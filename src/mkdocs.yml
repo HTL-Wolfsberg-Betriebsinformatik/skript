@@ -1,0 +1,50 @@
+site_name: INFI Skript
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+nav:
+  - 2 AHWII:
+    - Einführung: 2AHWII/index.md 
+    - Einführung Datenbanken: 2AHWII/01_why-databases.md
+    - Welche Datenbanksysteme gibt es?: 2AHWII/02_database-systems.md
+    - Relationale Datenbanken 🧪 : 2AHWII/03_exercise_movies.md
+  - 3 AHWII:
+    - Einführung: 3AHWII/index.md
+    - Entity Relations: 3AHWII/01_entity-relations.md
+  - Playground: playground.md

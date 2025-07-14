@@ -17,7 +17,7 @@ Eine **Datenbank** ist ein strukturiertes System zur **speichernden und verwalte
     | **Banken**       | Konten, Transaktionen, Kundendaten   |
 
 
-## Was bringt eine Datenbank?
+## Welche Vorteile bieten Datenbanken?
 
 - [x] **Struktur**: klare Regeln, wie Daten gespeichert werden
 - [x] **Zugriff für viele Benutzer gleichzeitig**

@@ -1,0 +1,10 @@
+.myclass {
+    background-color: red;
+}
+
+.preview {
+    padding: 1rem;
+    border: 1px dashed #bbb;
+    background: #ffffff;
+    margin-top: 0.5rem;
+  }

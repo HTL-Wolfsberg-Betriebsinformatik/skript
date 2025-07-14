@@ -1,4 +1,4 @@
-site_name: INFI Skript
+site_name: B.2 Informatik Skript
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -30,7 +30,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  
 theme:
   name: material
   features:
@@ -46,25 +45,31 @@ theme:
     - content.code.select
     - content.code.annotate
     - content.tabs.link
+extra_css:
+  - styles/extra.css
 nav:
-  - 2 AHWII:
-    - Einführung: 2AHWII/index.md 
-    - Einführung Datenbanken: 2AHWII/01_why-databases.md
-    - Datenbanksysteme: 2AHWII/02_database-systems.md
+  - INFI - 2 AHWII:
+    - Einführung: INFI/2AHWII/index.md 
+    - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
+    - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
     - Structured Query Language (SQL) - Intro:
-      - Einführung SQL: 2AHWII/03_structured_query_language.md
-      - Tabellen erstellen und löschen: 2AHWII/03_sql_create_and_drop_command.md
-      - Daten einfügen, ändern und löschen: 2AHWII/03_sql_insert_command.md
-      - Daten abfragen: 2AHWII/03_sql_select_command.md
-      - 🧪 Erste SQL Übung: 2AHWII/04_exercise_movies.md
-      - Tabellen ändern: 2AHWII/03_sql_alter_command.md
+      - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
+      - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
+      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
+      - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
+      - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
+      - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
     - Relationen, Relationenmodelle und Datenbankentwurf:
-      - Einführung Relationen: 2AHWII/05_relations.md
-      - Fremdschüssel - Beziehungen zwischen Tabellen: 2AHWII/06_foreign_keys.md
-      - Tabellen verbinden: 2AHWII/07_sql_join_command.md
-      - 🧪 Relationen Übung: 2AHWII/08_exercise_relations.md
-      - Entity Relations (ER): 2AHWII/09_entity_relations_diagram.md
-  - 3 AHWII:
-    - Einführung: 3AHWII/index.md
-    - Entity Relations: 3AHWII/01_entity-relations.md
-  - Playground: playground.md
+      - Einführung Relationen: INFI/2AHWII/05_relations.md
+      - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_foreign_keys.md
+      - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
+      - 🧪 Relationen Übung: INFI/2AHWII/08_exercise_relations.md
+      - Entity Relations (ER): INFI/2AHWII/09_entity_relations_diagram.md
+  - INFI - 3 AHWII:
+    - Einführung: INFI/3AHWII/index.md
+    - Entity Relations: INFI/3AHWII/01_entity-relations.md
+  - SWP/WEB - 2 AHWII:
+    - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
+    - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_html-tags.md
+  - Fächerübergreifende Projekte:
+    - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

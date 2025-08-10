@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Transitions & Hover – Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0f1220;
+      --surface:#13162a;
+      --surface-2:#1b2040;
+      --text:#e9ecf5;
+      --muted:#a9b0c7;
+      --brand:hsl(210 90% 55%);
+      --brand-2:hsl(210 90% 45%);
+      --ok:hsl(153 60% 45%);
+      --warn:hsl(38 90% 55%);
+      --radius:14px;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    html{box-sizing:border-box}
+    *,*::before,*::after{box-sizing:inherit}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Inter,Arial,sans-serif;
+      background:linear-gradient(180deg,#0e1120,#0b0e1a);
+      color:var(--text); line-height:1.55;
+    }
+    .wrap{
+      max-width:1100px; margin:auto; padding:32px 20px 60px;
+    }
+    h1{font-size:clamp(1.6rem,2.2vw,2.4rem); margin:0 0 10px}
+    h2{font-size:clamp(1.2rem,1.6vw,1.4rem); color:var(--muted); font-weight:600; margin:0 0 28px}
+    section{margin-block:28px}
+
+    /* Demo-Raster */
+    .grid{
+      display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    }
+    .card{
+      background:linear-gradient(180deg, var(--surface), var(--surface-2));
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 0 0 rgba(0,0,0,0);
+      transform:translateY(0) scale(1);
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .card:hover{ transform:translateY(-4px) scale(1.01); box-shadow:var(--shadow); border-color:rgba(255,255,255,.12) }
+    .card h3{margin:0 0 8px; font-size:1.05rem}
+    .card p{margin:0; color:var(--muted)}
+
+    /* Buttons */
+    .btn{
+      display:inline-block; padding:.75rem 1rem; border-radius:12px; font-weight:600; letter-spacing:.2px;
+      text-decoration:none; color:white; background:var(--brand); border:1px solid transparent;
+      transform:translateY(0); box-shadow:0 0 0 rgba(0,0,0,0);
+      transition:background-color .2s ease, transform .2s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .btn:hover{ background:var(--brand-2); transform:translateY(-2px); box-shadow:var(--shadow) }
+    .btn:active{ transform:translateY(0) }
+    .btn--ghost{
+      background:transparent; color:var(--text); border-color:rgba(255,255,255,.16);
+    }
+    .btn--ghost:hover{ border-color:rgba(255,255,255,.32); background:rgba(255,255,255,.06) }
+
+    /* Link-Effekte */
+    .link{
+      color:var(--brand); text-decoration:none; font-weight:600;
+      background-image:linear-gradient(currentColor,currentColor);
+      background-repeat:no-repeat; background-position:0 100%;
+      background-size:0 2px;
+      transition:color .2s ease, background-size .25s ease;
+    }
+    .link:hover, .link:focus-visible{ color:var(--brand-2); background-size:100% 2px; outline:none }
+
+    /* Icon-Nudge */
+    .link-icon{ display:inline-flex; align-items:center; gap:.5rem; color:var(--text); text-decoration:none; transition:color .2s ease }
+    .link-icon svg{ width:18px; height:18px; transition:transform .2s ease }
+    .link-icon:hover{ color:var(--brand) }
+    .link-icon:hover svg{ transform:translateX(2px) }
+
+    /* Thumb Overlay */
+    .thumb{ position:relative; border-radius:14px; overflow:hidden; aspect-ratio:16/10; background:linear-gradient(135deg,#3b82f6,#22c55e); }
+    .thumb .overlay{
+      position:absolute; inset:0; background:rgba(0,0,0,.45); display:grid; place-items:center;
+      color:#fff; font-weight:700; letter-spacing:.3px; opacity:0; transition:opacity .2s ease;
+    }
+    .thumb:hover .overlay, .thumb:focus-within .overlay{ opacity:1 }
+
+    /* Info-Badges to show transitions */
+    .badges{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px }
+    .badge{
+      font-size:.8rem; padding:.35rem .6rem; border-radius:999px; color:#0b0e1a; background:#d1f8e6;
+      transform:translateY(0); transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .badge:hover{ transform:translateY(-2px); box-shadow:0 8px 16px rgba(0,0,0,.2) }
+    .badge.warn{ background:#ffe4b8 }
+
+    /* Focus Styles (A11y) */
+    .btn:focus-visible, .link:focus-visible, .link-icon:focus-visible, .thumb a:focus-visible{
+      outline:2px solid #fff; outline-offset:2px;
+    }
+
+    /* Reduced motion respect */
+    @media (prefers-reduced-motion: reduce){
+      *{ transition:none !important; animation:none !important }
+    }
+
+    /* Layout helpers */
+    .row{ display:flex; flex-wrap:wrap; gap:12px; align-items:center }
+    .mt{ margin-top:14px }
+    .muted{ color:var(--muted) }
+    .k{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; color:#9ad2ff }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>CSS Transitions & Hover – Demo</h1>
+      <h2>Beispiele für <span class="k">transition</span>, Buttons, Links, Cards, Icon‑Nudge & Overlays</h2>
+    </header>
+
+    <section>
+      <div class="row">
+        <a class="btn" href="#" role="button">Primärer Button</a>
+        <a class="btn btn--ghost" href="#" role="button">Ghost‑Button</a>
+        <a class="link" href="#">Textlink mit animierter Unterstreichung</a>
+        <a class="link-icon" href="#">
+          Mehr erfahren
+          <!-- simple right arrow svg -->
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M13.293 5.293a1 1 0 011.414 0l5.999 6a1 1 0 010 1.414l-5.999 6a1 1 0 01-1.414-1.414L17.586 13H4a1 1 0 110-2h13.586l-4.293-4.293a1 1 0 010-1.414z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="muted mt">Bewege die Maus über die Elemente – beachte die <span class="k">transition</span> von <span class="k">background</span>, <span class="k">transform</span>, <span class="k">box-shadow</span> und <span class="k">opacity</span>.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Elevate Card</h3>
+        <p>Hebe die Karte per Hover leicht an (Lift) und füge Schatten hinzu.</p>
+        <div class="badges">
+          <span class="badge">transform</span>
+          <span class="badge">box-shadow</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Overlay‑Thumb</h3>
+        <div class="thumb mt" aria-label="Bild mit Overlay">
+          <a href="#" class="overlay">Overlay & Fade‑In</a>
+        </div>
+        <div class="badges">
+          <span class="badge">opacity</span>
+          <span class="badge">transition</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Timing‑Funktion</h3>
+        <p>Eigene Kurve mit <span class="k">cubic-bezier(.2,.8,.2,1)</span> auf einem Button.</p>
+        <div class="mt">
+          <a class="btn" style="transition: transform .35s cubic-bezier(.2,.8,.2,1), background-color .2s ease;" href="#">Sanfte Kurve</a>
+        </div>
+        <div class="badges">
+          <span class="badge">cubic‑bezier</span>
+          <span class="badge warn">ease</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Focus sichtbar</h3>
+        <p>Hover‑Effekte gelten auch für Tastatur‑Fokus (<span class="k">:focus-visible</span>).</p>
+        <div class="mt">
+          <a class="link" href="#focus-demo">Zum Abschnitt</a>
+        </div>
+        <div class="badges">
+          <span class="badge">:focus-visible</span>
+          <span class="badge">A11y</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="focus-demo">
+      <h2>Hinweise</h2>
+      <ul>
+        <li>Flüssige UI‑Transitions meist mit <span class="k">transform</span> & <span class="k">opacity</span>.</li>
+        <li>Kurze Dauer (150–300 ms) wirkt reaktionsschnell.</li>
+        <li>Respektiere Nutzerpräferenz: <span class="k">@media (prefers-reduced-motion: reduce)</span>.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

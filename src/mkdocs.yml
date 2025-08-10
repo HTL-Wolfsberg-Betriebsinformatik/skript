@@ -22,12 +22,14 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      base_path: ["docs"]
+      check_paths: true
   - pymdownx.tabbed:
       alternate_style: true
 theme:
@@ -70,6 +72,20 @@ nav:
     - Entity Relations: INFI/3AHWII/01_entity-relations.md
   - SWP/WEB - 2 AHWII:
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
-    - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_html-tags.md
+    - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_00_html-tags.md
+    - Medien einbinden: SWP/WEB/2AHWII/02_01_medien.md
+    - Einführung in CSS: SWP/WEB/2AHWII/03_00_intro-css.md
+    - Farbwerte in CSS: SWP/WEB/2AHWII/03_01_colors.md
+    - Einheiten in CSS: SWP/WEB/2AHWII/03_02_units.md
+    - 🧪 Übung - Lebenslauf: SWP/WEB/2AHWII/04_exercise_my-cv.md
+    - Gruppieren von Tags: SWP/WEB/2AHWII/05_div-tag.md
+    - CSS Box Modell: SWP/WEB/2AHWII/06_00_css-box-modell.md
+    - Schriftgestaltung in CSS: SWP/WEB/2AHWII/06_01_css-fonts.md
+    - Positionierung in CSS: SWP/WEB/2AHWII/06_02_css-positioning.md
+    - Layouts in CSS: SWP/WEB/2AHWII/06_layouts-with-css.md
+    - 🧪 Übung - Flexbox: SWP/WEB/2AHWII/07_exercise_flexbox-coding-fantasy.md
+    - CSS Cheatsheet: SWP/WEB/2AHWII/08_css-cheatsheet.md
+    - CSS Background: SWP/WEB/2AHWII/09_css-background.md
+    - Transition und Effects: SWP/WEB/2AHWII/10_transition-and-effects.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

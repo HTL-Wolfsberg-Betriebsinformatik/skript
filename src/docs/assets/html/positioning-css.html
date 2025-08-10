@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positionierung Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* damit wir scrollen können */
+    }
+
+    .box {
+      padding: 20px;
+      margin: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* 1. Static */
+    .static {
+      position: static;
+      background: steelblue;
+    }
+
+    /* 2. Relative */
+    .relative {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      background: orange;
+    }
+
+    /* 3. Absolute */
+    .absolute-container {
+      position: relative; /* Bezugspunkt */
+      height: 200px;
+      background: lightgray;
+      margin-bottom: 50px;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: crimson;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: darkgreen;
+      z-index: 1000;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box static">Static</div>
+
+  <div class="box relative">Relative (verschoben)</div>
+
+  <div class="absolute-container">
+    Grauer Container ist relative, aber Kinder sind absolute
+    <div class="box absolute">Absolute (in Container)</div>
+  </div>
+
+  <div class="box fixed">Fixed (immer oben rechts)</div>
+
+  <div class="box sticky">Sticky (klebt oben beim Scrollen)</div>
+
+  <p style="margin:20px">
+    Scrollen Sie, um das Verhalten von <strong>Fixed</strong> und <strong>Sticky</strong> zu sehen.
+  </p>
+
+</body>
+</html>

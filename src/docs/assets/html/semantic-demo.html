@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantisches HTML mit Sidebar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background: steelblue;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      margin: 0;
+    }
+
+    section {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    aside {
+      width: 250px;
+      background: #f0f0f0;
+      padding: 1rem;
+      border-left: 2px solid #ccc;
+      position: sticky; /* bleibt beim Scrollen sichtbar */
+      top: 0;
+      height: fit-content;
+    }
+
+    article {
+      margin-bottom: 1rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meine Webseite</h1>
+    <nav>
+      <a href="#home" style="color:white; margin-right:1rem;">Home</a>
+      <a href="#about" style="color:white; margin-right:1rem;">Über uns</a>
+      <a href="#contact" style="color:white;">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="news">
+      <h2>Neuigkeiten</h2>
+      <article>
+        <h3>Artikel 1</h3>
+        <p>Dies ist ein eigenständiger Artikel mit relevanten Informationen.</p>
+      </article>
+      <article>
+        <h3>Artikel 2</h3>
+        <p>Noch ein Artikel mit eigenem Thema.</p>
+      </article>
+      <p style="margin-top:800px;">Langer Inhalt zum Testen des Scrollverhaltens...</p>
+    </section>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Hier stehen zusätzliche Informationen, die beim Scrollen sichtbar bleiben.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Meine Webseite</p>
+  </footer>
+
+</body>
+</html>

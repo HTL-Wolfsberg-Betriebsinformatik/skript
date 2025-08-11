@@ -1,0 +1,29 @@
+div {
+    margin: 2rem;
+}
+
+button {
+    cursor: pointer;
+}
+button:hover {
+    background: lightblue;
+    transition-property: background-color;  /* welche Eigenschaft(en) */
+    transition-duration: 0.3s;              /* Dauer */
+    transition-timing-function: ease;       /* Verlaufskurve */
+    transition-delay: 0s;                   /* Startverzögerung */
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+a:hover,
+a:focus-visible {
+    color: goldenrod;
+    text-decoration: underline;
+    transition-property: color;             /* welche Eigenschaft(en) */
+    transition-duration: 0.3s;              /* Dauer */
+    transition-timing-function: ease;       /* Verlaufskurve */
+    transition-delay: .05s;                 /* Startverzögerung */
+}

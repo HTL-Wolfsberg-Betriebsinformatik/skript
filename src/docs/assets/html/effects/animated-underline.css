@@ -1,0 +1,17 @@
+div {
+    margin: 2rem;
+}
+
+.link {
+  color: brown;
+  background-image: linear-gradient(brown, brown);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 2px;                /* Start: 0 Breite */
+  transition: background-size .25s ease;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus-visible {
+  background-size: 100% 2px;              /* fährt von links nach rechts auf */
+}

@@ -1,0 +1,15 @@
+:root {
+  --hintergrund: white;
+  --textfarbe: black;
+}
+
+body {
+  background-color: var(--hintergrund);
+  color: var(--textfarbe);
+}
+
+/* Dark Mode -> reassign variable values */
+body.dark-mode {
+  --hintergrund: black;
+  --textfarbe: white;
+}

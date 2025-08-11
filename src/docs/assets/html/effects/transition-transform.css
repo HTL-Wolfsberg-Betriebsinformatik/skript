@@ -1,0 +1,15 @@
+div {
+    margin: 2rem;
+}
+
+button {
+    cursor: pointer;
+    transition: transform .25s ease;
+}
+.scale:hover {
+    transform: scale(1.2);
+}
+
+.move:hover {
+    transform: translate(2px, 2px);
+}

@@ -1,0 +1,22 @@
+.button-hover:hover {
+    background-color: aquamarine;
+}
+
+.link-hover:hover {
+    color: aquamarine;
+}
+
+
+input,
+button {
+  margin: 10px;
+}
+
+.focus-only:focus {
+  outline: 4px dashed darkorange;
+}
+
+.focus-visible-only:focus-visible {
+  outline: 4px dashed darkorange;
+}
+

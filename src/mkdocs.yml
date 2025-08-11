@@ -71,6 +71,7 @@ nav:
     - Einführung: INFI/3AHWII/index.md
     - Entity Relations: INFI/3AHWII/01_entity-relations.md
   - SWP/WEB - 2 AHWII:
+    - Lehrplan: SWP/WEB/2AHWII/00_lehrplan.md
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
     - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_00_html-tags.md
     - Medien einbinden: SWP/WEB/2AHWII/02_01_medien.md
@@ -90,5 +91,10 @@ nav:
     - Responsive Design: SWP/WEB/2AHWII/11_responsive-design.md
     - Semantisches HTML: SWP/WEB/2AHWII/12_semantisches-html.md
     - CSS Variablen: SWP/WEB/2AHWII/13_css-variablen.md
+  - SWP/WEB - 3 AHWII:
+    - Lehrplan: SWP/WEB/3AHWII/00_lehrplan.md
+    - Einführung in JavaScript: SWP/WEB/3AHWII/01_JS-fundamentals.md
+    - DOM Manipulation und Events: SWP/WEB/3AHWII/02_dom-manipulation-and-events.md
+    - Arbeiten mit APIs: SWP/WEB/3AHWII/03_working-with-apis.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

@@ -2,7 +2,7 @@
 
 ## Was sind HTML-Tags?
 
-TML verwendet sogenannte **Tags** (deutsch: „Auszeichnungen“), um Inhalte zu kennzeichnen und zu strukturieren.
+HTML verwendet sogenannte **Tags** (deutsch: „Auszeichnungen“), um Inhalte zu kennzeichnen und zu strukturieren.
 
 Ein Tag besteht meist aus:
 
@@ -71,6 +71,45 @@ HTML unterstützt auch **Kommentare**. Diese werden im Browser nicht angezeigt u
 ```html
 <a href="https://www.example.com">Zur Webseite</a> <!-- <a> steht für anchor -->
 ```
+
+> Der `<a>` tag wird benutzt um zu internen oder externen Seiten zu navigieren.
+
+**Absolute URLs**
+
+- Enthalten das vollständige Protokoll (e.g. `https`) und die Domain (e.g. `www.example.com`).
+
+```html
+<a href="https://www.example.com/about">Über uns</a>
+```
+> Als Voraussetzung gilt hier, dass eine `about.html` existiert.
+
+**Relative URLs**
+
+- Beziehen sich relativ zum Speicherort der aktuellen HTML-Datei.
+- Vorteil: keine festen Domains – gut für lokale Entwicklung oder innerhalb derselben Website.
+
+**Beispiel: Gleicher Ordner**
+```html
+<a href="kontakt.html">Kontakt</a>
+```
+> `kontakt.html` liegt im gleichen Ordner wie die aktuelle Seite.
+
+**Beispiel: Unterordner**
+
+```html
+<a href="produkte/liste.html">Produkte</a>
+```
+>  Geht in den Unterordner `produkte/`.
+
+**Beispiel: Übergeordneter Ordner**
+
+```html
+<a href="../index.html">Startseite</a>
+```
+>  Geht einen Ordner nach oben.
+
+!!! tip "Tipp"
+    Relative URLs sind vor allem nützlich, wenn das Projekt später auf verschiedenen Servern oder Domains laufen soll, ohne die Links anpassen zu müssen.
 
 ### Bilder
 

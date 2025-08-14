@@ -95,6 +95,8 @@ nav:
     - Lehrplan: SWP/WEB/3AHWII/00_lehrplan.md
     - Einführung in JavaScript: SWP/WEB/3AHWII/01_JS-fundamentals.md
     - DOM Manipulation und Events: SWP/WEB/3AHWII/02_dom-manipulation-and-events.md
-    - Arbeiten mit APIs: SWP/WEB/3AHWII/03_working-with-apis.md
+    - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
+    - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
+    - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

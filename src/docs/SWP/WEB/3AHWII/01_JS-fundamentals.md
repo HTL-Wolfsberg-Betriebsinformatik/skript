@@ -1,11 +1,11 @@
-# 📜 JavaScript Fundamentals – Block 1
+# JavaScript Fundamentals
 
-## 🌍 Was ist JavaScript?
+## Was ist JavaScript?
 
 JavaScript (JS) ist eine **Skriptsprache**, die ursprünglich entwickelt wurde, um Webseiten **interaktiv** zu machen.  
 Heute wird JavaScript nicht nur im Browser, sondern auch auf Servern (z. B. mit Node.js) und in vielen anderen Umgebungen genutzt.
 
-### 🖥 Einbindung in HTML
+### Einbindung in HTML
 
 === "Im `<script>`-Tag"
 
@@ -21,12 +21,12 @@ Heute wird JavaScript nicht nur im Browser, sondern auch auf Servern (z. B. mit 
     <script src="script.js"></script>
     ```
 
-💡 **Tipp:**  
-Am besten wird JavaScript in einer **externen Datei** gespeichert und am Ende des `<body>` eingebunden, damit der HTML-Inhalt zuerst geladen wird.
+!!! tip "Tipp"
+    Am besten wird JavaScript in einer **externen Datei** gespeichert und am Ende des `<body>` eingebunden, damit der HTML-Inhalt zuerst geladen wird.
 
 ---
 
-## 🗃 Variablen
+## Variablen
 
 Variablen speichern Werte, auf die man später zugreifen oder die man ändern kann.
 
@@ -36,14 +36,14 @@ const pi = 3.1415;
 var alter = 17;
 ```
 
-# 📜 JavaScript Fundamentals – Block 1
+# JavaScript Fundamentals – Block 1
 
-## 🌍 Was ist JavaScript?
+## Was ist JavaScript?
 
 JavaScript (JS) ist eine **Skriptsprache**, die ursprünglich entwickelt wurde, um Webseiten **interaktiv** zu machen.  
 Heute wird JavaScript nicht nur im Browser, sondern auch auf Servern (z. B. mit Node.js) und in vielen anderen Umgebungen genutzt.
 
-### 🖥 Einbindung in HTML
+### Einbindung in HTML
 
 === "Im `<script>`-Tag"
 
@@ -132,6 +132,16 @@ if (alter >= 18) {
 }
 ```
 
+**Beispiel:**
+
+=== "HTML"
+    ```html
+    --8<-- "assets/html/inline-script-demo.html"
+    ```
+=== "Ausgabe"
+    <a href="/assets/html/inline-script-demo.html" target="_blank">Zur Inline Script Demo</a>
+
+
 ### switch
 
 ```javascript
@@ -199,3 +209,4 @@ let personen = [
 
 console.table(personen);
 ```
+

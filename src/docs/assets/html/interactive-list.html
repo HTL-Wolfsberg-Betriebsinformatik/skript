@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Interaktive Liste</title>
+    </head>
+    <body>
+        <h1>Interaktive Liste</h1>
+        <input id="newItem" placeholder="Neuer Eintrag" />
+        <button id="addBtn">Hinzufügen</button>
+        <ul id="list"></ul>
+        <p id="msg"></p>
+        <script>
+            const input = document.getElementById("newItem");
+            const addBtn = document.getElementById("addBtn");
+            const list = document.getElementById("list");
+            const msg = document.getElementById("msg");
+
+            addBtn.addEventListener("click", () => {
+                const v = input.value.trim();
+                if (!v) {
+                    msg.textContent = "Bitte etwas eingeben.";
+                    return;
+                }
+                msg.textContent = "";
+                const li = document.createElement("li");
+                li.className = "item";
+                li.innerHTML = `${v} <button class="remove" aria-label="Eintrag entfernen">x</button>`;
+                list.appendChild(li);
+                input.value = "";
+                input.focus();
+            });
+
+            list.addEventListener("click", (e) => {
+                if (e.target.matches(".remove")) {
+                    e.target.closest(".item").remove();
+                }
+            });
+        </script>
+    </body>
+</html>

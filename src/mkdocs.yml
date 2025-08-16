@@ -98,5 +98,22 @@ nav:
     - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
     - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
     - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
+  - SWP/PR - 2 AHWII:
+    - Lehrplan: SWP/PR/2AHWII/00_lehrplan.md
+    - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
+    - Erstes Programm: SWP/PR/2AHWII/02_first-program.md
+    - IDE - Integrated Development Environment: SWP/PR/2AHWII/03_ide.md
+    - dotnet vs C#: SWP/PR/2AHWII/04_dotnet-vs-csharp.md
+    - Variablen und Datentypen: SWP/PR/2AHWII/05_variables-and-datatypes.md
+    - Operatoren: SWP/PR/2AHWII/06_operators.md
+    - Ein- und Ausgabe: SWP/PR/2AHWII/06_in-and-output.md
+    - Kontrollstrukturen: SWP/PR/2AHWII/07_control-structures.md
+    - Schleifen: SWP/PR/2AHWII/08_loops.md
+    - Funktionen: SWP/PR/2AHWII/09_functions.md
+    - Using Direktive und Bibliotheken: SWP/PR/2AHWII/09_using-and-libraries.md
+    - Arrays: SWP/PR/2AHWII/10_arrays.md
+    - Strings: SWP/PR/2AHWII/11_strings.md
+    - Struct: SWP/PR/2AHWII/12_structs.md
+    - Standardalgorithmen: SWP/PR/2AHWII/13_basic-algorithms.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

@@ -20,9 +20,10 @@ Verwenden wir für **Berechnungen mit Zahlen**.
 | `/`      | Division               | `10 / 2` | 5        |
 | `%`      | Modulo (Rest)          | `10 % 3` | 1        |
 
-**Beispiel in C#:**
+**Beispiel:**
 ```csharp
-int a = 10, b = 3;
+int a = 10;
+int b = 3;
 Console.WriteLine(a + b); // 13
 Console.WriteLine(a - b); // 7
 Console.WriteLine(a % b); // 1 (Rest)

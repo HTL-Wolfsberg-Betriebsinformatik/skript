@@ -5,10 +5,10 @@ HTML bietet dafür eigene Elemente, um Medien **einfach und standardkonform** ei
 
 === "HTML"
     ```html
-    <img src="/assets/images/god-of-html.png" alt="God of Html" width="200px" height="auto">
+    <img src="../../../../assets/images/god-of-html.png" alt="God of Html" width="200px" height="auto">
     ```
 === "Ausgabe"
-    <img src="/assets/images/god-of-html.png" alt="God of Html" width="200px" height="auto">
+    <img src="../../../../assets/images/god-of-html.png" alt="God of Html" width="200px" height="auto">
 
 | Attribut           | Bedeutung                                                                     |
 | ------------------ | ----------------------------------------------------------------------------- |
@@ -24,10 +24,10 @@ HTML bietet dafür eigene Elemente, um Medien **einfach und standardkonform** ei
 
 === "HTML"
     ```html
-    <audio src="/assets/audio/audio-example.mp3" controls></audio>
+    <audio src="../../../../assets/audio/audio-example.mp3" controls></audio>
     ```
 === "Ausgabe"
-    <audio src="/assets/audio/audio-example.mp3" controls></audio>
+    <audio src="../../../../assets/audio/audio-example.mp3" controls></audio>
 
 | Attribut           | Bedeutung                                                                     |
 | ------------------ | ----------------------------------------------------------------------------- |
@@ -39,10 +39,10 @@ HTML bietet dafür eigene Elemente, um Medien **einfach und standardkonform** ei
 
 === "HTML"
     ```html
-    <video src="/assets/videos/video-example.mp4" controls width="500" poster="vorschaubild.jpg"></video>
+    <video src="../../../../assets/videos/video-example.mp4" controls width="500" poster="vorschaubild.jpg"></video>
     ```
 === "Ausgabe"
-    <video src="/assets/videos/video-example.mp4" controls width="500" poster="/assets/images/vorschaubild_video-example.png"></video>
+    <video src="../../../../assets/videos/video-example.mp4" controls width="500" poster="/assets/images/vorschaubild_video-example.png"></video>
 
 | Attribut   | Bedeutung                                      |
 | ---------- | ---------------------------------------------- |

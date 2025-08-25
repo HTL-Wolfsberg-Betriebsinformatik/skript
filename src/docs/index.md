@@ -1,15 +1,22 @@
-# Welcome to MkDocs
+# Willkommen zum Betriebsinformatik Skript
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
+## Wie diese Doku funktioniert
 
-* `mkdocs new [dir-name]` - Create a new project.
+- Erstelle ein virtual python environment
+- Aktiviere das virutelle environment
+
+```bash
+source <name-of-virtual-env>/bin/activate
+```
+
+- Führe im `src/` folder folgende Befehle aus:
+
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
 
-## Project layout
+## Projekt Layout
 
     mkdocs.yml    # The configuration file.
     docs/

@@ -99,4 +99,4 @@ Diese Werte funktionieren nur, wenn `position` ≠ `static` ist:
     ```
 
 === "Ausgabe"
-    <iframe src="/assets/html/positioning-css.html" width="100%" height="500" style="border:1px solid #ccc;"></iframe>
+    <iframe src="../../../../assets/html/positioning-css.html" width="100%" height="500" style="border:1px solid #ccc;"></iframe>

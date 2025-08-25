@@ -42,7 +42,7 @@ Ein **Webbrowser** (z. B. Chrome, Firefox, Edge) ist ein Programm, das **HTML-Da
 </html>
 ```
 
-Speichern Sie diese Datei z. B. als `index.html` und öffnen Sie sie im Browser per Doppelklick oder klicken Sie [hier](/assets/html/hello-world.html).
+Speichern Sie diese Datei z. B. als `index.html` und öffnen Sie sie im Browser per Doppelklick oder klicken Sie [hier](../../../assets/html/hello-world.html).
 
 !!! info
     HTML-Dateien sind reine Textdateien mit der Endung `.html` und können mit jedem Texteditor erstellt werden:

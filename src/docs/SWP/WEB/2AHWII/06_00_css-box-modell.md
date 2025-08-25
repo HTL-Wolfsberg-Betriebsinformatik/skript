@@ -16,7 +16,7 @@ Von innen nach außen:
 3. **Border** – Rahmen um das Element
 4. **Margin** – Abstand zu anderen Elementen
 
-![Box-Modell Diagramm](/assets/images/css-box-model.drawio.png)
+![Box-Modell Diagramm](../../../assets/images/css-box-model.drawio.png)
 
 ---
 

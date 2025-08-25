@@ -49,6 +49,6 @@ button {
     --8<-- "assets/html/css-variablen/css-variablen-dark-mode.html"
     ```
 === "Ausgabe Light Mode"
-    <iframe src="/assets/html/css-variablen/css-variablen-light-mode.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/css-variablen/css-variablen-light-mode.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 === "Ausgabe Dark Mode"
-    <iframe src="/assets/html/css-variablen/css-variablen-dark-mode.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/css-variablen/css-variablen-dark-mode.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>

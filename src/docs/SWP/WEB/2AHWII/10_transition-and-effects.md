@@ -78,7 +78,7 @@ button:active {
     --8<-- "assets/html/effects/pseudo-classes.css"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/effects/pseudo-classes.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/effects/pseudo-classes.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 ---
 
@@ -198,7 +198,7 @@ button:hover {
     --8<-- "assets/html/effects/transition-color.css"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/effects/transition-color.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/effects/transition-color.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 
 #### `transform`
@@ -214,7 +214,7 @@ button:hover {
     --8<-- "assets/html/effects/transition-transform.css"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/effects/transition-transform.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/effects/transition-transform.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 **Unterstreichung animieren:**
 
@@ -227,7 +227,7 @@ button:hover {
     --8<-- "assets/html/effects/animated-underline.css"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/effects/animated-underline.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/effects/animated-underline.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 **Hervorgehobene Cards:**
 
@@ -240,7 +240,7 @@ button:hover {
     --8<-- "assets/html/effects/elevate-card.css"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/effects/elevate-card.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/effects/elevate-card.html" width="100%" height="400" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 
 ### Timing Funktionen (Bewegungskurven)

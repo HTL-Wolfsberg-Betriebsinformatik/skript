@@ -2,6 +2,6 @@
 
 TODO:
 
-![Beispielbild](/assets/images/er-diagram.drawio.png)
+![Beispielbild](../../assets/images/er-diagram.drawio.png)
 
 TODO

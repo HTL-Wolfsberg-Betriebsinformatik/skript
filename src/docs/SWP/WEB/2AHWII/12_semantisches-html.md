@@ -19,7 +19,7 @@ Anstatt alles in `<div>` oder `<span>` zu packen, werden **spezielle Tags** genu
     --8<-- "assets/html/semantic-demo.html"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/semantic-demo.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;"></iframe>
+    <iframe src="../../../../assets/html/semantic-demo.html" width="100%" height="700" style="border:1px solid #ccc; border-radius:8px;"></iframe>
 
 ## Vorteile
 

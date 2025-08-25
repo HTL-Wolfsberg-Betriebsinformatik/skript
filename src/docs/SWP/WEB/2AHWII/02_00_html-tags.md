@@ -143,8 +143,7 @@ HTML unterstützt auch **Kommentare**. Diese werden im Browser nicht angezeigt u
     --8<-- "assets/html/tag-example.html"
     ```
 === "Ausgabe"
-    <iframe src="/assets/html/tag-example.html" width="100%" height="850px" style="border:1px solid #ccc;"></iframe>
+    <iframe src="../../../../assets/html/tag-example.html" width="100%" height="850px" style="border:1px solid #ccc;"></iframe>
 
 !!! hint "Hinweis"
-
-    Diese Beispiel ist auch [hier](/assets/html/tag-example.html) verfügbar.
+    Diese Beispiel ist auch [hier](../../../assets/html/tag-example.html) verfügbar.

@@ -102,7 +102,7 @@ public readonly struct Size
 
 // Usage:
 var s1 = new Size(100, 40);
-s1.Width = 30; // Kompilierungsfehler: 
+s1.Width = 30; // Kompilierungsfehler
 ```
 
 !!! tip "Vorteil"

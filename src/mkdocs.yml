@@ -115,5 +115,11 @@ nav:
     - Strings: SWP/PR/2AHWII/11_strings.md
     - Struct: SWP/PR/2AHWII/12_structs.md
     - Standardalgorithmen: SWP/PR/2AHWII/13_basic-algorithms.md
+  - SWP/PR - 3 AHWII:
+    - Lehrplan: SWP/PR/3AHWII/00_lehrplan.md
+    - Einführung OOP: SWP/PR/3AHWII/01_intro-oop.md
+    - Implizite Typinferenz (var): SWP/PR/3AHWII/02_var-keyword.md 
+    - Properties in C#: SWP/PR/3AHWII/03_properties.md
+    - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

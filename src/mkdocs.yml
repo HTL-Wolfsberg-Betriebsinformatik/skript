@@ -121,5 +121,8 @@ nav:
     - Implizite Typinferenz (var): SWP/PR/3AHWII/02_var-keyword.md 
     - Properties in C#: SWP/PR/3AHWII/03_properties.md
     - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
+    - Interfaces: SWP/PR/3AHWII/05_interfaces.md
+    - Collections: SWP/PR/3AHWII/06_collections.md
+    - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

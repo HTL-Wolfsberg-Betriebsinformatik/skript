@@ -50,28 +50,23 @@ theme:
 extra_css:
   - styles/extra.css
 nav:
-  - INFI - 2 AHWII:
+  - Informatik:
     - Einführung: INFI/2AHWII/index.md 
     - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
     - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
-    - Structured Query Language (SQL) - Intro:
-      - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
-      - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
-      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
-      - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
-      - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
-      - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
-    - Relationen, Relationenmodelle und Datenbankentwurf:
-      - Einführung Relationen: INFI/2AHWII/05_relations.md
-      - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_foreign_keys.md
-      - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
-      - 🧪 Relationen Übung: INFI/2AHWII/08_exercise_relations.md
-      - Entity Relations (ER): INFI/2AHWII/09_entity_relations_diagram.md
-  - INFI - 3 AHWII:
-    - Einführung: INFI/3AHWII/index.md
-    - Entity Relations: INFI/3AHWII/01_entity-relations.md
-  - SWP/WEB - 2 AHWII:
-    - Lehrplan: SWP/WEB/2AHWII/00_lehrplan.md
+    - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
+    - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
+    - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
+    - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
+    - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
+    - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
+    - Einführung Relationen: INFI/2AHWII/05_relations.md
+    - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_foreign_keys.md
+    - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
+    - 🧪 Relationen Übung: INFI/2AHWII/08_exercise_relations.md
+    - Entity Relations (ER): INFI/2AHWII/09_entity_relations_diagram.md
+  - Softwareentwicklung - Web:
+    - Lehrplan: SWP/WEB/00_lehrplan.md
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
     - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_00_html-tags.md
     - Medien einbinden: SWP/WEB/2AHWII/02_01_medien.md
@@ -91,15 +86,13 @@ nav:
     - Responsive Design: SWP/WEB/2AHWII/11_responsive-design.md
     - Semantisches HTML: SWP/WEB/2AHWII/12_semantisches-html.md
     - CSS Variablen: SWP/WEB/2AHWII/13_css-variablen.md
-  - SWP/WEB - 3 AHWII:
-    - Lehrplan: SWP/WEB/3AHWII/00_lehrplan.md
     - Einführung in JavaScript: SWP/WEB/3AHWII/01_JS-fundamentals.md
     - DOM Manipulation und Events: SWP/WEB/3AHWII/02_dom-manipulation-and-events.md
     - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
     - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
     - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
-  - SWP/PR - 2 AHWII:
-    - Lehrplan: SWP/PR/2AHWII/00_lehrplan.md
+  - Softwareentwicklung - Programmieren:
+    - Lehrplan: SWP/PR/00_lehrplan.md
     - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
     - Erstes Programm: SWP/PR/2AHWII/02_first-program.md
     - IDE - Integrated Development Environment: SWP/PR/2AHWII/03_ide.md
@@ -115,8 +108,6 @@ nav:
     - Strings: SWP/PR/2AHWII/11_strings.md
     - Struct: SWP/PR/2AHWII/12_structs.md
     - Standardalgorithmen: SWP/PR/2AHWII/13_basic-algorithms.md
-  - SWP/PR - 3 AHWII:
-    - Lehrplan: SWP/PR/3AHWII/00_lehrplan.md
     - Einführung OOP: SWP/PR/3AHWII/01_intro-oop.md
     - Implizite Typinferenz (var): SWP/PR/3AHWII/02_var-keyword.md 
     - Properties in C#: SWP/PR/3AHWII/03_properties.md

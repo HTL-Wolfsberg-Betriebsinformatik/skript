@@ -1,4 +1,4 @@
-# Lehrplan 2.Klasse Betriebsinformatik
+## Lehrplan 2.Klasse Betriebsinformatik
 
 ## 3.Semester
 

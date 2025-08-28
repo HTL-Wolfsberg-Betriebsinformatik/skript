@@ -27,9 +27,9 @@
 - **Nur Windows-PCs und Windows Deployments, Fokus auf saubere Architektur:** WPF + MVVM.
     - Stabil, didaktisch ideal, viel Material; übertragbar auf Avalonia/MAUI.
 - **Teil Cross-Platform (z. B. auch MacBooks/Android-Phones, aber ohne embedded Linux):** .NET MAUI + MVVM.
-    - Moderner Tech-Stack, praxisnah (Mobile + Desktop).
-- **Full Cross-Platform (Linux-Rechner/Labore, FOSS-Fokus, Linux Embedded Systems):** Avalonia UI.
-    - Nahe an WPF, sehr angenehm zu lehren, echtes Cross-Desktop.
+    - Moderner Tech-Stack, praxisnah (Mobile + Desktop), aber ohne nativen Linux Support.
+- **Full Cross-Platform (Windows, Linux (Embedded Systems), FOSS-Fokus, iOS, Android, Web):** Avalonia UI.
+    - Nahe an WPF, sehr angenehm zu lehren/lernen, echtes Cross-Desktop.
 - **Starker Web-Fokus:** Blazor (evtl. Blazor Hybrid für Desktop-Shell).
     - Komponentenbasiert, Wiederverwendung zwischen Web & Desktop.
 - **Nur Prototypen bauen:** WinForms, aber **nur für sehr einfache Tools**; später zu MVVM-fähigem Stack wechseln.

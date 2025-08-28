@@ -123,6 +123,11 @@ nav:
     - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
     - Interfaces: SWP/PR/3AHWII/05_interfaces.md
     - Collections: SWP/PR/3AHWII/06_collections.md
-    - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling.md
+    - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling-intro.md
+    - UML Klassendiagram: SWP/PR/3AHWII/08_modelling-class-diagram.md
+    - UML Use-Case-Diagram: SWP/PR/3AHWII/09_use-case-diagram.md
+    - UML Sequenzdiagram: SWP/PR/3AHWII/10_sequence-diagram.md
+    - Flussdiagram: SWP/PR/3AHWII/11_flow-charts.md
+    - Graphical User Interfaces: SWP/PR/3AHWII/12_dotnet-guis.md
   - Fächerübergreifende Projekte:
     - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

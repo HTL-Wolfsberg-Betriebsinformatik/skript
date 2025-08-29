@@ -1,4 +1,4 @@
-# 🎨 CSS Cheatsheet – Häufig verwendete Eigenschaften
+# CSS Cheatsheet – Häufig verwendete Eigenschaften
 
 ## Box-Modell & Layout
 | Eigenschaft        | Beschreibung                                  | Beispiel |

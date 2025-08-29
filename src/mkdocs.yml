@@ -61,10 +61,13 @@ nav:
     - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
     - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
     - Einführung Relationen: INFI/2AHWII/05_relations.md
-    - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_foreign_keys.md
+    - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
+    - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
     - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
-    - 🧪 Relationen Übung: INFI/2AHWII/08_exercise_relations.md
-    - Entity Relations (ER): INFI/2AHWII/09_entity_relations_diagram.md
+    - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
+    - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
+    - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
+    - Entity Relations (ER): INFI/2AHWII/10_entity_relations_diagram.md
   - Softwareentwicklung - Web:
     - Lehrplan: SWP/WEB/00_lehrplan.md
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md

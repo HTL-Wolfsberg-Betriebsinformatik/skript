@@ -7,38 +7,12 @@ Da ein Regisseur mehrere Filme produzieren kann, und dementsprechend oft mit gle
 
 **Die Lösung:** Der Einsatz von Relationen und `JOIN` Abfragen.
 
-## Einstieg: 
-
-TODO
-
 ## Lernziele
 
 Die Schülerinnen und Schüler sollen:
 
-TODO
-
-## Voraussetzungen
-
-- SQLite CLI ist installiert  
-- Optional: visuelle Tools wie [DB Browser for SQLite](https://sqlitebrowser.org/)  
-
-
-## Schritt-für-Schritt-Anleitung
-
-### SQLite-Datenbank erstellen (falls nicht vorhanden)
-
-TODO
-
-### Tabelle `Regisseure` erstellen
-
-TODO
-
-### Tabelle `Movies` erweitern mit `ForeignKey` zu `Regisseure`
-
-TODO
-
-### Abfragen mit `SELECT` und `JOIN` durchführen
-
-TODO
-
-
+- eine weitere Tabelle `Regisseur` erstellen
+- Spalten der Tabelle hinzufügen
+- die `Movies` Tabelle updaten, sodass die `regisseur` Spalte ein Fremdschlüssel wird
+- Datensätze einfügen
+- SQL-Abfragen mit `JOIN` durchführen, um wieder den Regisseurnamen zu bekommen

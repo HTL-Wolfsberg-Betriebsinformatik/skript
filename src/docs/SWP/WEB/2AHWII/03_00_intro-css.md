@@ -1,4 +1,4 @@
-# 🎨 Einführung in CSS (Cascading Style Sheets)
+# Einführung in CSS (Cascading Style Sheets)
 
 ## Warum brauchen wir CSS?
 

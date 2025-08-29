@@ -9,8 +9,8 @@ Um diese Daten **gemeinsam abzufragen**, wird der SQL-Befehl `JOIN` verwendet.
 
 Einzelne Tabellen enthalten **nur einen Teil der Information**:
 
-- Die Tabelle `Movies` kennt den `regisseur_id`, aber nicht den Namen des Regisseurs.
-- Die Tabelle `Regisseur` kennt den Namen, aber nicht den Film.
+- Die Tabelle `Movies` kennt die `regisseur_id`, aber nicht den Namen des Regisseurs.
+- Die Tabelle `Regisseur` kennt den Namen, aber nicht die Filme in die er/sie Regie geführt hat.
 
 Um diese Informationen zu kombinieren, braucht man eine **Verknüpfung über den Fremdschlüssel**.
 
@@ -25,7 +25,7 @@ JOIN tabelle2 AS tab2
 ON tab1.fk = tab2.pk;
 ```
 
-- `JOIN` bedeutet standardmäßig INNER JOIN
+- `JOIN` bedeutet standardmäßig `INNER JOIN`
 - `ON` gibt die Verbindungsbedingung an (meist über Primär- und Fremdschlüssel)
 - Tabellen können mit Aliassen (`AS`) abgekürzt werden
 
@@ -82,7 +82,7 @@ Regisseur(regisseur_id, name)
     FROM Movies AS m
     LEFT JOIN regisseur AS r
     ON m.regisseur_id = r.regisseur_id;
-    ``
+    ```
 
 
 ### `RIGHT JOIN` (nur in SQL Server, nicht SQLite)

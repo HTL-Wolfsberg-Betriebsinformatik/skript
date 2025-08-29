@@ -1,5 +1,3 @@
-## Fremdschüssel – Beziehungen zwischen Tabellen
-
 Ein **Fremdschlüssel (engl. Foreign Key)** ist ein Attribut (Spalte) in einer Tabelle, das auf den **Primärschlüssel einer anderen Tabelle** verweist.
 
 Er stellt sicher, dass **Daten konsistent miteinander verknüpft** werden können.

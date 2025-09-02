@@ -1,4 +1,4 @@
-## 2.Klasse
+## 2.Jahrgang
 
 ### 3. und 4.Semester
 

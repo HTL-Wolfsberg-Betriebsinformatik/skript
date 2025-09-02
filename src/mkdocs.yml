@@ -51,7 +51,7 @@ extra_css:
   - styles/extra.css
 nav:
   - Informatik:
-    - Einführung: INFI/2AHWII/index.md 
+    - Lehrplan: INFI/00_lehrplan.md
     - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
     - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
     - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
@@ -67,7 +67,10 @@ nav:
     - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
     - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
     - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
-    - Entity Relations (ER): INFI/2AHWII/10_entity_relations_diagram.md
+    - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
+    - Indizes: INFI/2AHWII/11_indizes.md
+    - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
+    - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
   - Softwareentwicklung - Web:
     - Lehrplan: SWP/WEB/00_lehrplan.md
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md

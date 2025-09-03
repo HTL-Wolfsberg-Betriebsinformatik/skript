@@ -71,6 +71,10 @@ nav:
     - Indizes: INFI/2AHWII/11_indizes.md
     - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
     - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
+    - Normalformen: INFI/2AHWII/14_normal-forms.md
+    - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
+    - 5.KLasse:
+      - Business Process Modelling: INFI/5AHWII/01_business-process-modelling.md
   - Softwareentwicklung - Web:
     - Lehrplan: SWP/WEB/00_lehrplan.md
     - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md

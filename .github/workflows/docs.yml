@@ -6,6 +6,8 @@ on:
     paths:
       - "script/docs/**"
       - "script/mkdocs.yml"
+      - "slides/**"          # Slidev project
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
@@ -24,6 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # --- MkDocs build ---
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -44,6 +47,31 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: script/site
+
+      # --- Slidev build ---
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Setup @antfu/ni
+        run: npm i -g @antfu/ni
+      - name: Install slide deps
+        working-directory: slides
+        run: nci
+      - name: Build slides (served under /<repo>/slides/)
+        working-directory: slides
+        run: nr build --base "/${{ github.event.repository.name }}/slides/" --out dist
+      - name: Merge outputs
+        run: |
+          mkdir -p _site/slides
+          cp -r slides/dist/* _site/slides/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
 
   deploy:
     needs: build

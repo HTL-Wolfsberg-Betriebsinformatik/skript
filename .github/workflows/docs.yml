@@ -40,13 +40,7 @@ jobs:
 
       - name: Build site (in script/)
         working-directory: script
-        run: mkdocs build --strict
-        # Ausgabe: script/site/
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: script/site
+        run: mkdocs build --strict --site-dir ../_site
 
       # --- Slidev build ---
       - uses: actions/setup-node@v4

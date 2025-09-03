@@ -10,7 +10,7 @@
 source <name-of-virtual-env>/bin/activate
 ```
 
-- Führe im `src/` folder folgende Befehle aus:
+- Führe im `script/` folder folgende Befehle aus:
 
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.

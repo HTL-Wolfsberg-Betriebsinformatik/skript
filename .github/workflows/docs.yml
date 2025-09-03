@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "src/docs/**"
-      - "src/mkdocs.yml"
+      - "script/docs/**"
+      - "script/mkdocs.yml"
   workflow_dispatch:
 
 permissions:
@@ -35,15 +35,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Build site (in src/)
-        working-directory: src
+      - name: Build site (in script/)
+        working-directory: script
         run: mkdocs build --strict
-        # Ausgabe: src/site/
+        # Ausgabe: script/site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: src/site
+          path: script/site
 
   deploy:
     needs: build

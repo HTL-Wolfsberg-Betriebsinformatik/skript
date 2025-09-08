@@ -109,33 +109,40 @@ nav:
       - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
       - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
   - Softwareentwicklung - Programmieren:
-    - Lehrplan: SWP/PR/00_lehrplan.md
-    - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
-    - Erstes Programm: SWP/PR/2AHWII/02_first-program.md
-    - IDE - Integrated Development Environment: SWP/PR/2AHWII/03_ide.md
-    - dotnet vs C#: SWP/PR/2AHWII/04_dotnet-vs-csharp.md
-    - Variablen und Datentypen: SWP/PR/2AHWII/05_variables-and-datatypes.md
-    - Operatoren: SWP/PR/2AHWII/06_operators.md
-    - Ein- und Ausgabe: SWP/PR/2AHWII/06_in-and-output.md
-    - Kontrollstrukturen: SWP/PR/2AHWII/07_control-structures.md
-    - Schleifen: SWP/PR/2AHWII/08_loops.md
-    - Funktionen: SWP/PR/2AHWII/09_functions.md
-    - Using Direktive und Bibliotheken: SWP/PR/2AHWII/09_using-and-libraries.md
-    - Arrays und Listen: SWP/PR/2AHWII/10_arrays.md
-    - Strings: SWP/PR/2AHWII/11_strings.md
-    - Struct: SWP/PR/2AHWII/12_structs.md
-    - Standardalgorithmen: SWP/PR/2AHWII/13_basic-algorithms.md
-    - Einführung OOP: SWP/PR/3AHWII/01_intro-oop.md
-    - Implizite Typinferenz (var): SWP/PR/3AHWII/02_var-keyword.md 
-    - Properties in C#: SWP/PR/3AHWII/03_properties.md
-    - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
-    - Interfaces: SWP/PR/3AHWII/05_interfaces.md
-    - Collections: SWP/PR/3AHWII/06_collections.md
-    - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling-intro.md
-    - UML Klassendiagram: SWP/PR/3AHWII/08_modelling-class-diagram.md
-    - UML Use-Case-Diagram: SWP/PR/3AHWII/09_use-case-diagram.md
-    - UML Sequenzdiagram: SWP/PR/3AHWII/10_sequence-diagram.md
-    - Flussdiagram: SWP/PR/3AHWII/11_flow-charts.md
-    - Graphical User Interfaces: SWP/PR/3AHWII/12_dotnet-guis.md
-  - Fächerübergreifende Projekte:
-    - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 
+    - Lehrplan:
+      - 2.Jahrgang: SWP/PR/2AHWII/00_lehrplan.md
+      - 3.Jahrgang: SWP/PR/3AHWII/00_lehrplan.md
+    - Projekte:
+      - 2.Jahrgang: SWP/PR/2AHWII/projects/01_project_console-app.md
+      - 3.Jahrgang: SWP/PR/3AHWII/projects/01_project_game-app.md
+    - Skript - 2.Jahrgang:
+      - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
+      - Erstes Programm: SWP/PR/2AHWII/02_first-program.md
+      - IDE - Integrated Development Environment: SWP/PR/2AHWII/03_ide.md
+      - dotnet vs C#: SWP/PR/2AHWII/04_dotnet-vs-csharp.md
+      - Variablen und Datentypen: SWP/PR/2AHWII/05_variables-and-datatypes.md
+      - Operatoren: SWP/PR/2AHWII/06_operators.md
+      - Ein- und Ausgabe: SWP/PR/2AHWII/06_in-and-output.md
+      - Kontrollstrukturen: SWP/PR/2AHWII/07_control-structures.md
+      - Schleifen: SWP/PR/2AHWII/08_loops.md
+      - Funktionen: SWP/PR/2AHWII/09_functions.md
+      - Using Direktive und Bibliotheken: SWP/PR/2AHWII/09_using-and-libraries.md
+      - Arrays und Listen: SWP/PR/2AHWII/10_arrays.md
+      - Strings: SWP/PR/2AHWII/11_strings.md
+    - Skript - 3.Jahrgang:
+      - Struct: SWP/PR/2AHWII/12_structs.md
+      # - Standardalgorithmen: SWP/PR/2AHWII/13_basic-algorithms.md
+      - Einführung OOP: SWP/PR/3AHWII/01_intro-oop.md
+      - Implizite Typinferenz (var): SWP/PR/3AHWII/02_var-keyword.md 
+      - Properties in C#: SWP/PR/3AHWII/03_properties.md
+      - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
+      - Interfaces: SWP/PR/3AHWII/05_interfaces.md
+      - Collections: SWP/PR/3AHWII/06_collections.md
+      - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling-intro.md
+      - UML Klassendiagram: SWP/PR/3AHWII/08_modelling-class-diagram.md
+      - UML Use-Case-Diagram: SWP/PR/3AHWII/09_use-case-diagram.md
+      - UML Sequenzdiagram: SWP/PR/3AHWII/10_sequence-diagram.md
+      - Flussdiagram: SWP/PR/3AHWII/11_flow-charts.md
+      - Graphical User Interfaces: SWP/PR/3AHWII/12_dotnet-guis.md
+  # - Fächerübergreifende Projekte:
+  #   - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

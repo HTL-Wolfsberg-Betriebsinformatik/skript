@@ -57,7 +57,8 @@ jobs:
       - name: Merge outputs
         run: |
           mkdir -p _site/slides
-          cp -r slides/dist/* _site/slides/
+          cp -r slides/content/slides/dist/* _site/slides/
+          ls -l _site/slides/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

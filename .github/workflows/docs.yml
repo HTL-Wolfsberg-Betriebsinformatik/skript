@@ -53,7 +53,7 @@ jobs:
         run: nci
       - name: Build slides (served under /<repo>/slides/)
         working-directory: slides
-        run: nr build"
+        run: nr build
       - name: Merge outputs
         run: |
           mkdir -p _site/slides

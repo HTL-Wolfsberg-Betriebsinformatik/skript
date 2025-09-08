@@ -53,13 +53,11 @@ jobs:
         run: nci
       - name: Build slides (served under /<repo>/slides/)
         working-directory: slides
-        run: nr build --base "/${{ github.event.repository.name }}/slides/"
+        run: nr build --base "/${{ github.event.repository.name }}/"
       - name: Merge outputs
         run: |
           mkdir -p _site/slides
           cp -r slides/content/slides/dist/* _site/slides/
-          ls -l _site/slides/
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

@@ -25,7 +25,7 @@ VALUES (wert1, wert2, ...);
 === "MS SQL Server"
 
     ```sql
-    INSERT INTO Movies (titel, genre, dauer_minuten, published, has_oscar, rating)
+    INSERT INTO Movies (title, genre, duration_in_minutes, published, has_oscar, rating)
     VALUES (N'The Matrix', N'Action', 136, '1999-03-31', 0, 8.7);
     -- N'...' für Unicode-Zeichenkette
     -- rating: 1 = TRUE, 0 = FALSE 

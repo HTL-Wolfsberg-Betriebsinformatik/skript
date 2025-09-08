@@ -51,56 +51,63 @@ extra_css:
   - styles/extra.css
 nav:
   - Informatik:
+    - Projekte:
+      - 2.Jahrgang: INFI/2AHWII/projects/01_project_relational-database.md
     - Lehrplan: INFI/00_lehrplan.md
-    - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
-    - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
-    - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
-    - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
-    - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
-    - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
-    - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
-    - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
-    - Einführung Relationen: INFI/2AHWII/05_relations.md
-    - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
-    - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
-    - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
-    - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
-    - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
-    - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
-    - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
-    - Indizes: INFI/2AHWII/11_indizes.md
-    - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
-    - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
-    - Normalformen: INFI/2AHWII/14_normal-forms.md
-    - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
-    - 5.KLasse:
+    - Skript:
+      - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
+      - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
+      - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
+      - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
+      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
+      - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
+      - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
+      - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
+      - Einführung Relationen: INFI/2AHWII/05_relations.md
+      - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
+      - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
+      - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
+      - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
+      - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
+      - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
+      - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
+      - Indizes: INFI/2AHWII/11_indizes.md
+      - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
+      - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
+      - Normalformen: INFI/2AHWII/14_normal-forms.md
+      - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
       - Business Process Modelling: INFI/5AHWII/01_business-process-modelling.md
   - Softwareentwicklung - Web:
-    - Lehrplan: SWP/WEB/00_lehrplan.md
-    - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
-    - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_00_html-tags.md
-    - Medien einbinden: SWP/WEB/2AHWII/02_01_medien.md
-    - Einführung in CSS: SWP/WEB/2AHWII/03_00_intro-css.md
-    - Farbwerte in CSS: SWP/WEB/2AHWII/03_01_colors.md
-    - Einheiten in CSS: SWP/WEB/2AHWII/03_02_units.md
-    - 🧪 Übung - Lebenslauf: SWP/WEB/2AHWII/04_exercise_my-cv.md
-    - Gruppieren von Tags: SWP/WEB/2AHWII/05_div-tag.md
-    - CSS Box Modell: SWP/WEB/2AHWII/06_00_css-box-modell.md
-    - Schriftgestaltung in CSS: SWP/WEB/2AHWII/06_01_css-fonts.md
-    - Positionierung in CSS: SWP/WEB/2AHWII/06_02_css-positioning.md
-    - Layouts in CSS: SWP/WEB/2AHWII/06_layouts-with-css.md
-    - 🧪 Übung - Flexbox: SWP/WEB/2AHWII/07_exercise_flexbox-coding-fantasy.md
-    - CSS Cheatsheet: SWP/WEB/2AHWII/08_css-cheatsheet.md
-    - CSS Background: SWP/WEB/2AHWII/09_css-background.md
-    - Transition und Effects: SWP/WEB/2AHWII/10_transition-and-effects.md
-    - Responsive Design: SWP/WEB/2AHWII/11_responsive-design.md
-    - Semantisches HTML: SWP/WEB/2AHWII/12_semantisches-html.md
-    - CSS Variablen: SWP/WEB/2AHWII/13_css-variablen.md
-    - Einführung in JavaScript: SWP/WEB/3AHWII/01_JS-fundamentals.md
-    - DOM Manipulation und Events: SWP/WEB/3AHWII/02_dom-manipulation-and-events.md
-    - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
-    - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
-    - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
+    - Lehrplan:
+      - 2.Jahrgang: SWP/WEB/2AHWII/00_lehrplan.md
+    - Projekte:
+      - 2.Jahrgang: SWP/WEB/2AHWII/projects/01_project_static-website.md
+    - Skript - 2.Jahrgang:
+      - Einführung in HTML: SWP/WEB/2AHWII/01_intro-web.md
+      - HTML Grundstruktur und Tags: SWP/WEB/2AHWII/02_00_html-tags.md
+      - Medien einbinden: SWP/WEB/2AHWII/02_01_medien.md
+      - Einführung in CSS: SWP/WEB/2AHWII/03_00_intro-css.md
+      - Farbwerte in CSS: SWP/WEB/2AHWII/03_01_colors.md
+      - Einheiten in CSS: SWP/WEB/2AHWII/03_02_units.md
+      - 🧪 Übung - Lebenslauf: SWP/WEB/2AHWII/04_exercise_my-cv.md
+      - Gruppieren von Tags: SWP/WEB/2AHWII/05_div-tag.md
+      - CSS Box Modell: SWP/WEB/2AHWII/06_00_css-box-modell.md
+      - Schriftgestaltung in CSS: SWP/WEB/2AHWII/06_01_css-fonts.md
+      - Positionierung in CSS: SWP/WEB/2AHWII/06_02_css-positioning.md
+      - Layouts in CSS: SWP/WEB/2AHWII/06_layouts-with-css.md
+      - 🧪 Übung - Flexbox: SWP/WEB/2AHWII/07_exercise_flexbox-coding-fantasy.md
+      - CSS Cheatsheet: SWP/WEB/2AHWII/08_css-cheatsheet.md
+      - CSS Background: SWP/WEB/2AHWII/09_css-background.md
+      - Transition und Effects: SWP/WEB/2AHWII/10_transition-and-effects.md
+      - Responsive Design: SWP/WEB/2AHWII/11_responsive-design.md
+      - Semantisches HTML: SWP/WEB/2AHWII/12_semantisches-html.md
+      - CSS Variablen: SWP/WEB/2AHWII/13_css-variablen.md
+    - Skript - 3.Jahrgang:
+      - Einführung in JavaScript: SWP/WEB/3AHWII/01_JS-fundamentals.md
+      - DOM Manipulation und Events: SWP/WEB/3AHWII/02_dom-manipulation-and-events.md
+      - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
+      - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
+      - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
   - Softwareentwicklung - Programmieren:
     - Lehrplan: SWP/PR/00_lehrplan.md
     - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md

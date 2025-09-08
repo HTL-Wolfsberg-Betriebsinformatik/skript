@@ -1,6 +1,4 @@
-## 2.Jahrgang
-
-### 3.Semester
+## 3.Semester
 
 **Bildungs- und Lehraufgabe:**
 
@@ -14,7 +12,7 @@ Webentwicklung erläutern;
 Bereich Webtechnologien:
 - Informationsdarstellung im Internet (Dokumentenbeschreibungssprachen, Datenformate).
 
-### 4.Semester
+## 4.Semester
 
 **Bildungs- und Lehraufgabe:**
 

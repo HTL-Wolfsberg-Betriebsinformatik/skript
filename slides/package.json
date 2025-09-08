@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base ./ content/slides/1AWMBB2_01_intro.md content/slides/2AWMBB2_01_intro.md",
+    "build": "slidev build --base ./slides/ content/slides/1AWMBB2_01_intro.md content/slides/2AWMBB2_01_intro.md",
     "dev": "slidev --open",
     "export": "slidev export"
   },

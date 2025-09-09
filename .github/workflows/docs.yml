@@ -8,6 +8,7 @@ on:
       - "script/mkdocs.yml"
       - "slides/**"          # Slidev project
       - ".github/workflows/**"
+      - "build_all.sh"
   workflow_dispatch:
 
 permissions:

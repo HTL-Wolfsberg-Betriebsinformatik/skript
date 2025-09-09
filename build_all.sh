@@ -7,7 +7,7 @@ OUT_ROOT="${OUT_ROOT:-dist}"
 
 # MODE: "relative" (default) => --base ./ (recommended)
 #       "absolute" => --base "/<repo>/<deck>/" (for GH Pages project sites)
-MODE="${MODE:-relative}"
+MODE="${MODE:-absolute}"
 
 # Only used when MODE=absolute. Defaults to "/<repo-name>/"
 # You can override in CI: REPO_BASE="/my-repo/"
@@ -25,8 +25,19 @@ if [[ ${#decks[@]} -eq 0 ]]; then
   exit 1
 fi
 
-rm -rf "$OUT_ROOT"
-mkdir -p "$OUT_ROOT"
+SLIDES_OUT_ROOT="$INPUT_ROOT/$OUT_ROOT"
+
+sedi() {
+  # Usage: sedi 's|from|to|g' file
+  if sed --version >/dev/null 2>&1; then
+    # GNU sed
+    sed -i -E "$1" "$2"
+  else
+    # BSD/macOS sed
+    sed -i '' -E "$1" "$2"
+  fi
+}
+
 for md in "${decks[@]}"; do
   deck="$(basename "${md%.*}")"          # e.g. 1AWMBB2_01_intro.md -> 1AWMBB2_01_intro
   out="$OUT_ROOT"
@@ -43,18 +54,22 @@ for md in "${decks[@]}"; do
   
   npx -y pnpm build "$md" --base "$base" --out "$out"
 
-  # Safety: fix any absolute /assets URLs that might slip through
-  if [[ "$MODE" == "relative" ]]; then
-    if [[ -f "$out/index.html" ]]; then
-      sed -i -E 's/(href|src)="\/assets\//\1="assets\//g' "$out/index.html" || true
-    fi
+  # Post-process index.html to fix asset paths
+  slide_index="$SLIDES_OUT_ROOT/$deck/index.html"
+  echo "Slide index: $slide_index"
+  if [[ -f "$slide_index" ]]; then
+  # Rewrite absolute /assets/... to relative ./assets/...
+    echo "Found index.html, rewriting asset paths..."
+
+    # handle cases where vite inlines base path like /repo/deck/assets/...
+    perl -0777 -i -pe 's/(href|src)=\"[^"]*\/assets\//"$1=\".\/assets\/"/ge' "$slide_index"
   fi
 done
 
 echo "✅ All decks built to $OUT_ROOT"
 
 # Generate master index.html
-SLIDES_OUT_ROOT="content/slides/$OUT_ROOT"
+
 INDEX_FILE="$SLIDES_OUT_ROOT/index.html"
 
 cat > "$INDEX_FILE" <<'EOF'

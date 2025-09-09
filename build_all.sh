@@ -7,7 +7,7 @@ OUT_ROOT="${OUT_ROOT:-dist}"
 
 # MODE: "relative" (default) => --base ./ (recommended)
 #       "absolute" => --base "/<repo>/<deck>/" (for GH Pages project sites)
-MODE="${MODE:-absolute}"
+MODE="${MODE:-relative}"
 
 # Only used when MODE=absolute. Defaults to "/<repo-name>/"
 # You can override in CI: REPO_BASE="/my-repo/"
@@ -52,3 +52,32 @@ for md in "${decks[@]}"; do
 done
 
 echo "✅ All decks built to $OUT_ROOT"
+
+# Generate master index.html
+SLIDES_OUT_ROOT="content/slides/$OUT_ROOT"
+INDEX_FILE="$SLIDES_OUT_ROOT/index.html"
+
+cat > "$INDEX_FILE" <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slidev Presentations</title>
+</head>
+<body>
+  <h1>Available Presentations</h1>
+  <ul>
+EOF
+
+for deck in "$SLIDES_OUT_ROOT"/*/; do
+  name=$(basename "$deck")
+  echo "    <li><a href=\"$name/\" target=\"_blank\">$name</a></li>" >> "$INDEX_FILE"
+done
+
+cat >> "$INDEX_FILE" <<'EOF'
+  </ul>
+</body>
+</html>
+EOF
+
+echo "✅ Generated $INDEX_FILE"

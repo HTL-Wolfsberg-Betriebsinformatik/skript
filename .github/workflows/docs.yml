@@ -56,7 +56,7 @@ jobs:
         run: |
           bash build_all.sh
         env:
-          MODE: absolute
+          MODE: relative
           REPO_BASE: "/${{ github.event.repository.name }}/slides/"
           INPUT_ROOT: content/slides
           OUT_ROOT: dist

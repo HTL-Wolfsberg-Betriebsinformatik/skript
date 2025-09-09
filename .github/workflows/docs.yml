@@ -51,9 +51,14 @@ jobs:
       - name: Install slide deps
         working-directory: slides
         run: nci
-      - name: Build slides (served under /<repo>/slides/)
-        working-directory: slides
-        run: nr build --base "/${{ github.event.repository.name }}/slides/"
+      - name: Build all decks (relative URLs)
+        run: |
+          bash build_all.sh
+        env:
+          MODE: absolute
+          REPO_BASE: "/${{ github.event.repository.name }}/"
+          INPUT_ROOT: content/slides
+          OUT_ROOT: dist
       - name: Merge outputs
         run: |
           mkdir -p _site/slides

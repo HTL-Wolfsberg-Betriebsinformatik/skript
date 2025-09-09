@@ -23,26 +23,19 @@ mapfile -t decks < <(find "$INPUT_ROOT" -type f -name "*.md" | sort)
 if [[ ${#decks[@]} -eq 0 ]]; then
   echo "No .md decks found under $INPUT_ROOT" >&2
   exit 1
+else
+  echo "Found ${#decks[@]} decks:"
+  for d in "${decks[@]}"; do
+    echo " - $d"
+  done
 fi
 
 SLIDES_OUT_ROOT="$INPUT_ROOT/$OUT_ROOT"
 
-sedi() {
-  # Usage: sedi 's|from|to|g' file
-  if sed --version >/dev/null 2>&1; then
-    # GNU sed
-    sed -i -E "$1" "$2"
-  else
-    # BSD/macOS sed
-    sed -i '' -E "$1" "$2"
-  fi
-}
-
 for md in "${decks[@]}"; do
   deck="$(basename "${md%.*}")"          # e.g. 1AWMBB2_01_intro.md -> 1AWMBB2_01_intro
-  out="$OUT_ROOT"
+  out="$OUT_ROOT/$deck/"              # e.g. dist/1AWMBB2_01_intro/
   echo "Output dir: $out"
-  mkdir -p "$out"
 
   if [[ "$MODE" == "relative" ]]; then
     base="./"
@@ -52,7 +45,7 @@ for md in "${decks[@]}"; do
 
   echo "→ Building '$md' -> '$out' (base: '$base')"
   
-  npx -y pnpm build "$md" --base "$base" --out "$out"
+  npx pnpm build "$md" --base "$base" --out "$out"
 done
 
 echo "✅ All decks built to $OUT_ROOT"

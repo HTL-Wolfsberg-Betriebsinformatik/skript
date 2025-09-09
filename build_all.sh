@@ -11,7 +11,7 @@ MODE="${MODE:-absolute}"
 
 # Only used when MODE=absolute. Defaults to "/<repo-name>/"
 # You can override in CI: REPO_BASE="/my-repo/"
-REPO_BASE="${REPO_BASE:-/$(basename "$(git rev-parse --show-toplevel)")/}"
+REPO_BASE="${REPO_BASE:-/$(basename "$(git rev-parse --show-toplevel)")/slides/}"
 
 echo "Repo base: $REPO_BASE"
 

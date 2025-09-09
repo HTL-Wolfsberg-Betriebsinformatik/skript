@@ -50,6 +50,9 @@ theme:
 extra_css:
   - styles/extra.css
 nav:
+  - Allgemein:
+    - Motivation: General/01_motivation.md
+    - Roadmap: General/02_roadmap.md
   - Informatik:
     - Projekte:
       - 2.Jahrgang: INFI/2AHWII/projects/01_project_relational-database.md

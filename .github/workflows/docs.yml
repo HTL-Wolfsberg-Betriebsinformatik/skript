@@ -52,11 +52,11 @@ jobs:
       - name: Install slide deps
         working-directory: slides
         run: nci
-      - name: Build all decks (relative URLs)
+      - name: Build all decks
         run: |
           bash build_all.sh
         env:
-          MODE: relative
+          MODE: absolute
           REPO_BASE: "/${{ github.event.repository.name }}/slides/"
           INPUT_ROOT: content/slides
           OUT_ROOT: dist

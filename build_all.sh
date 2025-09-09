@@ -53,17 +53,6 @@ for md in "${decks[@]}"; do
   echo "→ Building '$md' -> '$out' (base: '$base')"
   
   npx -y pnpm build "$md" --base "$base" --out "$out"
-
-  # Post-process index.html to fix asset paths
-  slide_index="$SLIDES_OUT_ROOT/$deck/index.html"
-  echo "Slide index: $slide_index"
-  if [[ -f "$slide_index" ]]; then
-  # Rewrite absolute /assets/... to relative ./assets/...
-    echo "Found index.html, rewriting asset paths..."
-
-    # handle cases where vite inlines base path like /repo/deck/assets/...
-    perl -0777 -i -pe 's/(href|src)=\"[^"]*\/assets\//"$1=\".\/assets\/"/ge' "$slide_index"
-  fi
 done
 
 echo "✅ All decks built to $OUT_ROOT"

@@ -34,5 +34,3 @@
 !!! tip "Merke"
     Ohne Verbindung keine Daten.
     Die Datenbank ist ein eigenes Programm, wir sind nur Gäste – und brauchen erst die Tür (die Verbindung), bevor wir hineingehen und Fragen stellen dürfen.
-
-## Vergleich 

@@ -15,14 +15,14 @@ CREATE TABLE tabellenname (
 
 Ein **Datentyp** legt fest, welche Art von Daten in einer Spalte gespeichert werden darf.
 
-| Datentyp     | Beschreibung                             | Beispiele            |
-|--------------|------------------------------------------|----------------------|
-| `INTEGER`, `INT`    | Ganze Zahl                               | `1`, `-10`, `0`      |
-| `REAL`, `FLOAT`       | Kommazahl / Gleitkommazahl               | `3.14`, `-2.7`       |
-| `TEXT`       | Zeichenkette (Text, z. B. bei SQLite)    | `'Matrix'`           |
-| `VARCHAR(n)` | Text mit maximaler Länge `n`             | `'Test'`, `VARCHAR(100)` |
-| `DATE`       | Datum (je nach DBMS-Format)              | `'2023-09-01'`       |
-| `BOOLEAN`, `BIT`    | Wahr/Falsch-Wert (DB-abhängig)           | `TRUE`, `FALSE` oder `1`, `0` |
+| Datentyp          | Beschreibung                             | Beispiele                      |
+|-------------------|------------------------------------------|--------------------------------|
+| `INTEGER`, `INT`  | Ganze Zahl                               | `1`, `-10`, `0`                |
+| `REAL`, `FLOAT`   | Kommazahl / Gleitkommazahl               | `3.14`, `-2.7`                 |
+| `TEXT`            | Zeichenkette (Text, z. B. bei SQLite)    | `'Matrix'`                     |
+| `VARCHAR(n)`      | Text mit maximaler Länge `n`             | `'Test'`, `VARCHAR(100)`       |
+| `DATE`            | Datum (je nach DBMS-Format)              | `'2023-09-01'`                 |
+| `BOOLEAN`, `BIT`  | Wahr/Falsch-Wert (DB-abhängig)           | `TRUE`, `FALSE` oder `1`, `0`  |
 
 
 ### Constraints (Einschränkungen)

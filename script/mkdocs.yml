@@ -54,25 +54,27 @@ nav:
     - Motivation: General/01_motivation.md
     - Roadmap: General/02_roadmap.md
   - Informatik:
-    - Projekte:
-      - 2.Jahrgang: INFI/2AHWII/projects/01_project_relational-database.md
+    # - Projekte:
+    #  - 2.Jahrgang: INFI/2AHWII/projects/01_project_relational-database.md
     - Lehrplan: INFI/00_lehrplan.md
     - Skript:
       - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
-      - Datenbanksysteme: INFI/2AHWII/02_database-systems.md
-      - Einführung SQL: INFI/2AHWII/03_structured_query_language.md
-      - Tabellen erstellen und löschen: INFI/2AHWII/03_sql_create_and_drop_command.md
-      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_sql_insert_command.md
-      - Daten abfragen: INFI/2AHWII/03_sql_select_command.md
-      - 🧪 Erste SQL Übung: INFI/2AHWII/04_exercise_movies.md
-      - Tabellen ändern: INFI/2AHWII/03_sql_alter_command.md
+      - Datenbanksysteme: INFI/2AHWII/02_01_database-systems.md
+      - Arbeiten mit Datenbanken: INFI/2AHWII/02_02_working-with-databases.md
+      - MS SQL Server CLI Tutorial: INFI/2AHWII/02_03_mssql-cli.md
+      - Einführung SQL: INFI/2AHWII/03_00_structured_query_language.md
+      - Tabellen erstellen und löschen: INFI/2AHWII/03_01_sql_create_and_drop_command.md
+      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_02_sql_insert_command.md
+      - Daten abfragen: INFI/2AHWII/03_03_sql_select_command.md
+      # - 🧪 SQL Übung: INFI/2AHWII/04_exercise_movies.md
+      - Tabellen ändern: INFI/2AHWII/03_04_sql_alter_command.md
       - Einführung Relationen: INFI/2AHWII/05_relations.md
       - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
       - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
       - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
       - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
-      - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
-      - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
+      # - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
+      # - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
       - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
       - Indizes: INFI/2AHWII/11_indizes.md
       - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md

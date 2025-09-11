@@ -82,9 +82,10 @@ nav:
       - Normalformen: INFI/2AHWII/14_normal-forms.md
       - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
       - Business Process Modelling: INFI/5AHWII/01_business-process-modelling.md
-  - Softwareentwicklung - Web:
+  - SWP - Web:
     - Lehrplan:
       - 2.Jahrgang: SWP/WEB/2AHWII/00_lehrplan.md
+      - 4.Jahrgang: SWP/WEB/4AHWII/00_lehrplan.md
     - Projekte:
       - 2.Jahrgang: SWP/WEB/2AHWII/projects/01_project_static-website.md
     - Skript - 2.Jahrgang:
@@ -113,10 +114,11 @@ nav:
       - Einführung in TypeScript: SWP/WEB/3AHWII/03_typescript-intro.md
       - TypeScript installieren: SWP/WEB/3AHWII/04_install-typescript.md
       - TypeScript benutzen: SWP/WEB/3AHWII/05_typescript-usage.md
-  - Softwareentwicklung - Programmieren:
+  - SWP - Programmieren:
     - Lehrplan:
       - 2.Jahrgang: SWP/PR/2AHWII/00_lehrplan.md
       - 3.Jahrgang: SWP/PR/3AHWII/00_lehrplan.md
+      - 4.Jahrgang: SWP/PR/4AHWII/00_lehrplan.md
     # - Projekte:
     #   - 2.Jahrgang: SWP/PR/2AHWII/projects/01_project_console-app.md
     #   - 3.Jahrgang: SWP/PR/3AHWII/projects/01_project_game-app.md
@@ -143,11 +145,28 @@ nav:
       - Vererbung und Polymorphismus: SWP/PR/3AHWII/04_inheritence-and-polymorphysm.md
       - Interfaces: SWP/PR/3AHWII/05_interfaces.md
       - Collections: SWP/PR/3AHWII/06_collections.md
-      - Modellierung in der Softwareentwicklung: SWP/PR/3AHWII/07_modelling-intro.md
-      - UML Klassendiagram: SWP/PR/3AHWII/08_modelling-class-diagram.md
-      - UML Use-Case-Diagram: SWP/PR/3AHWII/09_use-case-diagram.md
-      - UML Sequenzdiagram: SWP/PR/3AHWII/10_sequence-diagram.md
-      - Flussdiagram: SWP/PR/3AHWII/11_flow-charts.md
       - Graphical User Interfaces: SWP/PR/3AHWII/12_dotnet-guis.md
+  - SWP - Projektmanagement:
+    - Lehrplan:
+      - 3.Jahrgang: SWP/PM/3AHWII/00_lehrplan.md
+      - 4.Jahrgang: SWP/PM/4AHWII/00_lehrplan.md
+    - Projekte:
+      - 3.Jahrgang: SWP/PM/3AHWII/projects/01_project_create-sw-project-in-teams.md
+      - 4.Jahrgang: SWP/PM/4AHWII/projects/01_project_implement-sw-project-in-teams.md
+    - Skript - 3.Jahrgang:
+      - Modellierung in der Softwareentwicklung: SWP/PM/3AHWII/01_modelling-intro.md
+      - UML Klassendiagram: SWP/PM/3AHWII/02_modelling-class-diagram.md
+      - UML Use-Case-Diagram: SWP/PM/3AHWII/03_use-case-diagram.md
+      - UML Sequenzdiagram: SWP/PM/3AHWII/04_sequence-diagram.md
+      - Flussdiagram: SWP/PM/3AHWII/05_flow-charts.md
+      - Projektmanagement Grundlagen: SWP/PM/3AHWII/06_project-management-intro.md
+    - Skript - 4.Jahrgang:
+      - Softwareentwicklungsmodelle: SWP/PM/4AHWII/01_sw-engineering-models.md
+      - Abschätzungsverfahren: SWP/PM/4AHWII/02_estimation-techniques.md
+      - Anforderungsanalyse: SWP/PM/4AHWII/03_requirement-engineering.md
+      - Design Patterns: SWP/PM/4AHWII/04_design-patterns.md
+      - Testing: SWP/PM/4AHWII/05_quality-management.md
+      - Projektmanagement: SWP/PM/4AHWII/06_project-management.md
+      
   # - Fächerübergreifende Projekte:
   #   - NITFLEX - Film Verwaltung: CrossSubjectProjects/01_nitflex.md 

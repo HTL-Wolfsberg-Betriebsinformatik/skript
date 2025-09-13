@@ -3,19 +3,22 @@ theme: seriph
 
 title: Microsoft SQL Server – Varianten & CLI
 info: Überblick über Editionen, Verbindungen und sqlcmd
-
+background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:
     persist: false
 transition: slide-left
 mdc: true
 layout: cover
+hideInToc: true
 ---
 
 # Microsoft SQL Server
 
 ## Varianten & Arbeiten mit der CLI
 
+---
+hideInToc: true
 ---
 
 # Inhalt

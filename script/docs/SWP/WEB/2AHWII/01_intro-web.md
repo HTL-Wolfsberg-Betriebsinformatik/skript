@@ -21,10 +21,29 @@ Das World Wide Web (WWW) ist ein weltweites Informationssystem, das auf dem Inte
 
 Ein **Webbrowser** (z. B. Chrome, Firefox, Edge) ist ein Programm, das **HTML-Dateien interpretiert** und daraus eine grafische Benutzeroberfläche rendert.
 
+### Geschichte der Browser
+
+| Year | Browser             | Details                                                                 |
+|------|---------------------|-------------------------------------------------------------------------|
+| 1990 | WorldWideWeb (Nexus)| Created by Tim Berners-Lee, the first web browser was later renamed Nexus. |
+| 1992 | Lynx                | A text-based browser with no graphical content support.                 |
+| 1993 | NCSA Mosaic         | The first graphical web browser, widely popular and accessible.         |
+| 1994 | Netscape Navigator  | Developed from Mosaic, becoming the most commonly used browser of its time. |
+| 1995 | Internet Explorer   | Microsoft’s first browser, bundled with Windows.                        |
+| 1996 | Opera               | Initially a research project, it was later released publicly.           |
+| 2003 | Safari              | Apple’s browser was released exclusively for Macintosh computers.       |
+| 2004 | Mozilla Firefox     | Launched as an open-source alternative, continuing from Netscape Navigator. |
+| 2007 | Mobile Safari       | Apple’s web browser for mobile devices introduced with the iPhone.      |
+| 2008 | Google Chrome       | A fast and minimalistic browser that quickly gained popularity.         |
+| 2011 | Opera Mini          | A lightweight mobile browser designed for faster web access on smartphones. |
+| 2015 | Microsoft Edge      | Microsoft’s modern browser, replacing Internet Explorer.                |
+
 ### Ablauf beim Laden einer Website:
 1. Der Browser fordert eine `.html`-Datei vom Server an
 2. Er **analysiert** den HTML-Code (Parsing)
 3. Er stellt die Inhalte auf dem Bildschirm dar
+
+
 
 ## Beispiel: Einfache HTML-Datei
 

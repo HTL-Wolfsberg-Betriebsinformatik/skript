@@ -3,18 +3,27 @@ theme: seriph
 
 title: SQL (MS SQL Server) – Erste Schritte
 info: Grundlagen & erste Befehle in T-SQL
-
+background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:
     persist: false
 transition: slide-left
 mdc: true
 layout: cover
+hideInToc: true
 ---
 
 # SQL
 
 ## Was & Wofür?
+
+---
+hideInToc: true
+---
+
+# Inhalt
+
+<Toc minDepth="1" maxDepth="1" />
 
 ---
 

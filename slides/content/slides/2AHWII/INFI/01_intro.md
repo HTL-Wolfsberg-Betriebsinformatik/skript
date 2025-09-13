@@ -4,19 +4,22 @@ theme: seriph
 title: Intro Datenbanken
 info: |
   ## Intro Datenbanken für 2AHWII INFI
-
+background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:
     persist: false
 transition: slide-left
 mdc: true
 layout: cover
+hideInToc: true
 ---
 
 # Einführung Datenbanken
 
 ## Warum Datenbanken?
 
+---
+hideInToc: true
 ---
 
 # Inhalt

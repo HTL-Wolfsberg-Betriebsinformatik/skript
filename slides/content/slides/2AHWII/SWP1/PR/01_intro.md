@@ -1,22 +1,27 @@
 ---
-theme: default
+theme: seriph
 
-background: https://cover.sli.dev
-
-title: Willkommen
+title: Intro Datenbanken
 info: |
-  ## Willkommensfolien für 2AHWII SWP1 - PR
+  ## Intro Datenbanken für 2AHWII INFI
 
 class: text-center
 drawings:
     persist: false
 transition: slide-left
 mdc: true
+layout: cover
 ---
 
 # Willkommen zu SWP1 - PR
 
 ## 2AHWII
+
+---
+
+# Inhalt
+
+<Toc minDepth="1" maxDepth="1" />
 
 ---
 
@@ -72,7 +77,7 @@ TODO: Skizze
 # Eingebettete Systeme / Industrie
 
 - Programme, die direkt auf Maschinen, Steuerungen oder Geräten laufen (z. B. SPS, CNC, Mikrocontroller).
-- Typische Sprachen: C, C++, strukturierter Text (IEC 61131-3).
+- Typische Sprachen: **C, C++**.
 - **Vorteil:** Sehr nah an der Technik (direkte Befehle).
 - **Nachteil:** Meist sehr speziell und limitiert
 

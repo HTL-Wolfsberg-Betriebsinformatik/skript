@@ -1,24 +1,46 @@
-# Willkommen zum Betriebsinformatik Skript
+# Willkommen zum Informatik-Skript der HTL Wolfsberg
 
+> Author: Professor DI Dominik Widnig
 
-## Wie diese Doku funktioniert
+Dieses Skript ist speziell für Schülerinnen und Schüler des **Informatikzweigs der HTL Wolfsberg** erstellt worden.  
+Es begleitet Sie durch den Unterricht und bietet eine zentrale Sammlung von **Wissen, Beispielen und Projekten**.
 
-- Erstelle ein virtual python environment
-- Aktiviere das virutelle environment
+---
 
-```bash
-source <name-of-virtual-env>/bin/activate
-```
+## Inhalte des Skripts
 
-- Führe im `script/` folder folgende Befehle aus:
+- **SWP-Programmieren**  
+  Einführung in die Welt des Codens mit praxisnahen Beispielen und Übungsprojekten in C#/.NET.  
 
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- **SWP-Web**  
+  Grundlagen der Webentwicklung (HTML, CSS, JavaScript).
 
-## Projekt Layout
+- **SWP-Projektmanagement**  
+  Methoden, Vorgehensmodelle, Entwurfsmuster und Projektmanagement – alles, was für professionelle Software wichtig ist.  
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **Informatik**  
+  Theoretische Grundlagen, Datenbanken, Netzwerke und viele weitere spannende Themen.    
+
+---
+
+## Ergänzende Materialien
+
+Neben den Texten finden Sie hier auch **interaktive Präsentationen (Slides)**, die den Stoff visualisieren und vertiefen.  
+Alle Folien können jederzeit unter folgender Adresse abgerufen werden:
+
+👉 [Slidesammlung](./slides/)  
+
+---
+
+## Ziel dieses Skripts
+
+Das Skript soll Ihnen helfen,  
+- **den Unterricht nachvollziehen zu können**,  
+- **selbstständig zu üben**,  
+- und **über den Unterricht hinaus** neue Themen zu entdecken.  
+
+Es wächst laufend mit dem Unterricht und wird immer wieder um Beispiele, Erklärungen und Projekte erweitert.  
+
+---
+
+> 💡 Tipp: Nutzen Sie die Suchfunktion in der Seitenleiste, um schnell die Inhalte zu finden, die Sie gerade benötigen!

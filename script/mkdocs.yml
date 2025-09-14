@@ -124,9 +124,9 @@ nav:
       - 2.Jahrgang: SWP/PR/2AHWII/00_lehrplan.md
       - 3.Jahrgang: SWP/PR/3AHWII/00_lehrplan.md
       - 4.Jahrgang: SWP/PR/4AHWII/00_lehrplan.md
-    # - Projekte:
-    #   - 2.Jahrgang: SWP/PR/2AHWII/projects/01_project_console-app.md
-    #   - 3.Jahrgang: SWP/PR/3AHWII/projects/01_project_game-app.md
+    - Projekte:
+      - 3.Jahrgang: 
+        - Hangman: SWP/PR/3AHWII/projects/01_hangman.md
     - Skript - 2.Jahrgang:
       - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
       - Erstes Programm: SWP/PR/2AHWII/02_first-program.md

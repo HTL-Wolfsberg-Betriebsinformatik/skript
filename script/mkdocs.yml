@@ -58,30 +58,35 @@ nav:
     #  - 2.Jahrgang: INFI/2AHWII/projects/01_project_relational-database.md
     - Lehrplan: INFI/00_lehrplan.md
     - Skript:
-      - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
-      - Datenbanksysteme: INFI/2AHWII/02_01_database-systems.md
-      - Arbeiten mit Datenbanken: INFI/2AHWII/02_02_working-with-databases.md
-      - MS SQL Server CLI Tutorial: INFI/2AHWII/02_03_mssql-cli.md
-      - Einführung SQL: INFI/2AHWII/03_00_structured_query_language.md
-      - Tabellen erstellen und löschen: INFI/2AHWII/03_01_sql_create_and_drop_command.md
-      - Daten einfügen, ändern und löschen: INFI/2AHWII/03_02_sql_insert_command.md
-      - Daten abfragen: INFI/2AHWII/03_03_sql_select_command.md
-      # - 🧪 SQL Übung: INFI/2AHWII/04_exercise_movies.md
-      - Tabellen ändern: INFI/2AHWII/03_04_sql_alter_command.md
-      - Einführung Relationen: INFI/2AHWII/05_relations.md
-      - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
-      - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
-      - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
-      - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
-      # - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
-      # - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
-      - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
-      - Indizes: INFI/2AHWII/11_indizes.md
-      - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
-      - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
-      - Normalformen: INFI/2AHWII/14_normal-forms.md
-      - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
-      - Business Process Modelling: INFI/5AHWII/01_business-process-modelling.md
+      - Datenbanken:
+        - Einführung Datenbanken: INFI/2AHWII/01_why-databases.md
+        - Datenbanksysteme: INFI/2AHWII/02_01_database-systems.md
+        - Arbeiten mit Datenbanken: INFI/2AHWII/02_02_working-with-databases.md
+        - MS SQL Server CLI Tutorial: INFI/2AHWII/02_03_mssql-cli.md
+        - Einführung SQL: INFI/2AHWII/03_00_structured_query_language.md
+        - Tabellen erstellen und löschen: INFI/2AHWII/03_01_sql_create_and_drop_command.md
+        - Daten einfügen, ändern und löschen: INFI/2AHWII/03_02_sql_insert_command.md
+        - Daten abfragen: INFI/2AHWII/03_03_sql_select_command.md
+        # - 🧪 SQL Übung: INFI/2AHWII/04_exercise_movies.md
+        - Tabellen ändern: INFI/2AHWII/03_04_sql_alter_command.md
+        - Einführung Relationen: INFI/2AHWII/05_relations.md
+        - Primärschlüssel: INFI/2AHWII/06_01_primary-key.md
+        - Fremdschüssel - Beziehungen zwischen Tabellen: INFI/2AHWII/06_02_foreign_keys.md
+        - Tabellen verbinden: INFI/2AHWII/07_sql_join_command.md
+        - Kardinalitäten: INFI/2AHWII/09_cardinalities.md
+        # - 🧪 Relationen Übung (1:n): INFI/2AHWII/08_01_exercise-1-to-n-relation.md
+        # - 🧪 Relationen Übung (m:n): INFI/2AHWII/08_02_exercise-m-to-n-relation.md
+        - Referenzielle Integrität: INFI/2AHWII/10_referential_integrity.md
+        - Indizes: INFI/2AHWII/11_indizes.md
+        - Datebankmodellierung: INFI/2AHWII/12_database-modelling.md
+        - ER Modell und Diagram: INFI/2AHWII/13_er-modell.md
+        - Normalformen: INFI/2AHWII/14_normal-forms.md
+        - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
+      - Geschätsprozessmodellierung:
+        - Einführung Geschäftsprozesse: INFI/5AHWII/01_intro-business-process.md
+        - Warum Geschäftsprozessmodellierung: INFI/5AHWII/02_why-business-process-modelling.md
+        - Geschäftsprozessmodellierungsprachen: INFI/5AHWII/03_overview-business-process-models.md
+        - BPMN 2.0 Grundlagen: INFI/5AHWII/04_intro-bpmn.md
   - SWP - Web:
     - Lehrplan:
       - 2.Jahrgang: SWP/WEB/2AHWII/00_lehrplan.md

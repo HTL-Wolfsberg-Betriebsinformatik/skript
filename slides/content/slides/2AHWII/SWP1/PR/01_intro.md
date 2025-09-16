@@ -1,43 +1,61 @@
 ---
 theme: seriph
 
-title: Intro Datenbanken
+title: Intro Programmieren
 info: |
-  ## Intro Datenbanken für 2AHWII INFI
-
+  ## Intro Programmieren - Überblick
+background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:
     persist: false
 transition: slide-left
 mdc: true
 layout: cover
+hideInToc: true
 ---
 
-# Willkommen zu SWP1 - PR
-
-## 2AHWII
+# Einführung in die strukturierte Programmierung
 
 ---
 
 # Inhalt
 
-<Toc minDepth="1" maxDepth="1" />
+<Toc minDepth="1" maxDepth="2" />
 
 ---
 
 # Was ist Programmieren?
 
+<br>
+
+*Programmieren bedeutet...*
+
+
+- **Probleme mit dem Computer lösen**  
+- Einen **exakten Ablauf** in einer Sprache beschreiben,  
+  die der Computer versteht  
+- Anweisungen so formulieren, dass sie **schrittweise ausgeführt** werden können  
+
+<br>
+
+> Merke:
+>
+> 👨‍🍳 **Rezept** = Zutaten + Schritte → fertiges Gericht  
+> 💻 **Programm** = Daten + Befehle → Ergebnis 
+
 ---
 
 # Einsatzgebiete
 
-- Überblick
-
-TODO: Skizze
+- Desktop-Anwendungen
+- Web-Entwicklung
+- Mobile-Apps
+- Skripte & Automatisierung
+- Eingebettete Systeme / Industrie
 
 ---
 
-# Einsatzgebiet: Desktop-Anwendungen
+## Desktop-Anwendungen
 
 - Klassische Programme, die man am PC installiert (z. B. Word, Excel, AutoCAD).
 - Typische Sprachen: **C#, Java, C++**.
@@ -46,7 +64,7 @@ TODO: Skizze
 
 ---
 
-# Einsatzgebiet: Web-Entwicklung
+## Web-Entwicklung
 
 - Webseiten & Web-Anwendungen
 - Läuft im Browser.
@@ -56,7 +74,7 @@ TODO: Skizze
 
 ---
 
-# Einsatzgebiet: Mobile-Apps
+## Mobile-Apps
 
 - Apps auf Smartphone/Tablet (Android, iOS).
 - Sprachen/Frameworks: **Java/Kotlin (Android), Swift (iOS), Flutter, React Native, .NET MAUI**.
@@ -65,7 +83,7 @@ TODO: Skizze
 
 ---
 
-# Skripte & Automatisierung
+## Skripte & Automatisierung
 
 - Kleine Programme, die wiederkehrende Aufgaben automatisieren (z. B. Daten verarbeiten, Dateien verschieben, Excel berechnen).
 - Typische Sprachen: **Python, PowerShell, VBA, Bash**.
@@ -74,7 +92,7 @@ TODO: Skizze
 
 ---
 
-# Eingebettete Systeme / Industrie
+## Eingebettete Systeme / Industrie
 
 - Programme, die direkt auf Maschinen, Steuerungen oder Geräten laufen (z. B. SPS, CNC, Mikrocontroller).
 - Typische Sprachen: **C, C++**.
@@ -97,7 +115,7 @@ TODO: Skizze
 
 # Welche Sprache für wen?
 
-- Informatiker/Softwareentwickler → Java, C#, Python, C++.
+- Informatiker/Softwareentwickler/Automatisierungtechniker → Java, C#, Python, C++.
 - Ingenieure, Meister, Techniker → oft Skripte (VBA, Python, PowerShell).
 - Webdesigner → HTML, CSS, JavaScript.
 - Datenanalysten → Python, R, SQL.

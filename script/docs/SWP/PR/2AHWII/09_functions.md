@@ -1,7 +1,9 @@
 ## Einführung
 
 Eine **Funktion** (in C# meist *Methode* genannt) ist ein **abgegrenzter Programmbaustein**, der eine bestimmte Aufgabe erfüllt.  
+
 Vorteile:
+
 - Code wird **übersichtlicher** und **wiederverwendbar**
 - **Fehler leichter finden** (kleinere Bausteine statt Riesencode)
 - Programme lassen sich **besser strukturieren**
@@ -14,7 +16,7 @@ Vorteile:
 ## Aufbau einer Funktion
 
 ```csharp
-Rückgabewert Funktionsname(Parameterliste)
+Rückgabetyp Funktionsname(Parameterliste)
 {
     // Funktionsrumpf
     return Rückgabewert; // falls Rückgabewert nicht void

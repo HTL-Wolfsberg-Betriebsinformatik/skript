@@ -11,7 +11,7 @@ In der Datenbanktheorie ist eine **Relation** eine **Tabelle**, bestehend aus:
 
 > Eine **Relation** beschreibt also eine **Menge gleich strukturierter Daten** – zum Beispiel alle Filme, alle Kunden oder alle Rechnungen.
 
-Beispiel einer Relation `filme`:
+Beispiel einer Relation `Filme`:
 
 | movie_id | title        | genre    | jahr |
 |----------|--------------|----------|------|

@@ -120,11 +120,17 @@ CREATE TABLE dbo.Tabellenname (
 
 ---
 
-# Beispiel: Tabelle „Movies“
+# Beispiel 
+
+Es folgt nun ein erstes Tutorial um SQL Befehle auszuprobieren.
+
+---
+
+# CREATE - Tabelle erstellen
 
 Mit dem Befehl `CREATE` können **Tabellen erstellt** werden
 
-```sql
+```sql [create-movie-database.sql]
 CREATE TABLE Movies (
   movie_id INT IDENTITY(1,1) PRIMARY KEY,   -- Automatische IDs
   title NVARCHAR(100) NOT NULL,             -- Pflichtfeld
@@ -142,7 +148,7 @@ CREATE TABLE Movies (
 
 Mit dem Befehl `INSERT` können **Datensätze** in Tabellen **eingefügt** werden
 
-```sql
+```sql [insert-movies.sql]
 INSERT INTO Movies (title, genre, duration_in_minutes, published, has_oscar, rating)
 VALUES
   (N'The Matrix', N'Sci-Fi', 136, '1999-03-31', 1, 9.0),
@@ -155,15 +161,22 @@ VALUES
 
 Mit dem Befehl `SELECT` können **Datensätze abgefragt** werden
 
-```sql
+```sql [select-all-columns.sql]
 -- alle Spalten
 SELECT * FROM Movies;
+```
+<br>
 
+```sql [select-title-rating.sql]
 -- bestimmte Spalten, sortiert
 SELECT title, rating
 FROM Movies
 ORDER BY rating DESC;
+```
 
+<br>
+
+```sql [select-specific-rows.sql]
 -- gefiltert
 SELECT title, genre, rating
 FROM Movies
@@ -176,10 +189,10 @@ WHERE genre = N'Sci-Fi' AND rating >= 8.5;
 
 Mit dem Befehl `UPDATE` können **Datensätze geändert** werden
 
-```sql
+```sql [update-movies.sql]
 UPDATE Movies
 SET rating = 9.1
-WHERE title = N'The Matrix';
+WHERE title = N'The Matrix'; -- WHERE gibt die Bedingung an, für welche Zeilen wir Daten geändert haben wollen
 ```
 <br/>
 
@@ -187,9 +200,9 @@ WHERE title = N'The Matrix';
 
 Mit dem Befehl `DELETE` können **Datensätze gelöscht** werden
 
-```sql
+```sql [delete-movies.sql]
 DELETE FROM Movies
-WHERE title = N'Inception';
+WHERE title = N'Inception'; -- WHERE gibt die Bedingung an, für welche Zeilen wir Daten gelöscht haben wollen
 ```
 
 ---
@@ -198,6 +211,6 @@ WHERE title = N'Inception';
 
 Mit dem Befehl `DROP TABLE` wird die Tabelle mit ihren Daten gelöscht
 
-```sql
+```sql [drop-movies-table.sql]
 DROP TABLE Movies;
 ```

@@ -68,32 +68,43 @@ hideInToc: true
 
 ---
 
-# Datenbanksysteme: Überblick
+# Was ist ein Datenbankmanagementsystem (DBMS)?
 
-Datenbanksysteme unterscheiden sich nach **Datenmodell**, **Einsatzzweck** und **technischer Ausprägung**.
+- **Software**, die das **Speichern, Abfragen und Verwalten** von Daten ermöglicht.
+- Kümmert sich um **Sicherheit & Rechte, Transaktionen, Gleichzeitigkeit, Backups, Indizes und Leistung**.
 
-- **Relationale Datenbanksysteme (RDBMS)**
+**DBMS vs. Datenbank:**
+
+|           | **DBMS**                      | **Datenbank**                           |
+| --------- | ----------------------------- | --------------------------------------- |
+| Rolle     | Werkzeug/Engine (Software)    | Inhalt (Daten + Schema)                 |
+| Aufgabe   | Verarbeiten, sichern, steuern | Persistente Informationen bereitstellen |
+| Beispiele | SQL Server, PostgreSQL        | SchulDB, ShopDB                         |
+
+---
+
+# Datenbankmanagementsysteme: Überblick
+
+Datenbankmanagementsysteme unterscheiden sich nach **Datenmodell**, **Einsatzzweck** und **technischer Ausprägung**.
+
+- <span v-mark.red="1">**Relationale Datenbanksysteme (RDBMS)**</span>
 - **Nicht-relationale Datenbanksysteme (NoSQL)**
 
 ---
 
 # RDBMS – Definition
 
-Relationale Datenbanken speichern Daten in **Tabellen**, die über Schlüssel verknüpft sind. Abfragen mit **SQL**.
+Ein **Relationales Datenbank­management­system (RDBMS)** ist **Software**, die das <span v-mark.red="1">**relationale Modell**</span> umsetzt:
 
-## RDBMS – Merkmale
-|  |                                    |
-|-----------|-----------------------------------------------|
-| Struktur  | Tabellen mit Zeilen & Spalten                 |
-| Sprache   | SQL                                           |
-| Vorteile  | Standardisiert, bewährt, konsistent (ACID)    |
-| Einsatz   | Geschäftsprozesse, Web-Apps, ERP, Schulen     |
+- Daten liegen in **Relationen (Tabellen)** mit **Zeilen (Tupeln)** und **Spalten (Attributen)**
 
+![Relationales Modell](./assets/relation-modell-employee-department.drawio.png)
 
 ---
 
 # RDBMS – Beispiele
-| System                   | Kurzbeschreibung                                      |
+
+| Software/System          | Kurzbeschreibung                                      |
 |--------------------------|-------------------------------------------------------|
 | **MySQL**                | Open Source, im Web weit verbreitet (z. B. mit PHP)  |
 | **PostgreSQL**           | Sehr leistungsfähig, viele Features                   |
@@ -101,16 +112,16 @@ Relationale Datenbanken speichern Daten in **Tabellen**, die über Schlüssel ve
 | **Oracle Database**      | Für große Unternehmens-Workloads                      |
 | **SQLite**               | Kompakt, serverlos, dateibasiert (Apps, Tests)       |
 
----
+<!-- --- -->
 
-# Nicht-relationale Datenbanksysteme (NoSQL)
+<!-- # Nicht-relationale Datenbanksysteme (NoSQL)
 NoSQL-Datenbanken für spezielle Einsatzzwecke: **skalierbar**, **flexibel**, oft **schemafrei** & **nicht tabellenbasiert**.
 
 ## NoSQL – Typen
 - **Dokumentenorientiert** (z. B. JSON-Dokumente)
 - **Key-Value-Stores**
 - **Graphdatenbanken**
-- **Zeitreihendatenbanken**
+- **Zeitreihendatenbanken** -->
 
 <!-- ## NoSQL – Beispiele
 | System       | Typ                  | Anwendung                           |
@@ -120,9 +131,9 @@ NoSQL-Datenbanken für spezielle Einsatzzwecke: **skalierbar**, **flexibel**, of
 | **Neo4j**    | Graphdatenbank       | Netzwerke, Routen, Empfehlungen     |
 | **InfluxDB** | Zeitreihen           | Sensorik, IoT, Monitoring           | -->
 
----
+<!-- ---
 
-# Vergleich: RDBMS vs. NoSQL
+ # Vergleich: RDBMS vs. NoSQL
 |        | Relationale DB (SQL)         | NoSQL-Datenbanken                 |
 |-----------------|-------------------------------|-----------------------------------|
 | Struktur        | Tabellenbasiert               | Flexibel (JSON, Key-Value, Graph) |
@@ -132,11 +143,11 @@ NoSQL-Datenbanken für spezielle Einsatzzwecke: **skalierbar**, **flexibel**, of
 
 ## Praxis-Leitlinie (Kurz)
 - **RDBMS**, wenn: klare Struktur, starke Konsistenz, Berichte/Transaktionen.
-- **NoSQL**, wenn: flexibel, massiv skalieren, spezielle Datenformen.
+- **NoSQL**, wenn: flexibel, massiv skalieren, spezielle Datenformen. -->
 
 ---
 
-# Lokales vs. Remote Datenbanksystem
+# Lokales vs. Remote RDBMS
 - **Remote (Firma/Cloud):** Server steht im Rechenzentrum oder in der Cloud.
 - **Lokal (Schule/PC):**
   - Kleines **Server-Programm** läuft im Hintergrund.

@@ -1,9 +1,9 @@
 ---
 theme: seriph
 
-title: Intro Datenbanken
+title: Intro Geschäftsprozesse
 info: |
-  ## Intro Datenbanken für 2AHWII INFI
+  ## Intro Geschäftsprozesse
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:
@@ -12,6 +12,13 @@ transition: slide-left
 mdc: true
 layout: cover
 hideInToc: true
+download: true
+export:
+    format: pdf
+    dark: false
+    withClicks: true
+    withToc: true
+selectable: true
 ---
 
 # Geschäftsprozesse und Modellierung

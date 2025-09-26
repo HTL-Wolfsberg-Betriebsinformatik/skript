@@ -11,6 +11,13 @@ transition: slide-left
 mdc: true
 layout: cover
 hideInToc: true
+download: true
+export:
+    format: pdf
+    dark: false
+    withClicks: true
+    withToc: true
+selectable: true
 ---
 
 # Microsoft SQL Server

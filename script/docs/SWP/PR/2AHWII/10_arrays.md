@@ -11,7 +11,7 @@ Wichtige Eigenschaften:
     - Bei Wertetypen (z. B. int, double) liegen die Werte inline im Array.
     - Bei Referenztypen (z. B. Point, Strings) speichert das Array Referenzen auf separate Objektinstanzen.
 - Feste Größe: Arrays haben nach der Erstellung eine fixe Länge. „Vergrößern“ bedeutet, ein neues Array  anzulegen und Inhalte zu kopieren (z. B. via Array.Resize oder manuell).
-- Sicherheitscheck: Jeder Zugriff wird auf Bounds geprüft; ein ungültiger Index führt zu IndexOutOfRangeException. Der JIT kann diese Checks in einfachen Schleifen teilweise optimieren.
+- Sicherheitscheck: Jeder Zugriff wird auf Bounds geprüft; ein ungültiger Index führt zu IndexOutOfRangeException. 
 
 ### Deklaration & Initialisierung
 

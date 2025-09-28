@@ -126,7 +126,8 @@ nav:
       - 4.Jahrgang: SWP/PR/4AHWII/00_lehrplan.md
     - Projekte:
       - 3.Jahrgang: 
-        - Hangman: SWP/PR/3AHWII/projects/01_hangman.md
+        - Hangman: SWP/PR/3AHWII/projects/01_project_hangman.md
+        - TicTacToe: SWP/PR/3AHWII/projects/02_project_tic-tac-toe.md
     - Skript - 2.Jahrgang:
       - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
       - Erstes Programm: SWP/PR/2AHWII/02_first-program.md

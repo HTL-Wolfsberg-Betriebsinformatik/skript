@@ -119,7 +119,7 @@ Das ER-Diagramm ist die **grafische Darstellung** des ER-Modells.
 
 **Beispiel:**
 
-![Beispiel](../assets/er-movie-actor-example.drawio.png)
+![Beispiel](./assets/er-movie-actor-example.drawio.png)
 
 ---
 

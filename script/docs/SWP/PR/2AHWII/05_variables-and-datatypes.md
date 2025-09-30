@@ -3,6 +3,7 @@
 ## Was ist eine Variable?
 
 Eine **Variable** ist wie ein **benannter Speicherplatz** im Arbeitsspeicher, in dem ein Wert abgelegt wird.
+
 - **Name**: Wie wir die Variable im Programm ansprechen
 - **Typ**: Welche Art von Daten sie speichern kann (z. B. Zahl, Text, Wahr/Falsch)
 - **Wert**: Der aktuell gespeicherte Inhalt

@@ -44,18 +44,31 @@ hideInToc: true
 👉 ER-Modell = **konzeptuelle Sicht** (fachliche Welt)
 
 ---
+layout: two-cols
+layoutClass: gap-16
+---
 
 # Ziel: Relationsschema
 
 - Relationsschema = **Sammlung von Tabellen**  
-- Jede Tabelle: Name + Attribute + Primärschlüssel  
+- Jede Tabelle enthält: 
+   - Name
+   - Attribute
+   - Primärschlüssel
+   - Fremdschlüssel (falls vorhanden)
 - Später Grundlage für SQL `CREATE TABLE`
+
+<br>
 
 👉 Relationsschema = **logische Sicht**
 
+::right::
+
+![ER zu Relationsschema](./assets/er-to-relationschema.drawio.png)
+
 ---
 
-# Regeln zur Umwandlung (Basis)
+# Regeln zur Umwandlung
 
 1. **Entität → Tabelle**  
    - Attribute der Entität → Spalten  
@@ -65,59 +78,73 @@ hideInToc: true
    - Der Schlüssel der „1“-Seite wird in der „n“-Tabelle als Fremdschlüssel gespeichert  
 
 3. **m:n Beziehung → Zwischentabelle**  
-   - Neue Relation mit beiden Primärschlüsseln  
+   - Neue Relation mit beiden Primärschlüsseln als Fremdschlüssel 
    - ggf. zusätzliche Beziehungsattribute  
 
 ---
 
-# Beispiel: Film & Schauspieler
+# Beispiel - m:n Beziehung
 
-**ER-Modell (vereinfacht):**  
-- `FILM(Film_ID, Titel)`  
+**ER-Modell + Diagramm:**  
+
+- `FILM(Film_ID, Titel, ...)`  
 - `SCHAUSPIELER(Schauspieler_ID, Name)`  
-- Beziehung: *m:n* „spielt in“ mit Attribut `Charakter_Name`
+- Beziehung: *m:n* `spielt in` mit Attribut `Charakter_Name`
+
+<br>
+
+![ER Film-Schauspieler](./assets/er-movie-actor-example.drawio.png)
 
 ---
+hideInToc: true
+---
 
-# Umwandlung ins Relationsschema
+# Beispiel - m:n Beziehung
 
-- `FILM(Film_ID PK, Titel)`  
+**Relationsschema:**
+
+- `FILM(Film_ID PK, Titel, ...)`  
 - `SCHAUSPIELER(Schauspieler_ID PK, Name)`  
-- `CASTING(Film_ID FK, Schauspieler_ID FK, Charakter_Name, PK = (Film_ID, Schauspieler_ID))`
+- `CASTING(Casting_ID PK, Film_ID FK, Schauspieler_ID FK, Charakter_Name)`
 
-👉 `CASTING` ist die Zwischentabelle für die m:n-Beziehung
+👉 `CASTING` ist die Zwischentabelle für die m:n-Beziehung `spielt in`
+
+![Relationsschema Film-Schauspieler](./assets/relationschema-movie-actor-example.drawio.png)
 
 ---
 
-# Beispiel: 1:n Beziehung
+# Beispiel - 1:n Beziehung
 
-**ER-Modell:**  
+**ER-Modell + Diagramm:**  
+
 - `REGISSEUR(Regisseur_ID, Name)`  
-- `FILM(Film_ID, Titel)`  
-- Beziehung: *1:n* – ein Regisseur kann viele Filme haben
+- `FILM(Film_ID, Titel, ...)`  
+- Beziehung: *1:n* – ein Regisseur kann viele Filme führen, aber ein Film kann nur von einem Regisseur geführt werden
+
+![ER Film-Regisseur](./assets/er-movie-regisseur-example.drawio.png)
 
 ---
 
-# Relationsschema
+# Beispiel - 1:n Beziehung
+
+**Relationsschema:**
 
 - `REGISSEUR(Regisseur_ID PK, Name)`  
-- `FILM(Film_ID PK, Titel, Regisseur_ID FK)`
+- `FILM(Film_ID PK, Titel, ..., Regisseur_ID FK)`
 
-👉 Fremdschlüssel in `FILM` zeigt auf `REGISSEUR`
+👉 Fremdschlüssel `Regisseur_ID` in Tabelle `FILM` zeigt auf Tabelle `REGISSEUR`
 
----
-
-# Besondere Fälle
-
-- **Schwache Entität**  
-  - Primärschlüssel = eigener Schlüssel + Fremdschlüssel  
-- **Abgeleitete Attribute**  
-  - werden i. d. R. **nicht gespeichert**  
+![Relationsschema Film-Regisseur](./assets/relationschema-movie-regisseur-example.drawio.png)
 
 ---
+
 
 # Warum diese Schritte?
 
-✅ Das Relationsschema ist **klar definiert**  
-✅ Direkte Grundlage für SQL (`CREATE TABLE`)  
+<br>
+
+✅ Das Relationsschema ist **klar definiert**
+
+✅ Direkte Grundlage für **SQL** Befehle (`CREATE TABLE`)  
+
 ✅ Vermeidet Fehler und Inkonsistenzen  

@@ -102,76 +102,65 @@ sqlcmd -?
 Wenn keine Instanz vorhanden ist, kann eine erstellt werden:
 
 ```powershell
-sqllocaldb create <yourDBInstanceName>
-sqllocaldb start  <yourDBInstanceName>
-sqlcmd -S "(localdb)\<yourDBInstanceName>" -Q "SELECT @@VERSION;"
+sqllocaldb create yourDBInstanceName
+sqllocaldb start  yourDBInstanceName
+```
+
+<br>
+
+> 💡 Anstatt `yourDBInstanceName` nimm den Namen deiner Klasse (e.g. `2AHWII`)
+
+**Beispiel:**
+
+```powershell
+sqllocaldb create 2AHWII
+sqllocaldb start 2AHWII
 ```
 
 ---
 
-# Verbinden zu einer Instanz
+# SQL Skripte schreiben
 
-```powershell
-# Standardinstanz
-sqlcmd -S localhost -E
+Befehle werden in `.sql` Dateien gespeichert, damit sie persistent sind und bei Bedarf wieder ausgeführt werden können
 
-# Expressinstanz
-sqlcmd -S localhost\SQLEXPRESS -E
+**Beispiel: Datenbank erstellen**
 
-# LocalDB Custom Instanz
-sqlcmd -S "(localdb)\<yourDBInstanceName>" -E
+```sql [create_database.sql]
+CREATE DATABASE Filmverwaltung;
 ```
 
-- `-S` = Server/Instanz, 
-- `-E` = Windows-Auth (Trusted Connection).
-  - Alternativ: `-U/-P` für SQL-LoginsS.
+**Beispiel: Tabelle in Datenbank erstellen**
 
-**Zwischen Instanzen wechseln:**
-
-Innerhalb von `sqlcmd` kann man die Instanz nicht „umstellen“.
-Beende die Session und verbinde dich neu:
-
-```powershell
-EXIT
-sqlcmd -S localhost\AndereInstanz -E
+```sql [create-movie-table.sql]
+CREATE TABLE Movies (
+  movie_id INT PRIMARY KEY,         -- eindeutiger Schlüssel
+  title NVARCHAR(100) NOT NULL,     -- Pflichtfeld
+  genre NVARCHAR(50),
+  duration_in_minutes INT,
+  published DATE,
+  has_oscar BIT,
+  rating DECIMAL(3,1)
+);
 ```
 
 ---
 
-# SQL an die Instanz schicken (interaktiv)
-
-Nach erfolgreicher Verbindung erscheint ein Prompt:
-
-```powershell
-1>
-```
-
-Beispiel:
-
-```powershell
-1> CREATE DATABASE Schulverwaltung;
-2> GO
-```
-
-**Wichtig:**
-
-- In `sqlcmd` führt `GO` den aktuellen Batch/Befehl aus.
-- Das Semikolon `;` ist empfohlen (und für manche Features erforderlich), aber der **Batchabschluss** erfolgt durch `GO`.
-
----
-
-# SQL an die Instanz schicken <span v-mark.green="0">(Empfohlen)</span>
+# SQL Befehle an die Instanz schicken
 
 Direkt aus der **CMD / PowerShell**: 
 
 ```powershell
-# DB anlegen
-sqlcmd -S "(localdb)\<yourDBInstanceName>" -Q "CREATE DATABASE Nitflex;"
+# Datenbank anlegen (e.g. Filmverwaltung)
+sqlcmd -S "(localdb)\yourDBInstanceName" -i create_database.sql
 
-# Tabelle anlegen
-sqlcmd -S "(localdb)\<yourDBInstanceName>" -d Nitflex -Q "CREATE TABLE Movie(Id int);"
-
-# Skriptdatei ausführen
-sqlcmd -S "(localdb)\<yourDBInstanceName>" -i create_db.sql
+# SQL Befehle an eine bereits erstellte Datenbank senden
+sqlcmd -S "(localdb)\yourDBInstanceName" -d Filmverwaltung -i create_movie_table.sql
 ```
+
+<br>
+
+- `-i` ist ein Parameter der eine `.sql` Datei bzw Pfad zur Datei erwartet.
+- Die Konsole muss sich also in dem Verzeichnis befinden wo die Datei liegt, damit nur der Dateiname angegeben werden muss.
+- `-d` ist ein Parameter der den Datenbanknamen erwartet. Ansonsten weiß es nicht in welcher Datenbank er z.B. eine Tabelle erstellen soll.
+
 

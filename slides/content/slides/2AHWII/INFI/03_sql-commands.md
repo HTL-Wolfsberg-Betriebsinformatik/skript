@@ -137,7 +137,7 @@ Es folgt nun ein erstes Tutorial um SQL Befehle auszuprobieren.
 
 Mit dem Befehl `CREATE` können **Tabellen erstellt** werden
 
-```sql [create-movie-database.sql]
+```sql [create-movie-table.sql]
 CREATE TABLE Movies (
   movie_id INT PRIMARY KEY,         -- eindeutiger Schlüssel
   title NVARCHAR(100) NOT NULL,     -- Pflichtfeld

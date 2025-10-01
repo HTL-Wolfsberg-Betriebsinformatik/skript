@@ -139,8 +139,8 @@ Mit dem Befehl `CREATE` können **Tabellen erstellt** werden
 
 ```sql [create-movie-database.sql]
 CREATE TABLE Movies (
-  movie_id INT IDENTITY(1,1) PRIMARY KEY,   -- Automatische IDs
-  title NVARCHAR(100) NOT NULL,             -- Pflichtfeld
+  movie_id INT PRIMARY KEY,         -- eindeutiger Schlüssel
+  title NVARCHAR(100) NOT NULL,     -- Pflichtfeld
   genre NVARCHAR(50),
   duration_in_minutes INT,
   published DATE,

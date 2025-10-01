@@ -127,7 +127,8 @@ nav:
     - Projekte:
       - 3.Jahrgang: 
         - Hangman: SWP/PR/3AHWII/projects/01_project_hangman.md
-        - TicTacToe: SWP/PR/3AHWII/projects/02_project_tic-tac-toe.md
+        - Taschenrechner: SWP/PR/3AHWII/projects/02_project_calculator.md
+        - TicTacToe: SWP/PR/3AHWII/projects/03_project_tic-tac-toe.md
     - Skript - 2.Jahrgang:
       - Einführung in die stukturierte Programmierung: SWP/PR/2AHWII/01_intro-structured-programming.md
       - Erstes Programm: SWP/PR/2AHWII/02_first-program.md

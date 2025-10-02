@@ -186,6 +186,6 @@ layoutClass: gap-16
 
 ::right::
 
-<img src="./dbms-structure.drawio.png" alt="DBMS Struktur" >
-<!--- ![DBMS Struktur](./dbms-structure.drawio.png) -->
+<img src="./assets/dbms-structure.drawio.png" alt="DBMS Struktur" >
+
 

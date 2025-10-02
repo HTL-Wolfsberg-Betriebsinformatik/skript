@@ -72,6 +72,10 @@ done
 
 echo "✅ All decks built to $OUT_AT_REPO"
 
+pretty() {
+  echo "$1" | sed -E 's/[-_]+/ /g'
+}
+
 # --- Generate grouped Bootstrap index.html under the shared dist root ---
 INDEX_FILE="$SLIDES_OUT_ROOT/index.html"
 
@@ -108,20 +112,20 @@ while IFS= read -r -d '' idx; do
     continue
   fi
 
-  # Headings (h2/h3/h4) per your nesting rules
+  # Headings
   if [[ -n "$seg1" && "$seg1" != "$prev1" ]]; then
     if (( open_row )); then echo '    </div>' >> "$INDEX_FILE"; open_row=0; fi
-    echo "    <h2 class=\"mt-4\">$seg1</h2>" >> "$INDEX_FILE"
+    echo "    <h2 class=\"mt-4\">$(pretty "$seg1")</h2>" >> "$INDEX_FILE"
     prev1="$seg1"; prev2=""; prev3=""
   fi
   if [[ -n "$seg2" && "$seg2" != "$prev2" ]]; then
     if (( open_row )); then echo '    </div>' >> "$INDEX_FILE"; open_row=0; fi
-    echo "    <h3 class=\"mt-3\">$seg2</h3>" >> "$INDEX_FILE"
+    echo "    <h3 class=\"mt-3\">$(pretty "$seg2")</h3>" >> "$INDEX_FILE"
     prev2="$seg2"; prev3=""
   fi
   if [[ -n "$seg3" && "$seg3" != "$prev3" ]]; then
     if (( open_row )); then echo '    </div>' >> "$INDEX_FILE"; open_row=0; fi
-    echo "    <h4 class=\"mt-2\">$seg3</h4>" >> "$INDEX_FILE"
+    echo "    <h4 class=\"mt-2\">$(pretty "$seg3")</h4>" >> "$INDEX_FILE"
     echo '    <div class="row g-3">' >> "$INDEX_FILE"
     open_row=1
     prev3="$seg3"
@@ -133,7 +137,7 @@ while IFS= read -r -d '' idx; do
 
   # Card (href relative to the deployed root; no SLIDES_OUT_ROOT prefix)
   cat >> "$INDEX_FILE" <<HTML
-       <a href="$deck_dir/" target="_blank" >$display</a>
+        <a href="$deck_dir/" target="_blank" >$(pretty "$display")</a>
 
 HTML
 done < <(find "$SLIDES_OUT_ROOT" -type f -name 'index.html' -print0 | sort -z)

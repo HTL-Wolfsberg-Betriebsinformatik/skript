@@ -153,6 +153,8 @@ nav:
       - Interfaces: SWP/PR/3AHWII/05_interfaces.md
       - Collections: SWP/PR/3AHWII/06_collections.md
       - Graphical User Interfaces: SWP/PR/3AHWII/12_dotnet-guis.md
+    - Skript - 4.Jahrgang:
+      - DateTime: SWP/PR/4AHWII/01_datetime.md
   - SWP - Projektmanagement:
     - Lehrplan:
       - 3.Jahrgang: SWP/PM/3AHWII/00_lehrplan.md

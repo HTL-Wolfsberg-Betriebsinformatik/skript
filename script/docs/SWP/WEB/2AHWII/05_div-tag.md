@@ -17,6 +17,7 @@ Das `<div>`-Element ist ein **Block-Element ohne eigene Bedeutung**. Es wird ver
 
 ```html
 <div class="info-box">
+  <h3>Achtung</h3>
   <p>Wichtige Information</p>
 </div>
 ```

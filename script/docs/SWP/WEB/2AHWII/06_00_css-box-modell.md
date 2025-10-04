@@ -95,7 +95,7 @@ div {
   width: 200px;
   padding: 20px;
   border: 5px solid blue;
-  margin: 10px;
+  margin: 24px;
   background-color: lightyellow;
   box-sizing: border-box;
 }
@@ -103,9 +103,8 @@ div {
 
 !!! tip "Tipp"
     - Verwenden Sie `box-sizing: border-box;` in allen Projekten, um die Größenberechnung einfacher zu machen.
-    Mit `html { box-sizing: border-box; }` setzt man den Standard für die gesamte Seite.
+    - Mit `html { box-sizing: border-box; }` setzt man den Standard für die gesamte Seite.
     - Mit `*` (und den Pseudo-Elementen `::before/::after`) stellt man sicher, dass alle Elemente und deren Pseudo-Elemente die gleiche Berechnungsmethode nutzen.
-
     - Das verhindert unvorhersehbare Layout-Probleme und erleichtert die Arbeit mit Padding + Border.
         ```css
         html {

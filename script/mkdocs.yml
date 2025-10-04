@@ -83,6 +83,8 @@ nav:
         - Normalformen: INFI/2AHWII/14_normal-forms.md
         - Aggregation und Gruppierung: INFI/2AHWII/16_aggregat-and-grouping.md
       - Geschätsprozessmodellierung:
+        - Projekte:
+            - BPMN Basics und Schleifen: INFI/5AHWII/projects/01_project_bpmn-basics.md
         - Einführung Geschäftsprozesse: INFI/5AHWII/01_intro-business-process.md
         - Warum Geschäftsprozessmodellierung: INFI/5AHWII/02_why-business-process-modelling.md
         - Geschäftsprozessmodellierungsprachen: INFI/5AHWII/03_overview-business-process-models.md

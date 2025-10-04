@@ -64,7 +64,7 @@ BPMN kennt **mehrere Möglichkeiten**, Schleifen zu modellieren:
 **Darstellung in BPMN:**
 
 - Eine **Aktivität mit Loop-Symbol (Pfeil im Kreis)**  
-- Bedingung: „Solange Daten fehlerhaft sind, wiederholen“
+- Bis Bedingung erfüllt ist
 - **Annotation hinzufügen** um Bedingung zu erläutern
 
 <br>

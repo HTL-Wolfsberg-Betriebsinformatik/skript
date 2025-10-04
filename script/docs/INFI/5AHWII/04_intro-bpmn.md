@@ -26,9 +26,7 @@ Das Ziel von BPMN ist es, eine **einheitliche Sprache** zu schaffen, die sowohl 
 
 ## Beispiel eines BPMN-Diagramms:
 
-![Beispiel BPMN](https://zenkit.com/wp-content/uploads/2024/04/de-00084-bpmn-diagramm-beispiel-genehmigungsverfahren-e1739267797830.png){ align=center }
-
-*Quelle: [Zenkit](https://zenkit.com/de/blog/bpmn/)*
+![Beispiel BPMN](./assets/bpmn-example.drawio.png){ align=center }
 
 
 ## Zentrale Elemente
@@ -53,7 +51,9 @@ Sie markieren wichtige Punkte im Ablauf.
 ![BPMN Ereignisse](./assets/bpmn-ereignisse.drawio.png)
 
 ### Aktivitäten
-Aktivitäten sind **Arbeitsschritte** in einem Prozess.  
+
+Aktivitäten sind **Arbeitsschritte** in einem Prozess.
+  
 - Darstellung: abgerundetes Rechteck.  
 - Jede Aktivität beschreibt **eine Aufgabe oder Handlung**.  
 - Aktivitäten werden nacheinander oder parallel ausgeführt. 

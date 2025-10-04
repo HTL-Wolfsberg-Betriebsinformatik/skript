@@ -203,7 +203,7 @@ layoutClass: gap-8
 
 ::right::
 
-![UML Activity Diagram Example](./assets/bpmn-example.drawio.png)
+![BPMN Diagram Example](./assets/bpmn-example.drawio.png)
 
 ---
 

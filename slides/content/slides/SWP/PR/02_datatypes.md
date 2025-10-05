@@ -1,9 +1,9 @@
 ---
 theme: seriph
 
-title: Intro Programmieren
+title: Variablen in C#
 info: |
-  ## Intro Programmieren - Überblick
+  ## Variablen in C#
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
 class: text-center
 drawings:

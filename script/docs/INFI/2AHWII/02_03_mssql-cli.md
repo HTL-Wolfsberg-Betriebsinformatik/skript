@@ -56,8 +56,6 @@ Copyright (C) 2022 Microsoft Corporation. All rights reserved.
 
 `sqlcmd` ist einfach eine `.exe` Datei, welche in den Umgebungsvariablen hinzugefügt wurde, damit sie von überall ausführbar ist.
 
-![SQLCMD Path](../../assets/images/sqlcmd-path.png)
-
 
 !!! tip "Tipp"
     `sqlcmd` kommt mit der SQL Server Installation (oder kann separat über die *SQL Server Command Line Utilities* installiert werden).

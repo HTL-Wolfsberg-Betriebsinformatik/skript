@@ -23,7 +23,7 @@ Mit dem SQL Befehl `ALTER TABLE` kann z.B.:
 
     ```sql
     ALTER TABLE tabellenname
-    ADD COLUMN spaltenname DATENTYP [CONSTRAINT];
+    ADD spaltenname DATENTYP [CONSTRAINT];
     ```
 
 #### Spalte umbenennen
@@ -70,10 +70,10 @@ Mit dem SQL Befehl `ALTER TABLE` kann z.B.:
 
     ```sql
     ALTER TABLE tabellenname
-    DROP COLUMN spaltenname;
+    DROP spaltenname;
     ```
 
-### Datentyp einer Spalte ändern
+#### Datentyp einer Spalte ändern
 
 === "SQLite"
 
@@ -91,4 +91,23 @@ Mit dem SQL Befehl `ALTER TABLE` kann z.B.:
     ```sql
     ALTER TABLE tabellenname
     ALTER COLUMN spaltenname NEUER_DATENTYP;
+    ```
+
+
+#### Constraint hinzufügen
+
+=== "SQLite"
+
+    ```sql
+    -- Nicht direkt möglich in SQLite
+    ```
+
+=== "MS SQL Server"
+
+    ```sql
+    ALTER TABLE MyTable
+    ADD CONSTRAINT fk_someName FOREIGN KEY (fieldName) REFERENCES OtherTable(OtherTableID)
+    -- oder
+    ALTER TABLE MyTable
+    ADD CONSTRAINT uq_someName UNIQUE (fieldName)
     ```

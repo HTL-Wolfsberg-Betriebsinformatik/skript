@@ -54,7 +54,7 @@ FROM Employee;
 
 ---
 
-# Summe bilden
+# Grundlegende Aggregatfunktionen
 
 ```sql
 SELECT SUM(Price) AS Gesamt
@@ -62,11 +62,47 @@ FROM Products;
 ```
 
 - `SUM()` addiert alle Werte
+- `AVG()` berechnet den Durchschnitt
+- `MIN()` findet den kleinsten Wert
+- `MAX()` findet den größten Wert
 
 | Gesamt |
 | ------ |
 | 12     |
 
+---
+
+# Kombinieren von Funktionen
+
+```sql
+SELECT OrderItem, PricePerUnit, Quantity, PricePerUnit * Quantity AS Price
+FROM OrderItems;
+
+```
+
+<br>
+
+oder
+
+<br>
+
+```sql
+SELECT SUM(Column1) + SUM(Column2) AS TotalSum
+FROM TableX;
+```
+
+---
+
+# Zählen von Zeilen
+
+```sql
+SELECT COUNT(*) AS Counter
+FROM TableX;
+```
+
+- `COUNT(*)` zählt alle Zeilen (auch wenn Spalten `NULL` sind)
+- `COUNT(MyColumn)` zählt nur Zeilen mit "Nicht-`NULL`" Werten in dieser Spalte (`0` wird mitgezählt)
+- `COUNT(DISTINCT MyColumn)` zählt verschiedene "Nicht-`NULL`" Werte einer Spalte
 
 ---
 
@@ -97,26 +133,11 @@ FROM Orders;
 ```
 
 - `CASE` = bedingte Zählung
+- Kann auch mit `COUNT()` verwendet werden (e.g. `COUNT(CASE WHEN Something > 0 THEN 1 END) as SomeCounterIfGreaterZero`)
 
 | MitRabatt | OhneRabatt |
 | --------- | ---------- |
 | 3         | 2          |
-
-
----
-
-# Unterschiedliche Werte zählen
-
-```sql
-SELECT COUNT(DISTINCT Category) AS VerschiedeneKategorien
-FROM Products;
-```
-
-- `COUNT(DISTINCT ...)` → nur verschiedene Werte
-
-| VerschiedeneKategorien |
-| ---------------------- |
-| 3                      |
 
 
 ---

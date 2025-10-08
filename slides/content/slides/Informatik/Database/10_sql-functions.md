@@ -54,6 +54,16 @@ FROM Employee;
 
 ---
 
+# Rechnen
+
+```sql
+SELECT OrderItem, PricePerUnit, Quantity, PricePerUnit * Quantity AS Price
+FROM OrderItems;
+
+```
+
+---
+
 # Grundlegende Aggregatfunktionen
 
 ```sql
@@ -73,18 +83,6 @@ FROM Products;
 ---
 
 # Kombinieren von Funktionen
-
-```sql
-SELECT OrderItem, PricePerUnit, Quantity, PricePerUnit * Quantity AS Price
-FROM OrderItems;
-
-```
-
-<br>
-
-oder
-
-<br>
 
 ```sql
 SELECT SUM(Column1) + SUM(Column2) AS TotalSum

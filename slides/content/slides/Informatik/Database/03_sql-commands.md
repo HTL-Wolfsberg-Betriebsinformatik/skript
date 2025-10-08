@@ -102,7 +102,7 @@ CREATE TABLE dbo.Tabellenname (
 | Datentyp          | Beschreibung                 | Beispiel/Format            |
 |-------------------|------------------------------|----------------------------|
 | `INT` / `BIGINT`  | Ganze (große) Zahl           | `0`, `1`, `-10`            |
-| `DECIMAL(p,s)`    | Feste Kommazahl              | `DECIMAL(10,2)` → `123,45` |
+| `DECIMAL(p,s)`    | Feste Kommazahl              | `DECIMAL(5,2)` → `123,45` |
 | `FLOAT`           | Gleitkommazahl               | `3.14`, `-2.7`             |
 | `NVARCHAR(n)` | Unicode-Text (Länge  n) | `N'Text'`, `NVARCHAR(100)` |
 | `DATE`            | Datum                        | `'2025-09-10'`             |

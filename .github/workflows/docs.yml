@@ -64,6 +64,7 @@ jobs:
         run: |
           mkdir -p _site/slides
           cp -r slides/content/slides/dist/* _site/slides/
+          cp slides/content/slides/hero-banner.png _site/slides/hero-banner.png
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

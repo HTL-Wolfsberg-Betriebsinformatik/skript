@@ -167,7 +167,7 @@ cat > "$INDEX_FILE" <<'HTML'
             <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden bg-white">
               <div class="d-flex align-items-center justify-content-center h-100 w-100 text-secondary">
                 <!-- Optional: place hero-banner.png into the same folder as index.html -->
-                <img src="hero-banner.png" alt="Slides Übersicht" class="hero-img">
+                <img src="hero-banner.png" alt="Slides Übersicht" class="hero-img" width="100%">
               </div>
             </div>
           </div>

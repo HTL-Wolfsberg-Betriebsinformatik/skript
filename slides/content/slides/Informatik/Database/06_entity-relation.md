@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Datenbankmodellierung und Entity Relation
 info: Grundlagen von Datenbankmodellierung und Entity Relation
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true

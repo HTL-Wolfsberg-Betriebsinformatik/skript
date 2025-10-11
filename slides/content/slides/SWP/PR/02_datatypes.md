@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Variablen in C#
 info: |
   ## Variablen in C#

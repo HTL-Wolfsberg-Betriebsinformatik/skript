@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: MINT Thymio Einführung
 info: |
   ## MINT Thymio Einführung

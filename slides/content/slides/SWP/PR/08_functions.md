@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Funktionen in C#
 info: |
   ## Einführung in Funktionen mit C#

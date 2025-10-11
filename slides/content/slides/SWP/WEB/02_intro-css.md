@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Einführung CSS
 info: |
   ## Intro CSS, Farben, Einheiten

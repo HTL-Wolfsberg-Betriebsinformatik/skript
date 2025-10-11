@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Operatoren in C#
 info: |
   ## Operatoren in C#

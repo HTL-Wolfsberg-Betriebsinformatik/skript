@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Microsoft SQL Server – Varianten & CLI
 info: Überblick über Editionen, Verbindungen und sqlcmd
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true

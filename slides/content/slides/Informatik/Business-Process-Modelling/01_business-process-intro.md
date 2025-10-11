@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Intro Geschäftsprozesse
 info: |
   ## Intro Geschäftsprozesse

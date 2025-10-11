@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Intro Programmieren
 info: |
   ## Intro Programmieren - Überblick

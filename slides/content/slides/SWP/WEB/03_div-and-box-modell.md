@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: DIV Element and CSS Box Modell
 info: |
   ## Gruppieren von Tags und CSS Box Modell

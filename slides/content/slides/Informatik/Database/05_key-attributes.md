@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Einführung in Schlüsselattribute
 info: Grundlagen von Primär- und Fremschlüsseln in Datenbanken
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true

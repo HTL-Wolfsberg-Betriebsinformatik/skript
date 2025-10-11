@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Intro Web & HTML
 info: |
   ## Intro Webentwicklung für 2AHWII SWP1 - WEB

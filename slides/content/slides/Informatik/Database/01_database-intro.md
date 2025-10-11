@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Intro Datenbanken
 info: |
   ## Intro Datenbanken für 2AHWII INFI

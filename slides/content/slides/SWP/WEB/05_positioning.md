@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: CSS Positionierung
 info: |
   ## Positionierung in CSS

@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: BPMN Basics
 info: |
   ## BPMN Basics

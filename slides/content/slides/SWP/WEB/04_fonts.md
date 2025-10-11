@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: CSS Fonts
 info: |
   ## Schriftgestaltung in CSS

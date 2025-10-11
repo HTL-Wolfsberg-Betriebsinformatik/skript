@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: Mehrdimensionale Arrays in C#
 info: |
   ## Einführung in mehrdimensionale Arrays in C#

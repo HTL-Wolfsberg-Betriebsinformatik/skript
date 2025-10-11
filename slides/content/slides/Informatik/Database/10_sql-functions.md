@@ -1,6 +1,6 @@
 ---
 theme: seriph
-
+routerMode: hash
 title: SQL - SELECT - Funktionen
 info: SQL SELECT Funktionen Übersicht
 background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true

@@ -122,6 +122,15 @@ cat > "$INDEX_FILE" <<'HTML'
       /* Cards */
       .card { border-radius: var(--radius); }
 
+      .card:hover {
+        background-color: rgb(255, 237, 209);
+        border: 1px solid orange;
+      }
+
+      .card:active {
+        background-color: rgb(255, 211, 145);
+      }
+
       .link-icon {
           float: right;
           color: var(--brand);

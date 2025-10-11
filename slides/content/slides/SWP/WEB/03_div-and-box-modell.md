@@ -65,14 +65,8 @@ layoutClass: gap-8
 
 Ziel: Einen logisch zusammengehörenden Abschnitt aus Überschrift und Text gruppieren.
 
-```html
-<div class="card">
-  <h3>HTML lernen</h3>
-  <p>HTML ist die Sprache, mit der Webseiten aufgebaut werden.</p>
-  <a href="#" class="btn">Mehr erfahren</a>
-</div>
-```
-
+- Erstelle eine vollständige HTML5 konforme `index.html` und `styles.css` Datei
+- Verlinke die `styles.css` in der `index.html`
 - Ändere die `.card` CSS Klasse
   - Ändere die Hintergrundfarbe zu `#006fca`
   - Ändere die Textfarbe zu `white`
@@ -82,6 +76,14 @@ Ziel: Einen logisch zusammengehörenden Abschnitt aus Überschrift und Text grup
 - Füge noch ein `div` mit der Klasse `card` hinzu und ändere die Inhalte des `h3` und `p` tags
 
 ::right::
+
+```html [index.html]
+<div class="card">
+  <h3>HTML lernen</h3>
+  <p>HTML ist die Sprache, mit der Webseiten aufgebaut werden.</p>
+  <a href="#" class="btn">Mehr erfahren</a>
+</div>
+```
 
 ```css [styles.css]
 .card {

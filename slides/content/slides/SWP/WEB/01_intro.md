@@ -39,7 +39,7 @@ Das World Wide Web (WWW) ist ein weltweites Informationssystem, das auf dem Inte
 
 ## Warum HTML?
 
-**HTML (HyperText Markup Language)** ist die Sprache, mit der Webseiten erstellt werden. Sie beschreibt den **Inhalt und die Struktur** einer Seite:
+**HTML (Hypertext Markup Language)** ist die Sprache, mit der Webseiten erstellt werden. Sie beschreibt den **Inhalt und die Struktur** einer Seite:
 
 - Text (Absätze, Überschriften)
 - Links

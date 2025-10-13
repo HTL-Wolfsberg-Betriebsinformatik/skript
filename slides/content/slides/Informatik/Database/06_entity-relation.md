@@ -166,37 +166,71 @@ mit Objekten einer anderen Entität verknüpft sein können.
 
 ---
 
-# Beziehungen mit Attributen
+# Arten von Beziehungen
+
+## Beziehungen mit Attributen
 
 In `m:n` Beziehungen können auch *Beziehungen* Attribute haben.
 
 ![ER Beziehung mit Attribut](./assets/er-attribute-on-relation-example.drawio.png){width=100%}
 
 ---
+hideInToc: true
+---
 
-# Weitere Elemente im ER Diagramm
+# Arten von Beziehungen
 
-<br>
 
-**Schwache Entität**
+## Mehrfache Beziehungen
+
+Entitäten können auch mehrfach miteinander in Beziehung stehen.
+
+![ER mehrfache Beziehung](./assets/er-multi-relationship.drawio.png)
+
+---
+hideInToc: true
+---
+
+# Arten von Beziehungen
+
+## Rekursive Beziehungen
+
+Eine Entität kann auch eine Beziehung zu sich selbst haben.
+
+![ER rekursive Beziehung](./assets/er-rekursive-relationship.drawio.png)
+
+---
+hideInToc: true
+---
+
+# Arten von Beziehungen
+
+## Ternäre Beziehungen
+
+Eine *ternäre Beziehung* ist eine Beziehung zwischen *3* Entitäten.
+
+![ER ternäre Beziehung](./assets/er-ternary-relationship.drawio.png)
+
+
+---
+
+# Arten von Entitäten
+
+## Schwache Entität
 
 - kann nicht alleine existieren
 - Beispiel: `Bewertung` gehört immer zu genau einem `Film`
-- Symbol: *Doppeltes Rechteck*
+- Symbol: *Doppeltes Rechteck*, *doppelte Raute*, Primärschlüssel der Weak Entity ist *strichliert unterstrichen*
 
 <br>
 
 ![ER - Schwache Entität](./assets/er-weak-entity-example.drawio.png)
 
 ---
-hideInToc: true
----
 
-# Weitere Elemente im ER Diagramm
+# Arten von Attributen
 
-<br>
-
-**Abgeleitetes Attribut**
+## Abgeleitetes Attribut
 
 - wird aus einem anderen Attribut berechnet
 - Beispiel: `Alter` wird aus `Geburtstag` berechnet
@@ -205,3 +239,39 @@ hideInToc: true
 <br>
 
 ![ER - Schwache Entität](./assets/er-derived-attribute-example.drawio.png)
+
+---
+hideInToc: true
+---
+
+# Arten von Attributen
+
+## Mehrwertiges Attribut
+
+- kann mehrere Werte für ein einziges Entity-Exemplar annehmen.
+- Beispiel: `TelefonNr`, eine Person kann mehrere haben
+- Symbol: *Doppelte Ellipse*
+
+<br>
+
+![ER - Mehrwertiges Attribut](./assets/er-multivalued-attribute.drawio.png)
+
+---
+
+# Generalisierung
+
+**Gemeinsame Merkmale mehrerer Entitätstypen** werden in einer **übergeordneten (allgemeinen) Entität** zusammengefasst.
+
+- gemeinsame Attribute in die Generalisierung, verschiedene Attribute in die Spezialisierungen
+- Symbol: Entitäten werden **mit Pfeilen verbunden** (in Richtung Generalisierung)
+
+![ER - Generalisierung](./assets/er-generalisierung.drawio.png)
+
+<!-- ---
+
+ # Aggregation
+
+- Sonderform der Beziehung zwischen zwei Klassen (besitzt-Beziehung, hat-Beziehung).
+- Zwischen den Objekten der beteiligten Klassen liegt eine Beziehung vor, die sich als *"ist Teil von"*, *"besteht aus"* oder einfach *"hat"* beschreiben lässt.
+
+![ER - Aggregation](./assets/er-aggregation.drawio.png) -->

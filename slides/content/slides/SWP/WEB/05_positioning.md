@@ -184,7 +184,7 @@ Diese Werte funktionieren nur, wenn `position` ≠ `static` ist:
 - Erstelle eine CSS Datei und verlinke sie zur HTML Seite
 - Erstelle je eine Klasse für die 4 `div` Elemente und weise ihnen eine `position` Eigenschaft zu
   - `.relative-box { position: relative; }`
-  - `.absolute-box { position: aboslute; }`
+  - `.absolute-box { position: absolute; }`
   - `.fixed-box { position: fixed; }`
   - `.sticky-box { position: sticky; }`
 - Ergänze das Beispiel mit den Positionierungswerten (e.g. `top`, `left`, `bottom`, `right`) und je nach Bedarf zusätzliche Elternelemente 

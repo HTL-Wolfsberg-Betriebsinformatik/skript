@@ -49,28 +49,50 @@ hideInToc: true
 > Wir möchten sehen, welcher Kunde welche Bestellung gemacht hat.
 
 ---
+layout: two-cols-header
+layoutClass: gap-8
+---
 
 # Grundidee
 
 Ein `JOIN` verbindet Datensätze über gemeinsame Werte, meist über **Primär- und Fremdschlüssel**.
 
-<br>
-
 **Beispiel:**
-- `kunden.id` <--> `bestellungen.kunden_id`
+- `Kunden.Id` <--> `Bestellungen.KundenId`
+
+::left::
 
 ```sql
-CREATE TABLE kunden (
-    id INT PRIMARY KEY,
-    name NVARCHAR(50)
+CREATE TABLE Kunden (
+    Id INT PRIMARY KEY,
+    Name NVARCHAR(50)
 );
 
-CREATE TABLE bestellungen (
-    id INT PRIMARY KEY,
-    kunden_id INT,
-    produkt NVARCHAR(50)
+CREATE TABLE Bestellungen (
+    Id INT PRIMARY KEY,
+    KundenId INT,
+    Produkt NVARCHAR(50),
+    FOREIGN KEY (KundenId) REFERENCES Kunden(Id)
 );
 ```
+
+::right::
+
+```sql
+INSERT INTO Kunden (Id, Name) VALUES
+(1, N'Anna'),
+(2, N'Bernd'), -- Bernd hat keine Bestellungen
+(3, N'Carla'),
+(4, N'Dirk');  -- Dirk hat keine Bestellungen
+
+-- Bestellungen:
+INSERT INTO Bestellungen (Id, KundenId, Produkt) VALUES
+(1, 1, N'Laptop'),    -- Bestellung von Anna
+(2, 3, N'Handy'),     -- Bestellung von Carla
+(3, NULL, N'Maus'),   -- KundenId bewusst NULL
+(4, 1, N'Tastatur');  -- Bestellung von Anna
+```
+
 
 ---
 layout: two-cols-header
@@ -78,24 +100,24 @@ layoutClass: gap-16
 ---
 # `INNER JOIN`
 
-Der `INNER JOIN` zeigt nur Datensätze, die in **beiden Tabellen vorkommen**.
+Der `(INNER) JOIN` zeigt nur Datensätze, die in **beiden Tabellen vorkommen**.
 
 ::left::
 
 ```sql
-SELECT k.name, b.produkt
-FROM kunden AS k
-INNER JOIN bestellungen AS b
-    ON k.id = b.kunden_id;
+SELECT k.Name, b.Produkt
+FROM Kunden AS k
+INNER JOIN Bestellungen AS b
+    ON k.id = b.KundenId;
 ```
 
 ::right::
 
-| name  | produkt  |
+| Name  | Produkt  |
 | ----- | -------- |
 | Anna  | Laptop   |
 | Carla | Handy    |
-| Carla | Tastatur |
+| Anna  | Tastatur |
 
 
 ---
@@ -103,25 +125,110 @@ layout: two-cols-header
 layoutClass: gap-16
 ---
 
-# `OUTER JOIN`
+# `FULL OUTER JOIN`
 
-Der `OUTER JOIN` zeigt auch Datensätze, die **keine Übereinstimmung** in der anderen Tabelle haben.
+Der `FULL (OUTER) JOIN` zeigt auch Datensätze, die **keine Übereinstimmung** in der anderen Tabelle haben.
 
 ::left::
 
 ```sql
 SELECT k.name, b.produkt
 FROM kunden AS k
-INNER JOIN bestellungen AS b
+FULLS JOIN bestellungen AS b
     ON k.id = b.kunden_id;
 ```
 
 ::right::
 
-| name  | produkt  |
+| Name  | Produkt  |
 | ----- | -------- |
 | Anna  | Laptop   |
+| Anna  | Tastatur |
+| Bernd | `NULL`   |
 | Carla | Handy    |
-| Carla | Tastatur |
-| Bernd | NULL     |
-| NULL  | Fernseher|
+| Dirk  | `NULL`   |
+| `NULL`| Maus     |
+
+---
+layout: two-cols-header
+layoutClass: gap-16
+---
+
+# `LEFT OUTER JOIN`
+
+Der `LEFT (OUTER) JOIN` zeigt alle Datensätze aus der **linken Tabelle**,
+auch wenn **keine passenden Einträge auf der rechten Seite** existieren.
+
+::left::
+
+```sql
+SELECT k.Name, b.Produkt
+FROM Kunden AS k
+LEFT JOIN Bestellungen AS b
+    ON k.id = b.KundenId;
+```
+
+::right::
+
+
+| Name  | Produkt  |
+| ----- | -------- |
+| Anna  | Laptop   |
+| Anna  | Tastatur |
+| Bernd | `NULL`   |
+| Carla | Handy    |
+| Dirk  | `NULL`   |
+
+---
+layout: two-cols-header
+layoutClass: gap-16
+---
+
+# `RIGHT OUTER JOIN`
+
+Der `RIGHT (OUTER) JOIN` zeigt alle Datensätze aus der **rechten Tabelle**,
+auch wenn **keine passenden Einträge auf der linken Seite** existieren.
+
+::left::
+
+```sql
+SELECT k.Name, b.Produkt
+FROM Kunden AS k
+RIGHT JOIN Bestellungen AS b
+    ON k.id = b.KundenId;
+```
+
+::right::
+
+| Name  | Produkt  |
+| ----- | -------- |
+| Anna  | Laptop   |
+| Anna  | Tastatur |
+| Carla | Handy    |
+| `NULL`| Maus     |
+
+---
+
+# Zusammenfassung
+
+| **JOIN-Typ**       | **Beschreibung**                | **Fehlende Werte werden…** |
+| ------------------ | ------------------------------- | ---------------------- |
+| `(INNER) JOIN`         | Nur übereinstimmende Datensätze | …weggelassen           |
+| `LEFT (OUTER) JOIN`  | Alle aus der linken Tabelle     | …als NULL ergänzt      |
+| `RIGHT (OUTER) JOIN` | Alle aus der rechten Tabelle    | …als NULL ergänzt      |
+| `FULL (OUTER) JOIN`    | Alle aus beiden Tabellen        | …als NULL ergänzt      |
+
+---
+
+# Übung: Lehrer - Fächer
+
+- Erstelle zwei Tabellen:
+    - `Lehrer (Id, Name)`
+    - `Fach (Id, Name, LehrerId)`
+- Fülle ein paar Beispiel-Daten ein
+- Führe verschiedene `JOIN`s aus:
+    - `INNER JOIN`
+    - `LEFT JOIN`
+    - `RIGHT JOIN`
+    - `FULL JOIN`
+- Überlege: Wann erscheinen NULL-Werte?

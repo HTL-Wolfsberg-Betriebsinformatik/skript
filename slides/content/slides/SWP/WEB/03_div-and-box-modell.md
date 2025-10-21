@@ -240,11 +240,11 @@ html {
 ```html
 <div class="box with-border-box">
   <h1>Mit Border Box</h1>
-  <p>Ein Absatz mit Border Box
+  <p>Ein Absatz mit Border Box</p>
 </div>
 <div class="box">
   <h1>Ohne Border Box</h1>
-  <p>Ein Absatz ohne Border Box
+  <p>Ein Absatz ohne Border Box</p>
 </div>
 ```
 

@@ -49,12 +49,28 @@ CREATE TABLE Student (
 
 ---
 
+# Wichtige Datentypen (MS SQL Server)
+| Datentyp          | Beschreibung                 | Beispiel/Format            |
+|-------------------|------------------------------|----------------------------|
+| `INT` / `BIGINT`  | Ganze (große) Zahl           | `0`, `1`, `-10`            |
+| `DECIMAL(p,s)`    | Feste Kommazahl              | `DECIMAL(5,2)` → `123,45` |
+| `FLOAT`           | Gleitkommazahl               | `3.14`, `-2.7`             |
+| `NVARCHAR(n)` | Unicode-Text (Länge  n) | `N'Text'`, `NVARCHAR(100)` |
+| `DATE`            | Datum                        | `'2025-09-10'`             |
+| `DATETIME2`       | Datum+Zeit (präzise)         | `'2025-09-10 12:30:00'`    |
+| `BIT`             | Wahr/Falsch                  | `0` = FALSE, `1` = TRUE    |
+
+
+**Tipp:** Für Unicode-Strings in SQL Server **N'…'** verwenden (z. B. `N'Alice'`).
+
+---
+
 # Primär- und Fremdschüssel
 
 ```sql
 CREATE TABLE Course (
   Id INT PRIMARY KEY,
-  Title NVARCHAR(100) NOT NULL
+  Title NVARCHAR(100) NOT NULL  -- Pflichtfeld
 );
 
 -- Beispiel für Zwischentabellen
@@ -95,4 +111,19 @@ CREATE TABLE Employee (
 ```
 
 - `CHECK` überprüft Bedingungen
+
+---
+
+# Zusammenfassung Constraints (Einschränkungen)
+
+| Constraint        | Bedeutung                                 | Beispiel                         |
+|------------------|--------------------------------------------|----------------------------------|
+| `PRIMARY KEY`    | Eindeutiger Schlüssel                      | `Id INT PRIMARY KEY`             |
+| `IDENTITY`       | Auto-Zähler                                | `Id INT IDENTITY(1,1)`           |
+| `NOT NULL`       | Darf nicht leer sein                       | `Name NVARCHAR(50) NOT NULL`     |
+| `UNIQUE`         | Werte müssen eindeutig sein                | `Email NVARCHAR(255) UNIQUE`     |
+| `DEFAULT`        | Standardwert                               | `IsActive BIT DEFAULT 1`         |
+| `CHECK`          | Bedingung muss erfüllt sein                | `CHECK (Score BETWEEN 1 AND 10)` |
+| `FOREIGN KEY`    | Verweis auf andere Tabelle                 | `UserId INT REFERENCES dbo.Users(UserId)` |
+
 

@@ -39,7 +39,7 @@ layoutClass: gap-8
 # Was sind Structs?
 
 Ein **Struct** ist in C# eine **selbstgemachte Datensorte**.
-Ähnlich wie `int`, `double` oder `bool`, kannst du mit einem Struct **deinen eigenen Datentyp** erfinden, der **mehrere Werte zusammenhält**.
+Ähnlich wie `int`, `double` oder `bool`, kann man mit einem Struct **seinen eigenen Datentyp** erfinden, der **mehrere Werte zusammenhält**.
 
 **Beispiel:**
 
@@ -77,7 +77,7 @@ p.Y = 20;
 # Warum braucht man Structs?
 
 ...weil Structs Dinge **zusammenfassen**, die **zusammengehören**.
-Anstatt viele einzelne Variablen herumliegen zu haben, kannst du einen **logischen Block** bilden.
+Anstatt viele einzelne Variablen herumliegen zu haben, kann man einen **logischen Block** bilden.
 
 <br>
 
@@ -185,10 +185,10 @@ layout: two-cols-header
 layoutClass: gap-8
 ---
 
-# Wichtige Struct-Konstruktor Regeln
+# Best Practice Struct-Konstruktor
 
 ::left::
-In einem Struct-Konstruktor müssen <br> **alle Felder selbst gesetzt werden**, sonst gibt es einen Fehler.
+In einem Struct-Konstruktor sollten <br> **alle Felder selbst gesetzt werden**.
 
 ```csharp
 struct Punkt
@@ -199,14 +199,14 @@ struct Punkt
     public Punkt(int x)
     {
         X = x;
-        // Y fehlt! ❌ --> Fehler
+        // Y fehlt! --> Absicht oder keine Absicht
     }
 }
 ```
 
 ::right::
 
-Es darf **keinen parameterlosen** Konstruktor geben (also keinen `public Punkt() {}`), weil **C# den automatisch bereitstellt**.
+**C# stellt automatisch** einen Standard Konstruktor zur Verfügung. Man könnte ihn notfalls überschreiben, sollte man aber nicht wenn nichts initialisiert wird.
 
 ```csharp
 struct Punkt
@@ -214,10 +214,10 @@ struct Punkt
     public int X;
     public int Y;
 
-    public Punkt() // nicht erlaubt! --> Fehler ❌
+    public Punkt() // Standardverhalten überschreiben
     {
-        X = 0;
-        Y = 0;
+        X = 5;
+        Y = 7;
     }
 }
 ```

@@ -169,9 +169,7 @@ hideInToc: true
 </div>
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/flex-direction.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -191,12 +189,15 @@ Bestimmt, in **welcher Richtung** die Flex-Items **angeordnet werden**.
 - `column`: Oben nach unten
 - `column-reverse`: Unten nach oben
 
+::right::
+
+<div style="display:flex; height: 100%; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/flex-direction.svg" alt="Flex Direction">
+</div>
 
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/flex-wrap.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -216,10 +217,15 @@ Sagt, ob Elemente in die **nächste Zeile umbrechen** dürfen, wenn kein Platz m
 - `wrap`: flex items will wrap onto multiple lines, from top to bottom.
 - `wrap-reverse`: flex items will wrap onto multiple lines from bottom to top.
 
+::right::
+
+<div style="display:flex; height: 100%; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/flex-wrap.svg" alt="Flex Wrap">
+</div>
+
+
 ---
-layout: image-right
-image: ./assets/images/flexbox/justify-content.svg
-backgroundSize: 60%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -233,10 +239,14 @@ Steuert, wie der freie Platz auf der Hauptachse verteilt wird. z.B. linksbündig
 }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/justify-content.svg" alt="Justify Content">
+</div>
+
 ---
-layout: image-right
-image: ./assets/images/flexbox/align-items.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -250,11 +260,14 @@ Steuert, wie die Items auf der Querachse (senkrecht zur Hauptachse) ausgerichtet
 }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/align-items.svg" alt="Align Items">
+</div>
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/align-content.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -268,11 +281,14 @@ Wie mehrere Zeilen (bei flex-wrap) auf der Querachse verteilt werden. → Wirkt 
 }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/align-content.svg" alt="Align Content">
+</div>
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/gap-1.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -291,11 +307,15 @@ Legt den Abstand zwischen Flex-Items fest — ohne zusätzliche Margins.
 }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/gap-1.svg" alt="Flex Gap">
+</div>
+
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/flex-grow.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -319,11 +339,15 @@ Bestimmt, **wie groß oder klein** ein Element im **Flex-Container** werden darf
 .item2 { flex: 2; }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/flex-grow.svg" alt="flex">
+</div>
+
 
 ---
-layout: image-right
-image: ./assets/images/flexbox/align-self.svg
-backgroundSize: 70%
+layout: two-cols
 hideInToc: true
 ---
 
@@ -337,6 +361,13 @@ hideInToc: true
 }
 ```
 
+::right::
+
+<div style="display:flex; height: 500px; align-content: center; margin: 0 16px; justify-content: center;">
+  <img src="./assets/images/flexbox/align-self.svg" alt="flex">
+</div>
+
+
 ---
 
 # Grid
@@ -348,9 +379,6 @@ Für **zweidimensionale Layouts** – Inhalte in **Zeilen und Spalten** position
 - Ermöglicht **präzise Platzierung** und **komplexe Strukturen**
 
 🧩 Merke: *"2D – Raster"*
-
-
-
 
 ---
 layout: two-cols

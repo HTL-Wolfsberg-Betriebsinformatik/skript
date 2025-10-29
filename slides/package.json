@@ -8,6 +8,7 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
     "@slidev/cli": "^52.1.0",
     "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "latest",

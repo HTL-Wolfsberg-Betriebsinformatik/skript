@@ -115,8 +115,6 @@ class Player
 
 Wenn der Bauplan (Klasse) umgesetzt wird, entsteht ein konkretes **Objekt** – das „echte Haus“.
 
-> 💡 Merke: Objekt = Instanz der Klasse.
-
 ```csharp
 Player player = new Player(100);
 Player enemy = new Player(50);
@@ -124,6 +122,10 @@ Player enemy = new Player(50);
 Console.WriteLine(player.Lebenspunkte); // 100
 Console.WriteLine(enemy.Lebenspunkte); // 50
 ```
+
+<br>
+
+> 💡 Merke: Objekt = Instanz der Klasse.
 
 ---
 
@@ -159,10 +161,3 @@ sondern nur eine Referenz (Adresse), um es zu erreichen.
 | **Objekt**      | Haus / Spind | Konkrete Instanz im Speicher             |
 | **Referenz**    | Spindnummer  | Zeiger auf das Objekt im Heap            |
 
----
-
-# Datenkapselung
-
-TODO
-
----

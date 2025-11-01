@@ -107,10 +107,79 @@ auf einer hellen Unterlage.
 
 # Aufgabe: Verfolgungsjagd
 
-Der Thymio verfolgt deine Hand. Programmiere ihn so, dass er
-der Hand geradeaus, links und rechts folgen kann.
+Der Thymio verfolgt deine Hand. Programmiere ihn so, dass er der Hand geradeaus, links und rechts folgen kann.
 
 **Tipps zur Umsetzung:**
 
 Je langsamer der Thymio fährt, desto besser folgt er der Hand.
 Programmiere mindestens drei vordere Sensoren. Vergiss den Stoppknopf nicht!
+
+---
+
+# Aufgabe: Blaulicht
+
+Der Thymio fährt auf Knopfdruck los. Unterwegs schaltet er bei leichtem Klopfen auf das Gehäuse das Blaulicht ein. 
+Immer, wenn ein Hindernis vor ihm erscheint, erklingt eine "Sirene" (Melodie) und der Thymio stoppt. 
+
+**Tipps zur Umsetzung:**
+
+Programmiere den Startknopf so, dass er das Blaulicht ausschaltet. So ist der Roboter bei einem erneuten Start wieder weiss. 
+
+---
+layout: center
+---
+
+# Expertenmodus einschalten
+
+<div style="display: flex; justify-content: center; width: 100%;">
+  <img src="./assets/expertenmodus.png" alt="Expertenmodus">
+</div>
+
+---
+
+# Timer: Rückwartsgang nach 3 Sekunden
+
+Der Thymio fährt auf Knopfdruck nach vorne. Nach 3 Sekunden legt er den Rückwärtsgang ein.
+
+![Timer Intro](./assets/timer-intro.png){width=40%}
+
+
+---
+
+# Aufgabe: Bergfahrt
+
+Die Strecke für den Thymio verläuft zuerst flach, dann folgt eine leichte Steigung. Der Thymio bemerkt die Steigung und wird rot, ansonsten ist er grün.
+
+- Den Sensor für die Vorwärts- / Rückwärtsneigung findest du bei den
+Ereignissen links unten. Er sieht zuerst so aus:
+
+![Bergfahrt Intro](./assets/bergfahrt-intro.png){width=60%}
+
+# Kreisel mit Farbwechsel
+
+Der Thymio dreht sich auf Knopfdruck um sich selber. 
+Wenn du deine Hand vor den Thymio hältst, wird er rot, beim zweiten Mal blau und beim dritten Mal grün, dann wieder rot usw. 
+Nutze immer den gleichen Sensor (vorne in der Mitte)! 
+
+---
+
+# Aufgabe: Endlos Vorwärts / Rückwärts
+
+Der Thymio fährt bei Klopfereignis nach vorne. Nach 3 Sekunden legt er den Rückwärtsgang ein. Danach fährt er wieder vorwärts für 3 Sekunden, danach wieder Rückwärts, usw. usw
+
+**Tipps zur Umsetzung:**
+
+- Du musst mit den States arbeiten
+- Du musst mit dem Timer arbeiten
+
+---
+
+# Lösung: Endlos Vorwärts / Rückwärts
+***
+![Lösung: Vorwärts-Rückwärts Endlos](./assets/solution-forth-and-back-endless.png){width=40%}
+
+---
+
+# Links
+
+[Alle Lösungen](./assets/Dossier-Thymio-mit-VPL.pdf)

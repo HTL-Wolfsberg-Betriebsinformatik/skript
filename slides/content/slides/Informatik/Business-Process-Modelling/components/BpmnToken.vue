@@ -6,7 +6,7 @@ defineProps({
   },
   color: {
     type: String,
-    default: 'blue',
+    default: 'red',
   },
   x: {
     type: Number,

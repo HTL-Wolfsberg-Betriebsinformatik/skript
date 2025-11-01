@@ -118,13 +118,81 @@ clicks: 2
 
 ---
 hideInToc: true
+clicks: 4
 ---
 
 # Token Konzept
 
 Die eigentliche Stärke des Token-Konzepts besteht darin, zu veranschaulichen, wie verschiedene Gateways funktionieren.
 
-TODO: Zeichnung
+**Beispiel: XOR**
+
+<div class="w-full flex justify-center items-center">
+<div class="absolute"
+  v-motion
+  :enter="{ x: -240, y: -3 }"
+  :click-1="{ x: -175, y: -3 }"
+  :click-2="{ x: 15, y: -90 }"
+  :click-3="{ x: 195, y: -3 }"
+  :click-4="{ x: 260, y: -3 }"
+  >
+    <BpmnToken />
+</div>
+  <img src="./assets/bpmn-token-concept-xor-path.drawio.png" alt="BPMN Token Konzept XOR">
+</div>
+
+---
+hideInToc: true
+clicks: 8
+---
+
+# Token Konzept
+
+Die eigentliche Stärke des Token-Konzepts besteht darin, zu veranschaulichen, wie verschiedene Gateways funktionieren.
+
+**Beispiel "Parallel": Tokens werden geklont und beim Closing Gateway muss man auf alle warten.**
+
+<div class="w-full flex justify-center items-center">
+<div class="absolute"
+  v-motion
+  :initial="{ x: -160 }"
+  :enter="{ x: -300, y: -3 }"
+  :click-1="{ x: -195, y: -3 }"
+  :click-2="{ x: -140, y: -3 }"
+  :click-3="{ x: 0, y: -3 }"
+  :click-4="{ x: 140, y: -3 }"
+  :click-7="{ x: 204, y: -3 }"
+  :click-8="{ x: 244, y: -3 }"
+  >
+    <BpmnToken />
+</div>
+<div class="absolute"
+  v-click="1"
+  v-click.hide="8"
+  v-motion
+  :enter="{ x: -195, y: -3 }"
+  :click-2="{ x: -195, y: -106 }"
+  :click-3="{ x: 0, y: -106 }"
+  :click-4="{ x: 204, y: -106 }"
+  :click-5="{ x: 204, y: -3 }"
+  >
+    <BpmnToken />
+</div>
+<div class="absolute"
+  v-click="1"
+  v-click.hide="8"
+  v-motion
+  :enter="{ x: -195, y: -3 }"
+  :click-2="{ x: -195, y: 100 }"
+  :click-3="{ x: 0, y: 100 }"
+  :click-4="{ x: 204, y: 100 }"
+  :click-6="{ x: 204, y: -3 }"
+  >
+    <BpmnToken />
+</div>
+
+  <img src="./assets/bpmn-token-parallel-paths.drawio.png" alt="BPMN Token Konzept AND">
+</div>
 
 
 

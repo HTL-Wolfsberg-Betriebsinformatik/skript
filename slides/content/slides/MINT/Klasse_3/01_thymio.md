@@ -155,7 +155,9 @@ Ereignissen links unten. Er sieht zuerst so aus:
 
 ![Bergfahrt Intro](./assets/bergfahrt-intro.png){width=60%}
 
-# Kreisel mit Farbwechsel
+---
+
+# Aufgabe: Kreisel mit Farbwechsel
 
 Der Thymio dreht sich auf Knopfdruck um sich selber. 
 Wenn du deine Hand vor den Thymio hältst, wird er rot, beim zweiten Mal blau und beim dritten Mal grün, dann wieder rot usw. 

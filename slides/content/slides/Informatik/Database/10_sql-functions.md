@@ -195,3 +195,23 @@ GROUP BY Department;
 | IT         | 2                |
 | Sales      | 1                |
 
+---
+
+# `HAVING` - Bedingungen nach dem Gruppieren
+
+Das `HAVING`-Statement wird verwendet, um das Ergebnis von `GROUP BY` zu filtern.
+
+Es funktioniert ähnlich wie `WHERE`, aber:
+- `WHERE` filtert vor dem Gruppieren (auf Zeilenebene)
+- `HAVING` filtert nach dem Gruppieren (auf Gruppenebene).
+
+<br>
+
+**Beispiel:** Verkäufer mit einem Gesamtumsatz über `2000`
+
+```sql
+SELECT Salesman, SUM(Revenue) AS TotalRevenue
+FROM Sales
+GROUP BY Salesman
+HAVING SUM(Revenue) > 2000;
+```

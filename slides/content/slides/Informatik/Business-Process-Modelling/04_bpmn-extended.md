@@ -33,31 +33,6 @@ hideInToc: true
 
 ---
 
-# Pools & Lanes
-
-- Der **Pool** definiert in der Regel die **Organisation oder Einheit**, in der der Prozess stattfindet.
-- Die **Lane** (Bahn) definiert die **Rolle oder Abteilung**, die für die Ausführung der einzelnen Aufgaben verantwortlich ist.
-
-![Pools and Lanes Beispiel](./assets/bpmn-pools-and-lanes-example.drawio.png){width=50%}
-
----
-
-# Beispiel: Fehlender Schuhgrößen Prozess
-
-*** 
-
-![Fehlender Schuhgrößen Prozess 1.0](./assets/bpmn-exercise-missing-shoe-size-process.drawio.png)
-
----
-
-# Beispiel: Fehlender Schuhgrößen Prozess 2.0
-
-***
-
-![Fehlender Schuhgrößen Prozess 1.0](./assets/bpmn-exercise-missing-shoe-size-process-with-warehouse-manager.drawio.png){width=80%}
-
----
-
 # Closing Gateways
 
 Um Aktivitäten (Tasks) wieder zusammenzuführen, benutzt man *Closing Gateways*.
@@ -65,24 +40,6 @@ Um Aktivitäten (Tasks) wieder zusammenzuführen, benutzt man *Closing Gateways*
 <br>
 
 ![Closing Gateway Beispiel](./assets/bpmn-example-closing-gateways.drawio.png)
-
----
-
-# Übung: Lieferung Großhändler
-
-Der Verkäufer steht vor einer neuen Herausforderung. Er erhält eine Lieferung vom Großhändler und weiß nicht, was er als Nächstes tun soll. Sein Chef sagt zu ihm:
-
-„Keine Sorge. Zuerst überprüfst du, ob die Bestellung und die Rechnung korrekt sind. Wenn nicht, gibst du das Paket an den Versandmitarbeiter zurück. Wenn alles stimmt, prüfst du, ob es sich um eine Standardbestellung oder um eine Kundenbestellung handelt. Wenn es eine Standardbestellung ist, bringst du die Schuhe einfach ins Lager. Wenn es eine Kundenbestellung ist, stellst du die Schuhe hinter die Kasse – und das war’s!“
-
-Deine Aufgabe ist es nun, dem Verkäufer zu helfen, indem du einen einfachen Prozess erstellst. Ignoriere dabei die Aufgaben des Versandmitarbeiters. Modelle nur, was der Verkäufer tun muss.
-
----
-
-# Lösung: Lieferung Großhändler
-
-*** 
-
-![Lösung: Lieferung Großhändler](./assets/bpmn-exercise-shoe-delivery-process.drawio.png)
 
 ---
 
@@ -195,6 +152,79 @@ Die eigentliche Stärke des Token-Konzepts besteht darin, zu veranschaulichen, w
 
   <img src="./assets/bpmn-token-parallel-paths.drawio.png" alt="BPMN Token Konzept AND">
 </div>
+
+
+---
+
+# Pools & Lanes
+
+- Der **Pool** definiert in der Regel die **Organisation oder Einheit**, in der der Prozess stattfindet.
+- Die **Lane** (Bahn) definiert die **Rolle oder Abteilung**, die für die Ausführung der einzelnen Aufgaben verantwortlich ist.
+
+![Pools and Lanes Beispiel](./assets/bpmn-pools-and-lanes-example.drawio.png){width=50%}
+
+---
+
+# Übung: Fehlender Schuhgrößen Prozess
+
+***
+
+Ein Kunde möchte ein Paar Schuhe kaufen, doch im Verkaufsregal ist seine Schuhgröße nicht verfügbar.
+Daraufhin beginnt der Verkaufsprozess. <br><br>
+Zuerst prüft der Verkäufer, ob die gewünschte Schuhgröße im Lager verfügbar ist. <br><br>
+Ist sie dort vorhanden, holt der Verkäufer die Schuhe aus dem Lager und verkauft sie direkt an den Kunden. 
+Der Prozess endet in diesem Fall mit dem Ergebnis, dass die Schuhe erfolgreich verkauft wurden. <br><br>
+Ist die Schuhgröße nicht im Lager vorhanden, ruft der Verkäufer den zweiten Filialstandort an,
+um zu prüfen, ob die Schuhgröße dort erhältlich ist. <br><br>
+Wenn der zweite Shop die passende Größe vorrätig hat, empfiehlt der Verkäufer dem Kunden,
+die Schuhe dort zu kaufen. <br><br>
+Falls jedoch auch der zweite Shop die Größe nicht auf Lager hat,
+wird die Schuhgröße per Expressversand bestellt, und der Verkäufer fragt nach dem voraussichtlichen Lieferdatum.
+<br><br>
+Anschließend endet der Prozess mit dem Ergebnis, dass die Schuhe nicht an den Kunden verkauft wurden.
+
+---
+
+# Lösung: Fehlender Schuhgrößen Prozess
+
+*** 
+
+![Fehlender Schuhgrößen Prozess 1.0](./assets/bpmn-exercise-missing-shoe-size-process.drawio.png)
+
+---
+
+# Übung: Fehlender Schuhgrößen Prozess 2.0
+
+***
+
+Ein Lagerverwalter kümmert sich darum die Schuhe aus dem Lager zu holen.
+
+---
+
+# Lösung: Fehlender Schuhgrößen Prozess 2.0
+
+***
+
+![Fehlender Schuhgrößen Prozess 1.0](./assets/bpmn-exercise-missing-shoe-size-process-with-warehouse-manager.drawio.png){width=80%}
+
+---
+
+# Übung: Lieferung Großhändler
+
+Der Verkäufer steht vor einer neuen Herausforderung. Er erhält eine Lieferung vom Großhändler und weiß nicht, was er als Nächstes tun soll. Sein Chef sagt zu ihm:
+
+„Keine Sorge. Zuerst überprüfst du, ob die Bestellung und die Rechnung korrekt sind. Wenn nicht, gibst du das Paket an den Versandmitarbeiter zurück. Wenn alles stimmt, prüfst du, ob es sich um eine Standardbestellung oder um eine Kundenbestellung handelt. Wenn es eine Standardbestellung ist, bringst du die Schuhe einfach ins Lager. Wenn es eine Kundenbestellung ist, stellst du die Schuhe hinter die Kasse – und das war’s!“
+
+Deine Aufgabe ist es nun, dem Verkäufer zu helfen, indem du einen einfachen Prozess erstellst. Ignoriere dabei die Aufgaben des Versandmitarbeiters. Modelle nur, was der Verkäufer tun muss.
+
+---
+
+# Lösung: Lieferung Großhändler
+
+*** 
+
+![Lösung: Lieferung Großhändler](./assets/bpmn-exercise-shoe-delivery-process.drawio.png)
+
 
 
 

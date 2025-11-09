@@ -170,7 +170,8 @@ Die eigentliche Stärke des Token-Konzepts besteht darin, zu veranschaulichen, w
   v-click="1"
   v-click.hide="8"
   v-motion
-  :enter="{ x: -195, y: -3 }"
+  :enter="{ x: -300, y: -3 }"
+  :click-1="{ x: -195, y: -3}"
   :click-2="{ x: -195, y: -106 }"
   :click-3="{ x: 0, y: -106 }"
   :click-4="{ x: 204, y: -106 }"
@@ -182,7 +183,8 @@ Die eigentliche Stärke des Token-Konzepts besteht darin, zu veranschaulichen, w
   v-click="1"
   v-click.hide="8"
   v-motion
-  :enter="{ x: -195, y: -3 }"
+  :enter="{ x: -300, y: -3 }"
+  :click-1="{ x: -195, y: -3}"
   :click-2="{ x: -195, y: 100 }"
   :click-3="{ x: 0, y: 100 }"
   :click-4="{ x: 204, y: 100 }"

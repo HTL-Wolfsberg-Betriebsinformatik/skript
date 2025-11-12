@@ -46,13 +46,13 @@ hideInToc: true
 # Beispiel: 2D-Array
 
 ```csharp
-// 2D-Array mit 2 Zeilen und 3 Spalten
-double[,] matrix = new double[2, 3];
+// 2D-Array mit 3 Zeilen und 4 Spalten
+double[,] matrix = new double[3, 4];
 
 matrix[0, 1] = 1.5;
 
-int zeilen = matrix.GetLength(0); // 2
-int spalten = matrix.GetLength(1); // 3
+int zeilen = matrix.GetLength(0); // 3
+int spalten = matrix.GetLength(1); // 4
 ```
 
 ![2D Array Beispiel](./assets/2D-array-example.drawio.png)

@@ -98,7 +98,7 @@ Diese Werte funktionieren nur, wenn `position` ≠ `static` ist:
 
 ```css
 
-.relative-box { position: relative; top: 6px; right: 6px; }
+.relative-box { position: relative; top: 6px; left: 6px; }
 ```
 
 **Demo**

@@ -134,7 +134,7 @@ Der `FULL (OUTER) JOIN` zeigt auch Datensätze, die **keine Übereinstimmung** i
 ```sql
 SELECT k.name, b.produkt
 FROM kunden AS k
-FULLS JOIN bestellungen AS b
+FULL JOIN bestellungen AS b
     ON k.id = b.kunden_id;
 ```
 

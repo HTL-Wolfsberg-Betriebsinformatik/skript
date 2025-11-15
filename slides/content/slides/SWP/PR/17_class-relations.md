@@ -39,24 +39,72 @@ hideInToc: true
 
 <br>
 
-1️⃣ **Assoziation** → lose Bekanntschaft 
+1️⃣ **Abhängigkeit** → temporäre Nutzung
 
-2️⃣ **Aggregation** → Zusammenarbeit  
+2️⃣ **Assoziation** → lose Bekanntschaft 
 
-3️⃣ **Komposition** → untrennbare Zugehörigkeit
+3️⃣ **Aggregation** → Zusammenarbeit  
+
+4️⃣ **Komposition** → untrennbare Zugehörigkeit
+
+
+---
+
+# Abhängigkeit - temporäre Nutzung
+
+Eine **Dependency** (Abhängigkeit) beschreibt, dass eine Klasse eine andere kurzzeitig benutzt, ohne dass eine dauerhafte Beziehung entsteht.
+
+- Es gibt **kein Feld/Property**, also keine langfristige Beziehung
+- Das Objekt wird nur für eine einzelne Operation benötigt
+- Die Lebensdauer der beiden Objekte ist nicht verbunden
+
+<br>
+
+**Beispiel:**
+
+Eine **Person** ruft ein **Taxi-Service**. <br>
+Das ist **keine Beziehung**, sondern **kurzzeitige Nutzung**.
+
+
+> ➡️ **Dependency** = Wird kurz benutzt, aber nicht behalten..
+
+---
+
+# Beispiel: Abhängigkeit
+
+```csharp{all|14}{lines:true}
+public class TaxiService
+{
+    public void CallTaxi(string address)
+    {
+        Console.WriteLine($"Taxi is on the way to {address}");
+    }
+}
+
+public class Person
+{
+    public string Name { get; set; }
+    public Person(string name) => Name = name;
+
+    public void OrderTaxi(TaxiService taxiService)
+    {
+        service.CallTaxi("Main Street 12");
+    }
+}
+```
 
 ---
 
 # Assoziation – lose Bekanntschaft
 
 - Objekte **kennen** einander,  
-- aber keines gehört dem anderen.
+- aber keines gehört dem anderen bzw ist Teil eines anderen.
 
 <br>
 
 **Beispiel:**
 
-Ein **Arzt** behandlet einen **Patienten**, <br>
+Ein **Krankenhaus** behandelt **Patienten**, <br>
 aber beide **existieren unabhängig** voneinander.
 
 > ➡️ Eine **einfache Verbindung** zwischen zwei Klassen – keine Abhängigkeit in der Lebensdauer.
@@ -65,28 +113,29 @@ aber beide **existieren unabhängig** voneinander.
 
 # Beispiel: Assoziation
 
-```csharp{all|6,21}{lines:true}
-public class Doctor
-{
-    public string Name { get; set; }
-    public Doctor(string name) => Name = name;
-
-    public void Treat(Patient patient)
-    {
-        Console.WriteLine($"Dr. {Name} gives {patient.Name} medical treatment.");
-    }
-}
-
+```csharp{all|8}{lines:true}
 public class Patient
 {
     public string Name { get; set; }
-    public Patient(string name) => Name = name;
 }
 
-var doctor = new Doctor("King");
-var patient = new Patient("James");
+public class Hospital
+{
+    public List<Patient> Patients { get; } = new();
 
-doctor.Treat(patient);
+    public void PrintPatientList()
+    {
+        foreach (var patient in Patients)
+        {
+            Console.WriteLine($"{patient.Name}");
+        }
+    }
+
+    public void AddPatient(Patient patient)
+    {
+        Patients.Add(patient);
+    }
+}
 ```
 
 ---
@@ -100,8 +149,8 @@ doctor.Treat(patient);
 <br>
 
 **Beispiel:**
-- Eine **Schule** hat viele **Lehrer**  
-- Aber ein Lehrer kann **auch ohne Schule** existieren (z. B. wechseln)
+- Eine **Krankenhaus** hat viele **Ärzte**  
+- Aber ein Arzt kann **auch ohne Krankenhaus** existieren (z. B. durch Wechsel, oder Selbstständig nebenbei)
 
 ➡️ Das ist **Aggregation** – eine *lockere Besitzbeziehung*.
 
@@ -109,31 +158,22 @@ doctor.Treat(patient);
 
 # Beispiel: Aggregation
 
-```csharp{all|6,11,16,21-22}{lines:true}
-public class Teacher { ... } // Felder: Name
-
-public class School
+```csharp{all|8}{lines:true}
+public class Doctor
 {
     public string Name { get; set; }
-    public List<Teacher> Teachers { get; set; } // hat Objekt(e)
-
-    public School(string name)
-    {
-        Name = name;
-        Teachers = new List<Teacher>(); // leer initialisiert, beim Erstellen
-    }
-
-    public void AddTeacher(Teacher t)
-    {
-        Teachers.Add(t); // bekommt erst Objekte nachdem `School` erstellt wurde
-    }
 }
 
-var school = new School("HTL Wolfsberg");
-school.AddTeacher(new Lehrer("Anna")); // Erstellung außerhalb der `School` Klasse
-school.AddTeacher(new Lehrer("Markus"));
-```
+public class Hospital
+{
+    public List<Doctor> Doctors { get; } = new();
 
+    public void AddDoctor(Doctor doctor)
+    {
+        Teachers.Add(doctor);
+    }
+}
+```
 ---
 
 # Komposition - starke Bindung
@@ -186,9 +226,10 @@ house.AddRoom("Bedroom", 20);
 
 <br>
 
-| Beziehung       | Beispiel        | Lebensdauer | Besitz | 
-| --------------- | --------------- | ----------- | ------ | 
-| **Assoziation** | Arzt – Patient  | unabhängig  | kein   | 
-| **Aggregation** | Schule – Lehrer | unabhängig  | lose   |
-| **Komposition** | Haus – Raum     | gemeinsam   | stark  |
+| Beziehung       | Beispiel        | Lebensdauer | Grund | 
+| --------------- | --------------- | ----------- | ------ |
+| **Abhängigkeit** | Person – Taxi Service  | unabhängig  | kurzfristige Nutzung   |  
+| **Assoziation** | Krankenhaus – Patient  | unabhängig  | kennt, aber besitzt nicht   | 
+| **Aggregation** | Krankenhaus – Arzt | unabhängig  | hat ein, aber existiert alleine   |
+| **Komposition** | Haus – Raum     | gemeinsam   | besitzt, Lebensdauer ist gebunden  |
 

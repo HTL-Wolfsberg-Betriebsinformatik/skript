@@ -88,7 +88,7 @@ public class Person
 
     public void OrderTaxi(TaxiService taxiService)
     {
-        service.CallTaxi("Main Street 12");
+        taxiService.CallTaxi("Main Street 12");
     }
 }
 ```
@@ -170,7 +170,7 @@ public class Hospital
 
     public void AddDoctor(Doctor doctor)
     {
-        Teachers.Add(doctor);
+        Doctors.Add(doctor);
     }
 }
 ```

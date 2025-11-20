@@ -152,8 +152,8 @@ layoutClass: gap-y-14
 ::left::
 
 **Generalisierung → FK = PK**
-   - Die Spezialisierung hat den selben Primärschlüssel der Generalisierung
-   - Zusätzlich dient dieser Primärschlüssel als Fremdschlüssel um eine Verbindung zwischen den Tabellen herzustellen.
+   - Die Spezialisierung  teilt sich den Primärschlüssel mit der Generalisierung
+   - Zusätzlich dient dieser Primärschlüssel als Fremdschlüssel um eine Verbindung zur Generalisierung herzustellen.
 
 ::right::
 

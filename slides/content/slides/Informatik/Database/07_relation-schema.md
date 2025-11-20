@@ -151,8 +151,9 @@ layoutClass: gap-y-14
 
 ::left::
 
-**Weak Entity → Fremdschlüssel + PK**
-   - Die Tabelle aus der Weak Entity bekommt den Primärschüssel der anderen Tabelle als Primär- und Fremdschlüssel
+**Generalisierung → FK = PK**
+   - Die Spezialisierung hat den selben Primärschlüssel der Generalisierung
+   - Zusätzlich dient dieser Primärschlüssel als Fremdschlüssel um eine Verbindung zwischen den Tabellen herzustellen.
 
 ::right::
 

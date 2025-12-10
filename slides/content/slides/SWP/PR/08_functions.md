@@ -241,3 +241,102 @@ Differenz: 2
 Produkt: 8
 Quotient: 2
 ```
+
+---
+
+# Parameterübergabe in C#: `out` & `ref`
+
+Warum gibt es diese Schlüsselwörter?
+
+Normale Parameter in C# werden *by value* übergeben:
+- Die Funktion erhält eine **Kopie** der Daten.
+- Änderungen wirken sich **nicht** auf die Originalvariable aus.
+
+`ref` und `out` erlauben **by reference**:
+- Die Funktion erhält **eine Referenz auf die Originalvariable**.
+- Änderungen wirken sich **direkt auf den Aufrufer aus**.
+
+## Ziel von `out` und `ref`
+
+- **Mehrere Werte aus einer Funktion zurückgeben**  
+- **Werte in einer Funktion verändern lassen**
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+# `out` – Parameter, die *von der Funktion gesetzt* werden müssen
+
+- Die Variable **darf vor dem Aufruf nicht initialisiert** sein.
+- Die Funktion **muss einen Wert zuweisen**.
+- Typisch für: *Versuche etwas zu berechnen – lief es oder nicht?*
+
+**Einsatzgebiete:**
+
+- Methoden, die Erfolg/Misserfolg zurückgeben + berechneten Wert liefern
+- Bekannt aus .NET-API: `int.TryParse()`, `double.TryParse()`
+
+::right::
+<br>
+
+```csharp
+bool TryDivide(int a, int b, out int result)
+{
+    // verhindert eine Division durch 0
+    if (b == 0)
+    {
+        result = 0;
+        return false;
+    }
+
+    result = a / b;
+    return true;
+}
+
+// Aufruf:
+int result; // darf nicht initialisiert werden
+bool success = TryDivide(5, 0, out result)
+```
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+# `ref` – Parameter, die *vorher existieren & valid sein müssen*
+
+- Die Variable **muss vor dem Aufruf initialisiert** sein.
+- Funktion **kann** diese verändern (muss aber nicht).
+- Typisch für: *Werte an Funktionen übergeben, die sie verändern sollen*.
+
+::right::
+<br>
+
+```csharp
+void Increase(ref int number)
+{
+    number += 10;
+}
+
+int x = 5;
+Increase(ref x);
+// x ist jetzt 15
+```
+
+---
+
+# Vergleich: `out` vs `ref`
+
+| Merkmal                             | `out`                                 | `ref`                                        |
+| ----------------------------------- | ------------------------------------- | -------------------------------------------- |
+| Muss vor Aufruf initialisiert sein? | ❌ Nein                               | ✔ Ja                                         |
+| Muss die Methode einen Wert setzen? | ✔ Ja                                  | ❌ Nein                                       |
+| Typische Nutzung                    | Parsing, Berechnungen                 | Werte verändern                              |
+| Rückgabecharakter                   | *„Hier, ich fülle das für dich aus.“* | *„Arbeite mit meiner bestehenden Variable.“* |
+
+
+**Merksatz:**
+
+- out: Die Funktion liefert einen Wert.
+- ref: Die Funktion verarbeitet/ändert einen vorhandenen Wert.

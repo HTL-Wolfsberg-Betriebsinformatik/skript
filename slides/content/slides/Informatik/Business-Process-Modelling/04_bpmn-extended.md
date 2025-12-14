@@ -226,5 +226,103 @@ Deine Aufgabe ist es nun, dem Verkäufer zu helfen, indem du einen einfachen Pro
 ![Lösung: Lieferung Großhändler](./assets/bpmn-exercise-shoe-delivery-process.drawio.png)
 
 
+---
+layout: two-cols-header
+layoutClass: gap-12
+---
+
+# Inclusive Gateway
+
+::left:: 
+
+- Defines a decision
+- Any combinations of paths can be taken
+
+::right::
+
+<div class="flex flex-row h-full items-center justify-center">
+
+![Inklusives Gateway](./assets/bpmn-inclusive-gateway.drawio.png)
+
+</div>
+
+---
+layout: two-cols-header
+layoutClass: gap-12
+---
+
+# Closing Inclusive Gateway
+
+::left:: 
+
+- Waits for all active inputs
+- Is informed about all preceding token flows
+
+::right::
+
+<div class="flex flex-row h-full items-center justify-center">
+
+![Inklusives Gateway](./assets/bpmn-inclusive-gateway-closing.drawio.png)
+
+</div>
+
+---
+layout: two-cols-header
+layoutClass: gap-12
+---
+
+# Collapsed Pools
+
+::left:: 
+
+- Don't show the process flow - like a black box
+- Collapsed Pools are used to represent external process participants
+
+::right::
+
+<div class="flex flex-row h-full items-center justify-center">
+
+![Collapsed Pool](./assets/bpmn-collapsed-pool.drawio.png)
+
+</div>
+
+---
+
+# Message Event
+
+- **4 types of events**
+- Represents incoming or outgoing messages
+- Is also used for the sending or receiving of goods, money or other things 
+
+<div class="flex items-center justify-center mt-12">
+
+![Message Events](./assets/bpmn-message-events.drawio.png)
+
+</div>
+
+---
+
+# Warum 4 Message Events?
+
+- **Start Message Event:** The process is started with the event
+- **Intermediate Message Event:** Occurs within gour process flow, so somewhere between the start and end event
+  - **Catching:** Stands for incoming messages, so the literally catch a message as soon as it comes in
+  - **Throwing:** Defines an outgoing message
+- **End Message Event:** At the end of a process, it is always "throwing" (e.g if your process completes with the shipment of a good)
+
+<div class="flex items-center justify-center">
+
+![Message Events](./assets/bpmn-message-events.drawio.png)
+
+</div>
+
+---
+
+# Beispiel
+***
+
+![Example Message Events and Collapsed Pool](./assets/bpmn-example-message-events-and-collapsed-pool.drawio.png)
+
+
 
 

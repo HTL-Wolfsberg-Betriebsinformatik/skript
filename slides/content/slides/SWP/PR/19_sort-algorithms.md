@@ -134,6 +134,12 @@ für i von 0 bis n-2:
             tausche array[j] mit array[j+1]
 ```
 
+---
+layout: iframe
+url: https://www.youtube.com/embed/Dv4qLJcxus8?si=uJwspHg0NYBsteVO
+---
+
+# Bubble Sort - Erklärvideo
 
 ---
 layout: two-cols-header
@@ -170,6 +176,12 @@ für i von 0 bis n-2:
 
 ```
 
+---
+layout: iframe
+url: https://www.youtube.com/embed/EwjnF7rFLns?si=Sc0NmAgRRlObOsEX
+---
+
+# Selection Sort - Erklärvideo
 
 ---
 layout: two-cols-header
@@ -205,6 +217,12 @@ für i von 1 bis n-1:
     array[j+1] = key
 ```
 
+---
+layout: iframe
+url: https://www.youtube.com/embed/8mJ-OhcfpYg?si=T9bz-tr9i1aoE5e3
+---
+
+# Insertion Sort - Erklärvideo
 
 ---
 layout: two-cols-header
@@ -251,6 +269,12 @@ funktion Partition(array, links, rechts):
     gib i+1 zurück
 ```
 
+---
+layout: iframe
+url: https://www.youtube.com/embed/Vtckgz38QHs?si=nViY5G-OLUq5kry2
+---
+
+# Quick Sort - Erklärvideo
 
 ---
 

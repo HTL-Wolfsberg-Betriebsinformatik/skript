@@ -173,7 +173,9 @@ Steuert die Position des Hintergrundbilds.
 
 ```css
 div {
-  background-position: center center; /* vertical / horizontal */
+  background-position: center; /* zentriert */
+  background-position: top left;
+  background-position: 40% 20%; /* horizontal vertikal */
 }
 ```
 
@@ -182,6 +184,7 @@ div {
 - Schlüsselwörter: `left`, `center`, `right`, `top`, `bottom`
 - Pixelangaben: `20px 50px`
 - Prozente: `50% 100%` (relativ zur Elementgröße)
+- Gemischt: `20% left`
 
 <style>
 .image {

@@ -138,7 +138,7 @@ div {
 
 ---
 
-# Wiederholung steuern mit `backgrond-repeat`
+# Wiederholung steuern mit `background-repeat`
 
 Legt fest, ob und wie sich das Hintergrundbild wiederholt.
 
@@ -189,7 +189,7 @@ div {
 <style>
 .image {
   width: 40%;
-  height: 35%;
+  height: 25%;
   background-image: url("./assets/images/doodad.png");
   background-repeat: no-repeat;
   background-color: lightblue;

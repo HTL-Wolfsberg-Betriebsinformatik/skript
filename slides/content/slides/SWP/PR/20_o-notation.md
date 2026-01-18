@@ -119,7 +119,10 @@ layout: center
 
 <div>
 
-👉 [zum TSP Spiel (wähle Szene 3)](https://prolog.univie.ac.at/tspGame/game.html) 👈
+👉 [1. TSP Spiel (wähle Szene 3)](https://prolog.univie.ac.at/tspGame/game.html) 
+
+
+👉 [2. TSP Algorithmen Vergleich](https://tspvis.com/) 
 
 </div>
 </div>

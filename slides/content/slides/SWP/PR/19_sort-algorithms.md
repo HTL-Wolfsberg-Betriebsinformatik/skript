@@ -104,7 +104,7 @@ layoutClass: gap-16
 **Eigenschaften:**
 
 - Sehr leicht verständlich
-- Extrem ineffizient (O(n²))
+- Extrem ineffizient
 - Hauptsächlich ein **Lehrbeispiel**
 
 ::right::
@@ -141,7 +141,7 @@ layoutClass: gap-16
 **Eigenschaften:**
 
 - Einfach zu verstehen
-- Immer gleiche Anzahl Vergleiche → O(n²)
+- Immer gleiche Anzahl Vergleiche
 - Gut zum Lernen, schlecht für große Datenmengen
 
 ::right::
@@ -181,8 +181,6 @@ layoutClass: gap-16
 **Eigenschaften:**
 
 - Sehr schnell, wenn Daten fast sortiert sind
-- Im Worst-Case O(n²)
-- Im Best-Case O(n)
 - Wird in der Praxis häufig eingesetzt
 
 ::right::
@@ -221,7 +219,6 @@ layoutClass: gap-16
 
 **Eigenschaften:**
 
-- Durchschnittlich O(n log n)
 - Sehr schnell in der Praxis
 - Gehört zu den wichtigsten Sortierverfahren
 - Wird in vielen Programmiersprachen standardmäßig verwendet
@@ -273,14 +270,4 @@ layout: center
 </div>
 </div>
 
----
-
-# Vergleich der Algorithmen
-
-| Algorithmus        | Best Case        | Average Case | Worst Case | Vorteil                                | Nachteil                       |
-| ------------------ | ---------------- | ------------ | ---------- | -------------------------------------- | ------------------------------ |
-| **Bubble Sort**    | O(n)             | O(n²)        | O(n²)      | Extrem leicht verständlich             | Sehr ineffizient               |
-| **Selection Sort** | O(n²)            | O(n²)        | O(n²)      | Sehr einfach                           | Immer gleich langsam           |
-| **Insertion Sort** | O(n)             | O(n²)        | O(n²)      | Sehr schnell bei fast sortierten Daten | Langsam bei unsortierten Daten |
-| **QuickSort**      | O(n log n)       | O(n log n)   | O(n²)      | Sehr schnell in der Praxis             | Schlechtes Pivot → langsam     |
 

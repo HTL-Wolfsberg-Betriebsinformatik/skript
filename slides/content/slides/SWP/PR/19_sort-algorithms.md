@@ -58,24 +58,6 @@ hideInToc: true
 
 ---
 
-# *Big O-Notation*
-
-Die **(Big) O-Notation** beschreibt, wie **schnell oder langsam ein Algorithmus wächst**, wenn die Datenmenge größer wird. Es geht also nicht um „wie viele Millisekunden auf meinem PC“, sondern um die **grundsätzliche Skalierung**.
-
-![O-Notation Chart](./assets/o-notation-chart.png){width=70%}
-
----
-
-# Komplexitätsklassen
-
-Algorithmen werden in sogenannte Komplexitätsklassen eingeteilt. Eine Komplexitätsklasse wird mit dem Landau-Symbol O ("Groß O") gekennzeichnet. 
-
-![O-Notation Tabelle](./assets/o-notation-table.png){width=70%}
-
-
----
-
-
 # Warum verschiedene Sortieralgorithmen?
 
 Es gibt nicht den einen perfekten Algorithmus
@@ -225,13 +207,11 @@ url: https://www.youtube.com/embed/8mJ-OhcfpYg?si=T9bz-tr9i1aoE5e3
 # Insertion Sort - Erklärvideo
 
 ---
-layout: two-cols-header
+layout: two-cols
 layoutClass: gap-16
 ---
 
-# QuickSort
-
-::left::
+# Quick Sort
 
 - Wähle ein Pivot-Element
 - Teile das Array:
@@ -252,29 +232,46 @@ layoutClass: gap-16
 funktion QuickSort(array, links, rechts):
     wenn links < rechts:
         p = Partition(array, links, rechts)
-
         QuickSort(array, links, p-1)
         QuickSort(array, p+1, rechts)
 
 funktion Partition(array, links, rechts):
     pivot = array[rechts]
-    i = links - 1
+    l = links - 1
+    r = rechts
 
-    für j von links bis rechts-1:
-        wenn array[j] < pivot:
-            i = i + 1
-            tausche array[i] mit array[j]
+    wiederhole:
+        wiederhole:
+            l = l + 1
+        solange l < rechts und array[l] < pivot
 
-    tausche array[i+1] mit array[rechts]
-    gib i+1 zurück
+        wiederhole:
+            r = r - 1
+        solange r > links und array[r] >= pivot
+
+        wenn l >= r:
+            beende Schleife
+
+        tausche array[l] mit array[r]
+
+    tausche array[l] mit array[rechts]
+    gib l zurück
 ```
 
 ---
-layout: iframe
-url: https://www.youtube.com/embed/Vtckgz38QHs?si=nViY5G-OLUq5kry2
+layout: center
 ---
 
-# Quick Sort - Erklärvideo
+# Quick Sort - Beispiel
+
+<div class="flex justify-center">
+
+<div>
+
+👉 [zum Quick Sort Beispiel](https://www.canva.com/design/DAG-Mb1VCZc/wWsO3c4sd8kiNJ1S6XLSug/edit?utm_content=DAG-Mb1VCZc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 👈
+
+</div>
+</div>
 
 ---
 

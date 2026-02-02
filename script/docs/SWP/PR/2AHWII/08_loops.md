@@ -94,7 +94,7 @@ foreach (string n in namen)
 - `continue;` → springt zum nächsten Durchlauf
 - `return;` → beendet die Methode, in der die Schleife steht
 
-**Beispiel mit `continue`:
+**Beispiel mit `continue`:**
 
 ```csharp
 for (int i = 1; i <= 10; i++)
@@ -124,7 +124,7 @@ for (int i = 1; i <= 10; i++)
 {
     for (int j = 1; j <= 10; j++)
     {
-        Console.Write($"{i * j,4}");
+        Console.Write($"{i * j}");
     }
     Console.WriteLine();
 }

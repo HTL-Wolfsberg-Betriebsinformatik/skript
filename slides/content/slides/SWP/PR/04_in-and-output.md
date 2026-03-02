@@ -21,7 +21,7 @@ export:
 selectable: true
 ---
 
-#  Einlesen und Ausgeben
+# Einlesen und Ausgeben
 
 ## in C# Konsolenprogrammen
 

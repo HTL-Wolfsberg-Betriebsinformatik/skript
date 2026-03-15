@@ -4,7 +4,7 @@ routerMode: hash
 title: DIV Element and CSS Box Modell
 info: |
   ## Gruppieren von Tags und CSS Box Modell
-background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
+background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:
     persist: false

@@ -3,7 +3,7 @@ theme: seriph
 routerMode: hash
 title: Einführung in Relationen
 info: Grundlagen von Relationen in Datenbanken
-background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
+background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:
     persist: false

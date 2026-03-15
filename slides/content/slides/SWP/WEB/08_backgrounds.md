@@ -4,7 +4,7 @@ routerMode: hash
 title: Backgrounds in CSS
 info: |
   ## Backgrounds in CSS
-background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
+background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:
     persist: false
@@ -58,7 +58,7 @@ CSS bietet eine Vielzahl an Möglichkeiten, um Hintergründe für Elemente zu ge
 }
 
 .bg-image {
-  background-image: url("https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true");
+  background-image: url("https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp");
   background-size: cover;
 }
 
@@ -67,7 +67,7 @@ CSS bietet eine Vielzahl an Möglichkeiten, um Hintergründe für Elemente zu ge
 }
 
 .bg-multi-image {
-  background-image: url("./assets/images/htl-logo.png"), url("https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true");
+  background-image: url("./assets/images/htl-logo.png"), url("https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp");
   background-position: top center, left top;
   background-repeat: no-repeat, no-repeat;
   padding: 15px;
@@ -129,7 +129,7 @@ div {
 .container {
   width: 40%;
   height: 40%;
-  background-image: url("https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true");
+  background-image: url("https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp");
   background-size: cover;
 }
 </style>
@@ -232,7 +232,7 @@ div {
 .bg {
   width: 30%;
   height: 40%;
-  background-image: url("https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true");
+  background-image: url("https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp");
   background-repeat: no-repeat;
   background-color: red;
   text-align: center;
@@ -333,7 +333,7 @@ div {
 }
 
 .bg-multi-image {
-  background-image: url("./assets/images/htl-logo.png"), url("https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true");
+  background-image: url("./assets/images/htl-logo.png"), url("https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp");
   background-position: top right, left top;
   background-repeat: no-repeat, no-repeat;
   background-size: 80px, cover;

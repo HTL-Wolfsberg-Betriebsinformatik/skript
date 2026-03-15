@@ -4,7 +4,7 @@ routerMode: hash
 title: Flexbox - Moderne Layouts in CSS
 info: |
   ## Flexbox - Moderne Layouts in CSS
-background: https://github.com/HTL-Wolfsberg-Betriebsinformatik/skript/blob/main/slides/content/slides/background-cover-16-9.webp?raw=true
+background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:
     persist: false

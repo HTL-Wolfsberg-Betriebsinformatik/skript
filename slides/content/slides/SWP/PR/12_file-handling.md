@@ -87,22 +87,22 @@ Im Gegensatz zu `ReadAll` / `WriteAll` muss bei einem *Stream* nicht alles in de
 
 ```csharp
 // Erstellen und Schreiben einer Textdatei
-using (StreamWriter writer = new StreamWriter("test.txt"))
-{
-    writer.WriteLine("Hallo");
-    writer.WriteLine("Welt");
-}
+FileStream fs = new FileStream(path, FileMode.OpenOrCreate);
+StreamWriter writer = new StreamWriter(fs);
+writer.WriteLine("Hallo");
+writer.WriteLine("Welt");
+writer.Close() // wichtig!!!
 
 // Lesen einer Textdatei
-using (StreamReader reader = new StreamReader("test.txt"))
+FileStream fs = new FileStream("test.txt", FileMode.Open);
+StreamReader reader = new StreamReader(fs);
+string line;
+while ((line = reader.ReadLine()) != null)
 {
-    string line;
-
-    while ((line = reader.ReadLine()) != null)
-    {
-        Console.WriteLine(line);
-    }
+    Console.WriteLine(line);
 }
+reader.Close(); // wichtig!!!
+
 ```
 
 ℹ️ *Netflix und Co. "streamen" auch, d.h. sie laden laufend kleine Videosequenzen, aber nicht den ganzen Film auf einmal zu Beginn.*
@@ -154,24 +154,22 @@ Mit `BinaryReader` und `BinaryWriter` liest bzw schreibt C# nicht Text, sondern 
 
 ```csharp
 // Schreiben einer Binärdatei
-using (BinaryWriter writer = new BinaryWriter(File.Open("data.bin", FileMode.Create)))
-{
-    writer.Write(42);          // int
-    writer.Write(3.14);        // double
-    writer.Write("Hallo");     // string
-}
+FileStream fs = new FileStream("test.txt", FileMode.Create, FileAccess.Write);
+BinaryWriter writer = new BinaryWriter(fs);
+
+writer.Write(42);          // int
+writer.Write(3.14);        // double
+writer.Write("Hallo");     // string
+writer.Close();
 
 // Lesen einer Binärdatei
-using (BinaryReader reader = new BinaryReader(File.Open("data.bin", FileMode.Open)))
-{
-    int zahl = reader.ReadInt32();
-    double d = reader.ReadDouble();
-    string text = reader.ReadString();
+FileStream fs = new FileStream("test.txt", FileMode.Open, FileAccess.Read);
+BinaryReader reader = new BinaryReader(fs);
 
-    Console.WriteLine(zahl);
-    Console.WriteLine(d);
-    Console.WriteLine(text);
-}
+int zahl = reader.ReadInt32();
+double d = reader.ReadDouble();
+string text = reader.ReadString();
+reader.Close();
 ```
 
 🚨*Reihenfolge muss identisch sein, ansonsten stürzt das Programm ab, oder liefert falsche Werte*

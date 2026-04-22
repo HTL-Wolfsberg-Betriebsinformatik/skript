@@ -154,7 +154,7 @@ Mit `BinaryReader` und `BinaryWriter` liest bzw schreibt C# nicht Text, sondern 
 
 ```csharp
 // Schreiben einer Binärdatei
-FileStream fs = new FileStream("test.txt", FileMode.Create, FileAccess.Write);
+FileStream fs = new FileStream("test.dat", FileMode.Create, FileAccess.Write);
 BinaryWriter writer = new BinaryWriter(fs);
 
 writer.Write(42);          // int
@@ -163,7 +163,7 @@ writer.Write("Hallo");     // string
 writer.Close();
 
 // Lesen einer Binärdatei
-FileStream fs = new FileStream("test.txt", FileMode.Open, FileAccess.Read);
+FileStream fs = new FileStream("test.dat", FileMode.Open, FileAccess.Read);
 BinaryReader reader = new BinaryReader(fs);
 
 int zahl = reader.ReadInt32();

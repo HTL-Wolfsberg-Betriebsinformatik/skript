@@ -167,3 +167,186 @@ FROM Kunde;
 | Performance                | Schnell bei großen Datenmengen | Kann langsamer sein           |
 | Ergebnisstruktur           | Kombiniert Spalten             | Bleibt bei einer Haupttabelle |
 
+---
+
+# `ALL` und `ANY`
+
+Beide werden mit einem Subselect verwendet und vergleichen einen Wert mit mehreren Ergebnissen.
+
+- Das Subselect liefert eine Liste von Werten
+- `ALL` / `ANY` bestimmen, wie verglichen wird
+
+**Beispiel: Tabelle `Orders`**
+
+| OrderID | CustomerID | Amount |
+| ------- | ---------- | ------ |
+| 1       | 1          | 100    |
+| 2       | 1          | 200    |
+| 3       | 2          | 50     |
+| 4       | 3          | 300    |
+
+---
+
+# `ANY`
+
+Vergleich muss **für mindestens einen Wert** zutreffen
+
+**Beispiel:**
+
+```sql
+SELECT *
+FROM Orders
+WHERE Amount > ANY (
+    SELECT Amount
+    FROM Orders
+    WHERE CustomerID = 1
+);
+```
+
+**Ergebnis:**
+
+<div v-click="1">
+
+`200, 300` weil Subselect liefert `100, 200` und `200, 300 > 100 ODER 200`
+
+</div>
+
+<br>
+
+> 💡 **`ANY`= mindestens ein Vergleich muss stimmen**
+
+---
+
+# `ALL`
+
+Vergleich muss **für alle Werte** zutreffen
+
+**Beispiel:**
+
+```sql
+SELECT *
+FROM Orders
+WHERE Amount > ALL (
+    SELECT Amount
+    FROM Orders
+    WHERE CustomerID = 1
+);
+```
+
+**Ergebnis:**
+
+<div v-click="1">
+
+`300` weil Subselect liefert `100, 200` und `300 > 100 UND 200`
+
+</div>
+
+<br>
+
+> 💡 `ALL` **= alle Vergleiche müssen stimmen**
+
+---
+
+# Typische `ALL` und `ANY` Szenarien
+
+| SQL     | Bedeutung                         |
+| ------- | --------------------------------- |
+| `> ANY` | größer als **mindestens einer**   |
+| `< ANY` | kleiner als **mindestens einer**   |
+| `> ALL` | größer als **der größte Wert**    |
+| `< ALL` | kleiner als **der kleinste Wert** |
+
+---
+
+# Synchronisierung
+
+Die innere Abfrage **(Subquery) verwendet Werte aus der äußeren Abfrage**. Sie wird für jede Zeile neu ausgeführt.
+
+**Beispiel: Tabelle `Orders`**
+
+| OrderID | CustomerID | Amount |
+| ------- | ---------- | ------ |
+| 1       | 1          | 100    |
+| 2       | 1          | 200    |
+| 3       | 2          | 50     |
+| 4       | 3          | 300    |
+
+
+---
+
+# Synchronisierung: Aufgabe
+
+Finde alle Bestellungen, die **größer als der Durchschnitt des jeweiligen Kunden** sind
+
+```sql
+SELECT *
+FROM Orders o
+WHERE Amount > (
+    SELECT AVG(Amount)
+    FROM Orders
+    WHERE CustomerID = o.CustomerID
+);
+```
+
+**Wo ist die Synchronisierung?**
+
+<div v-click="1">
+
+```sql
+WHERE CustomerID = o.CustomerID
+```
+
+- `o.CustomerID` kommt aus der äußeren Abfrage
+- Die Subquery passt sich pro Zeile an
+
+</div>
+
+---
+
+# Synchronisierung: Lösung
+
+***
+
+**Order 1 (C1, 100):**
+
+<div v-click="1">
+
+```bash
+→ AVG(C1) = 150 
+→ 100 > 150 ❌
+```
+
+</div>
+
+**Order 2 (C1, 200):**
+
+<div v-click="2">
+
+```
+→ AVG(C1) = 150 
+→ 200 > 150 ✅
+```
+
+</div>
+
+**Order 3 (C2, 50):**
+
+<div v-click="3">
+
+```
+→ AVG(C2) = 50 
+→ 50 > 50 ❌
+```
+
+</div>
+
+**Order 4 (C3, 300):**
+
+<div v-click="4">
+
+```
+→ AVG(C3) = 300 
+→ 300 > 300 ❌
+```
+
+</div>

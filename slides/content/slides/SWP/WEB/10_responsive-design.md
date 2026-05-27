@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Responsive Design
+title: 10 Responsive Design
 info: |
-  ## Responsive Design
+  ## 10 Responsive Design
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

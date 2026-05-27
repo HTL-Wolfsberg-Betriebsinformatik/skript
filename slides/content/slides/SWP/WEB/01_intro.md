@@ -1,7 +1,7 @@
 ---
 theme: seriph
 routerMode: hash
-title: Intro Web & HTML
+title: 01 Intro Web HTML
 info: |
   ## Intro Webentwicklung für 2AHWII SWP1 - WEB
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp

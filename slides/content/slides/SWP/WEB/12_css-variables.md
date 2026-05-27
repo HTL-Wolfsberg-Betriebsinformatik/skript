@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: CSS-Variablen & Theming
+title: 12 CSS-Variablen & Theming
 info: |
-  ## CSS-Variablen & Theming
+  ## 12 CSS-Variablen & Theming
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

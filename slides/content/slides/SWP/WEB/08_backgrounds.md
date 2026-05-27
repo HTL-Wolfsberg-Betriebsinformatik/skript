@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Backgrounds in CSS
+title: 08 Backgrounds in CSS
 info: |
-  ## Backgrounds in CSS
+  ## 08 Backgrounds in CSS
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

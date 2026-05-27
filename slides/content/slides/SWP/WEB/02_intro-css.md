@@ -1,7 +1,7 @@
 ---
 theme: seriph
 routerMode: hash
-title: Einführung CSS
+title: 02 Einführung CSS
 info: |
   ## Intro CSS, Farben, Einheiten
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp

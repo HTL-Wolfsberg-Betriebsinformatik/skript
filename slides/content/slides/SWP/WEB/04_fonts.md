@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: CSS Fonts
+title: 04 CSS Fonts
 info: |
-  ## Schriftgestaltung in CSS
+  ## 04 Schriftgestaltung in CSS
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

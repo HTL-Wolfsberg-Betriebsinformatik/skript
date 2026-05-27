@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Flexbox - Moderne Layouts in CSS
+title: 07 Flexbox - Moderne Layouts in CSS
 info: |
-  ## Flexbox - Moderne Layouts in CSS
+  ## 07 Flexbox - Moderne Layouts in CSS
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

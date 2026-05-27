@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Interaktion & Effekte
+title: 09 Interaktion & Effekte
 info: |
-  ## Interaktion & Effekte
+  ## 09 Interaktion & Effekte
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

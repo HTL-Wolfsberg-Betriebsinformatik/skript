@@ -1,7 +1,7 @@
 ---
 theme: seriph
 routerMode: hash
-title: DIV Element and CSS Box Modell
+title: 03 DIV Element and CSS Box Modell
 info: |
   ## Gruppieren von Tags und CSS Box Modell
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp

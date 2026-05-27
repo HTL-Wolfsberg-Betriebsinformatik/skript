@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Klassische Layouts in CSS
+title: 06 Klassische Layouts in CSS
 info: |
-  ## Klassische Layouts in CSS
+  ## 06 Klassische Layouts in CSS
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

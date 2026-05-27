@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: Semantisches HTML
+title: 11 Semantisches HTML
 info: |
-  ## Semantisches HTML
+  ## 11 Semantisches HTML
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

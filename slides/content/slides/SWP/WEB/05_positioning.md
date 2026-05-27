@@ -1,9 +1,9 @@
 ---
 theme: seriph
 routerMode: hash
-title: CSS Positionierung
+title: 05 CSS Positionierung
 info: |
-  ## Positionierung in CSS
+  ## 05 Positionierung in CSS
 background: https://raw.githubusercontent.com/HTL-Wolfsberg-Betriebsinformatik/skript/refs/heads/main/slides/content/slides/background-cover-16-9.webp
 class: text-center
 drawings:

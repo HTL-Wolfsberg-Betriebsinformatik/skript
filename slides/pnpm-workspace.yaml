@@ -1,3 +1,6 @@
 onlyBuiltDependencies:
   - esbuild
   - playwright-chromium
+approvedBuilds:
+  - esbuild@0.25.9
+  - playwright-chromium@1.55.0

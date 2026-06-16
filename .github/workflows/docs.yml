@@ -44,14 +44,17 @@ jobs:
         run: mkdocs build --strict --site-dir ../_site
 
       # --- Slidev build ---
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
+          cache: 'pnpm'
+          cache-dependency-path: slides/pnpm-lock.yaml
       - name: Install slide deps
         working-directory: slides
-        run: nci
+        run: pnpm install --frozen-lockfile
       - name: Build all decks
         run: |
           bash build_all.sh

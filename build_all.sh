@@ -67,7 +67,7 @@ for md in "${decks[@]}"; do
   echo "   out:    $out_rel"
   echo "   base:   $base"
 
-  npx pnpm build "$md" --base "$base" --out "$out_rel"
+  pnpm build "$md" --base "$base" --out "$out_rel"
 done
 
 echo "✅ All decks built to $OUT_AT_REPO"

@@ -1,4 +1,9 @@
+# pnpm 11+ reads only `allowBuilds`.
+allowBuilds:
+  esbuild: true
+  playwright-chromium: true
+
+# Fallback for pnpm 10.x, which ignores `allowBuilds`.
 onlyBuiltDependencies:
   - esbuild
-approvedBuilds:
-  - esbuild@0.25.9
+  - playwright-chromium

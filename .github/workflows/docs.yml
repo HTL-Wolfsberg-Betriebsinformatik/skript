@@ -46,7 +46,7 @@ jobs:
       # --- Slidev build ---
       - uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 12.5.1
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"

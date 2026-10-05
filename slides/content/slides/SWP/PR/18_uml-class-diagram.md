@@ -567,7 +567,7 @@ classDiagram
 ```mermaid
 classDiagram
   class Kunde {
-    kundenNr : int «PK»
+    kundenNr : int #lt;PK#gt;
     name : String
     bonitaet : int
   }
@@ -580,7 +580,7 @@ classDiagram
 
 - **keine Operationen** und **keine Sichtbarkeiten**
 - meist **keine Navigationspfeile** – Beziehungen gelten in beide Richtungen
-- Primärschlüssel werden mit `«PK»` markiert
+- Primärschlüssel werden mit `<PK>` markiert
 
 </v-clicks>
 
@@ -592,7 +592,7 @@ classDiagram
 |---------|---------------------|----------|
 | Entität (Rechteck) | Klasse | `Kunde` |
 | Attribut (Ellipse) | Zeile in der Klasse | `name : String` |
-| Schlüssel (unterstrichen) | `«PK»` | `kundenNr : int «PK»` |
+| Schlüssel (unterstrichen) | `<PK>` | `kundenNr : int <PK>` |
 | Beziehung (Raute) | Assoziationslinie mit Namen | `gibt auf` |
 | Kardinalität 1 : N | Multiplizitäten | `1`, `0..1`, `0..*`, `1..*` |
 | Beziehungsattribut | Assoziationsklasse | `Teilnahme` mit `note` |
@@ -622,30 +622,30 @@ hideInToc: true
 
 <svg viewBox="0 0 960 330" class="w-full mt-4" style="font-family: ui-sans-serif, Arial, sans-serif; font-size: 16px" fill="none" stroke="currentColor" stroke-width="1.5">
   <!-- Person -->
-  <rect x="40" y="10" width="200" height="112"/>
+  <rect x="40" y="10" width="200" height="134"/>
   <text x="140" y="32" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Person</text>
   <line x1="40" y1="42" x2="240" y2="42"/>
-  <text x="52" y="64" fill="currentColor" stroke="none">name : String</text>
-  <text x="52" y="86" fill="currentColor" stroke="none">geburtsdatum : Date</text>
-  <text x="52" y="108" fill="currentColor" stroke="none">/alter : int</text>
+  <text x="52" y="64" fill="currentColor" stroke="none">personNr : int &lt;PK&gt;</text>
+  <text x="52" y="86" fill="currentColor" stroke="none">name : String</text>
+  <text x="52" y="108" fill="currentColor" stroke="none">geburtsdatum : Date</text>
+  <text x="52" y="130" fill="currentColor" stroke="none">/alter : int</text>
   <!-- Artikel -->
   <rect x="720" y="10" width="200" height="112"/>
   <text x="820" y="32" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Artikel</text>
   <line x1="720" y1="42" x2="920" y2="42"/>
-  <text x="732" y="64" fill="currentColor" stroke="none">artikelNr : int «PK»</text>
+  <text x="732" y="64" fill="currentColor" stroke="none">artikelNr : int &lt;PK&gt;</text>
   <text x="732" y="86" fill="currentColor" stroke="none">bezeichnung : String</text>
   <text x="732" y="108" fill="currentColor" stroke="none">preis : decimal</text>
   <!-- Kunde -->
   <rect x="40" y="200" width="200" height="90"/>
   <text x="140" y="222" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Kunde</text>
   <line x1="40" y1="232" x2="240" y2="232"/>
-  <text x="52" y="254" fill="currentColor" stroke="none">kundenNr : int «PK»</text>
-  <text x="52" y="276" fill="currentColor" stroke="none">bonitaet : int</text>
+  <text x="52" y="254" fill="currentColor" stroke="none">bonitaet : int</text>
   <!-- Bestellung -->
   <rect x="380" y="200" width="200" height="90"/>
   <text x="480" y="222" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Bestellung</text>
   <line x1="380" y1="232" x2="580" y2="232"/>
-  <text x="392" y="254" fill="currentColor" stroke="none">bestellNr : int «PK»</text>
+  <text x="392" y="254" fill="currentColor" stroke="none">bestellNr : int &lt;PK&gt;</text>
   <text x="392" y="276" fill="currentColor" stroke="none">datum : Date</text>
   <!-- Bestellposition -->
   <rect x="720" y="200" width="200" height="90"/>
@@ -654,8 +654,8 @@ hideInToc: true
   <text x="732" y="254" fill="currentColor" stroke="none">posNr : int</text>
   <text x="732" y="276" fill="currentColor" stroke="none">menge : int</text>
   <!-- Kunde ist eine Person -->
-  <polygon points="140,122 130,140 150,140"/>
-  <line x1="140" y1="140" x2="140" y2="200"/>
+  <polygon points="140,144 130,162 150,162"/>
+  <line x1="140" y1="162" x2="140" y2="200"/>
   <!-- Kunde gibt auf Bestellung -->
   <line x1="240" y1="245" x2="380" y2="245"/>
   <text x="248" y="237" fill="currentColor" stroke="none" font-weight="bold">1</text>
@@ -682,7 +682,7 @@ hideInToc: true
 
 <v-clicks>
 
-- Ein **Kunde** *ist eine* **Person** → erbt `name`, `geburtsdatum`, `/alter`
+- Ein **Kunde** *ist eine* **Person** → erbt `personNr` (PK), `name`, `geburtsdatum`, `/alter` – der PK steht nur in der Oberklasse
 - `/alter` ist **abgeleitet** – wird aus `geburtsdatum` berechnet, nicht gespeichert
 - Ein Kunde gibt `0..*` Bestellungen auf – eine Bestellung gehört zu genau `1` Kunden
 - Eine Bestellung enthält `1..*` Positionen – Positionen existieren nicht ohne Bestellung (Komposition)
@@ -692,7 +692,7 @@ hideInToc: true
 
 <div v-click class="mt-8">
 
-> ⚠️ **Bestellung hat KEIN Attribut `kundenNr`!**
+> ⚠️ **Bestellung hat KEIN Attribut `personNr`!**
 > Die Verbindung zum Kunden steckt in der **Assoziationslinie**. Der Fremdschlüssel entsteht erst bei der Umsetzung ins Relationenschema.
 
 </div>
@@ -821,7 +821,7 @@ hideInToc: true
   <rect x="20" y="20" width="230" height="90"/>
   <text x="135" y="42" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Mitarbeiter</text>
   <line x1="20" y1="52" x2="250" y2="52"/>
-  <text x="32" y="74" fill="currentColor" stroke="none">mitarbeiterNr : int «PK»</text>
+  <text x="32" y="74" fill="currentColor" stroke="none">mitarbeiterNr : int &lt;PK&gt;</text>
   <text x="32" y="96" fill="currentColor" stroke="none">name : String</text>
   <polyline points="250,65 400,65 400,190 135,190 135,110"/>
   <text x="258" y="57" fill="currentColor" stroke="none" font-weight="bold">0..1</text>
@@ -856,15 +856,15 @@ Wenn **drei** Klassen gleichzeitig beteiligt sind, zeichnet UML eine **Raute**.
   <rect x="30" y="30" width="150" height="70"/>
   <text x="105" y="55" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Lehrer</text>
   <line x1="30" y1="66" x2="180" y2="66"/>
-  <text x="40" y="88" fill="currentColor" stroke="none" style="font-size: 14px">lehrerId «PK»</text>
+  <text x="40" y="88" fill="currentColor" stroke="none" style="font-size: 14px">lehrerId &lt;PK&gt;</text>
   <rect x="420" y="30" width="150" height="70"/>
   <text x="495" y="55" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Klasse</text>
   <line x1="420" y1="66" x2="570" y2="66"/>
-  <text x="430" y="88" fill="currentColor" stroke="none" style="font-size: 14px">klasseId «PK»</text>
+  <text x="430" y="88" fill="currentColor" stroke="none" style="font-size: 14px">klasseId &lt;PK&gt;</text>
   <rect x="225" y="245" width="150" height="70"/>
   <text x="300" y="270" text-anchor="middle" fill="currentColor" stroke="none" font-weight="bold">Fach</text>
   <line x1="225" y1="281" x2="375" y2="281"/>
-  <text x="235" y="303" fill="currentColor" stroke="none" style="font-size: 14px">fachId «PK»</text>
+  <text x="235" y="303" fill="currentColor" stroke="none" style="font-size: 14px">fachId &lt;PK&gt;</text>
   <polygon points="300,120 340,150 300,180 260,150"/>
   <text x="300" y="108" text-anchor="middle" fill="currentColor" stroke="none" font-style="italic" style="font-size: 15px">unterrichtet</text>
   <line x1="180" y1="65" x2="260" y2="150"/>
@@ -1003,7 +1003,7 @@ class: text-center
 
 **OOP-Klassendiagramm**: Name, Attribute, Operationen, Sichtbarkeiten, Beziehungen
 
-**Datenmodell**: keine Operationen, keine Sichtbarkeiten, keine Fremdschlüssel, `«PK»`
+**Datenmodell**: keine Operationen, keine Sichtbarkeiten, keine Fremdschlüssel, `<PK>`
 
 **Multiplizitäten**: look across, Untergrenze immer angeben
 

@@ -1,0 +1,12 @@
+Übungsideen zu „Datenbanken in C#: vom DataReader zu EF Core“
+(Notiz für die Lehrkraft, nicht für Folien. Bewusst .txt statt .md,
+weil build_all.sh jede .md-Datei unter content/slides als Foliensatz baut.)
+
+- Nach „Die neue Id zurückbekommen“ (A.14): Artikel anlegen per Konsoleneingabe, mit Parametern. Testeingaben: `12,90` und `Kinder's Maus`.
+- Nach „JOINs“ (A.20): Eine Methode `KundenMitUmsatz()`, die eine `List<KundeUmsatz>` liefert (DTO, JOIN, GROUP BY).
+- Nach „Transaktion in C# (2/2)“ (A.24): Die Bestellung mit einem nicht lagernden Artikel testen und in SSMS prüfen, dass nichts angelegt wurde.
+- Nach „Ordnung: das Repository“ (A.27): `ArtikelRepository` vollständig implementieren, danach `KundenRepository` selbstständig.
+- Nach „GroupBy“ (C.8): LINQ-Kärtchen: SQL-Abfrage auf der einen Seite, LINQ auf der anderen, zuordnen lassen.
+- Nach „Das Modell ändern“ (D.11): `[MaxLength]` für alle Strings ergänzen, Migration erzeugen und das erzeugte SQL mit `dotnet ef migrations script` ansehen.
+- Nach „Projektion“ (D.21): Die Übungen von A.20 mit EF Core lösen und das erzeugte SQL mit dem eigenen vergleichen.
+- Nach „Vergleich: Teil A und Teil D“ (D.27): `IArtikelRepository` mit zwei Implementierungen (ADO.NET und EF Core), austauschbar im Programm.

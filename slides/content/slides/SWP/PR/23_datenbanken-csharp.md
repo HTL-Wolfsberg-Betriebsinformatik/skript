@@ -213,27 +213,18 @@ Jede Spalte wird zu einer Eigenschaft. `Email` darf in der Tabelle `NULL` sein, 
 -->
 
 ---
-layout: section
+layout: full
 ---
 
-# Verbindung herstellen
-
-## Connection · Connection-String · using
+<UebersichtAdoNet />
 
 ---
 hideInToc: true
+layout: full
+clicks: 3
 ---
 
-# ADO.NET im Überblick
-
-```mermaid {scale: 0.7}
-flowchart LR
-    App["Deine C#-Anwendung"] --> Con["SqlConnection<br/>Leitung zur DB"]
-    Con --> Cmd["SqlCommand<br/>SQL + Parameter"]
-    Cmd --> DB[("SQL Server<br/>OnlineShop")]
-    DB --> R["SqlDataReader<br/>Ergebnis Zeile für Zeile"]
-    R --> App
-```
+<Datentransfer :schritt="$clicks" />
 
 <v-clicks>
 
@@ -268,6 +259,13 @@ using Microsoft.Data.SqlClient;  // SqlConnection, SqlCommand, …
 
 - In Visual Studio geht es auch über „NuGet-Pakete verwalten“.
 
+---
+layout: section
+---
+
+# Verbindung herstellen
+
+## Connection-String · Connection · using
 
 ---
 hideInToc: true

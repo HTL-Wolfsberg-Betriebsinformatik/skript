@@ -35,6 +35,20 @@ hideInToc: true
 <Toc minDepth="1" maxDepth="1" />
 
 ---
+layout: full
+---
+
+<!-- als Wegweiser vor dem EF-Core-Teil -->
+<Schichtenmodell fokus="reader" titel="Was wir bisher gelernt haben" />
+
+---
+layout: full
+---
+
+<!-- als Wegweiser vor dem EF-Core-Teil -->
+<Schichtenmodell fokus="ef" titel="Wohin die Reise weitergeht" />
+
+---
 layout: section
 ---
 

@@ -45,10 +45,10 @@ withDefaults(defineProps<{
 
     <div class="sm-turm" style="grid-area: a">
       <div class="sm-blk sm-h-r sm-hoch" data-t="reader">
-        <b>SqlCommand + SqlDataReader</b>
+        <b>SqlConnection + SqlCommand + SqlDataReader</b>
         <span>SQL selbst schreiben · Parameter</span>
         <span>ExecuteScalar · NonQuery · Reader</span>
-        <span>Mapping von Hand · Transaktion</span>
+        <span>Mapping von Hand</span>
       </div>
     </div>
 
@@ -74,7 +74,7 @@ withDefaults(defineProps<{
 
     <div class="sm-lbl" style="grid-area: l3">ADO.NET</div>
     <div class="sm-blk sm-h-a" data-t="reader ef" style="grid-area: core">
-      <b>SqlConnection · SqlCommand · SqlParameter · SqlDataReader · SqlTransaction</b>
+      <b>DBConnection · DbCommand · DbParameter · DbDataReader</b>
       <span>direkt verwendet in Schritt 1, intern verwendet von EF Core</span>
     </div>
 

@@ -35,14 +35,14 @@ hideInToc: true
 <Toc minDepth="1" maxDepth="1" />
 
 ---
-layout: full
+layout: none
 ---
 
 <!-- als Wegweiser vor dem EF-Core-Teil -->
 <Schichtenmodell fokus="reader" titel="Was wir bisher gelernt haben" />
 
 ---
-layout: full
+layout: none
 ---
 
 <!-- als Wegweiser vor dem EF-Core-Teil -->
@@ -52,7 +52,7 @@ layout: full
 layout: section
 ---
 
-# Object-Relational Mapping
+# Object-Relational Mapping (ORM)
 
 ## Die Brücke zwischen Tabellen und Objekten
 
@@ -293,29 +293,11 @@ layout: section
 
 ---
 hideInToc: true
+layout: none
+clicks: 5
 ---
 
-# Die Bausteine
-
-```mermaid {scale: 0.72}
-flowchart LR
-    E["<b>Entities</b><br/>Kunde, Artikel,<br/>Bestellung, Bestellposition"] --- Ctx["<b>DbContext</b><br/>ShopContext<br/>DbSet je Tabelle"]
-    Ctx --> P["<b>Provider</b><br/>SqlServer<br/>(nutzt SqlClient)"]
-    P --> DB[("OnlineShopEf")]
-    M["<b>Migrations</b><br/>Schema aus Code"] -.-> DB
-```
-
-<div class="text-xs">
-
-| Begriff | Bedeutung | aus ADO.NET bekannt als |
-|---|---|---|
-| Entity | Klasse, die einer Tabelle entspricht | `Artikel`-Klasse |
-| DbContext | Sitzung mit der Datenbank, verwaltet Entities | Connection + Repository |
-| DbSet&lt;T&gt; | Zugriff auf eine Tabelle | `FROM Artikel` |
-| Provider | übersetzt für eine bestimmte Datenbank | `Microsoft.Data.SqlClient` |
-| Migration | versionierte Schemaänderung | `setup.sql` |
-
-</div>
+<EfBausteine :schritt="$clicks" />
 
 <!--
 Der Provider für SQL Server verwendet intern genau den `Microsoft.Data.SqlClient` aus ADO.NET.

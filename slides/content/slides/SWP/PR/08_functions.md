@@ -191,56 +191,123 @@ Begruessung(); // ok, nimmt "Gast" als `name`
 Begruessung("Stefan"); // ok, nimmt "Stefan" als `name` 
 ```
 
---- 
+---
 
-# Funktionen schreiben vs. benutzen
+# Überladene Funktionen (Method Overloading)
 
-- Eine Funktion ist einfach ein **benannter Block von Code**, der etwas Bestimmtes tut.
-- Man kann eine Funktion **selbst schreiben**, oder eine **fertige Funktion** aus einer Bibliothek aufrufen.
-- Damit spart man sich Arbeit, weil viele nützliche Dinge schon im .NET-Framework programmiert sind.
+Mehrere Funktionen dürfen **denselben Namen** haben, wenn sich ihre **Parameterliste** unterscheidet.
 
-**Beispiele:**
+<div class="grid grid-cols-2 gap-8">
+<div>
 
-`Console.WriteLine("Hallo");`
+```csharp
+int Addiere(int a, int b)
+{
+    return a + b;
+}
 
-- `WriteLine(...)` is eine Funktion mit Parameter
+int Addiere(int a, int b, int c)
+{
+    return a + b + c;
+}
 
-`"Hallo".StartsWith("Ha")`
+double Addiere(double a, double b)
+{
+    return a + b;
+}
+```
 
-- `"Hallo"` ist ein String-Objekt (Zeichenkette)
-- `StartsWith(...)` ist eine Funktion, die überprüft, ob die Zeichenkette mit einem bestimmten Text anfängt
-- Rückgabetyp ist `bool` und somit Rückgabewert `true` oder `false`
+</div>
+<div>
+
+```csharp
+// ruft Addiere(int, int) auf
+int summe1 = Addiere(2, 3);
+
+// ruft Addiere(int, int, int) auf
+int summe2 = Addiere(2, 3, 4);
+
+// ruft Addiere(double, double) auf
+double summe3 = Addiere(2.5, 1.5);
+```
+
+</div>
+</div>
+
+Der Compiler entscheidet anhand der **übergebenen Argumente**, welche Variante aufgerufen wird.
 
 ---
 
-# Ablauf einer Funktion
+# Regeln für das Überladen
 
-```csharp {all|6-7|8-9|11|1|11|12|2|12|13|3|13|14|4|14}{lines:true}
-int Addiere(int a, int b) { return a + b };
-int Subtrahiere(int a, int b) { return a - b; }
-int Multipliziere(int a, int b) { return a * b; }
-double Dividiere(int a, int b) { return (double) a / b; }
+Die Funktionen müssen sich in ihrer **Signatur** (Name + Parameterliste) unterscheiden durch:
 
-Console.Write("Zahl 1: ");
-int x = int.Parse(Console.ReadLine());
-Console.Write("Zahl 2: ");
-int y = int.Parse(Console.ReadLine());
+- die **Anzahl** der Parameter: `Addiere(int a, int b)` vs. `Addiere(int a, int b, int c)`
+- die **Typen** der Parameter: `Addiere(int a, int b)` vs. `Addiere(double a, double b)`
+- die **Reihenfolge** der Typen: `Ausgabe(string text, int anzahl)` vs. `Ausgabe(int anzahl, string text)`
 
-Console.WriteLine($"Summe: {Addiere(x,y)}");
-Console.WriteLine($"Differenz: {Subtrahiere(x,y)}");
-Console.WriteLine($"Produkt: {Multipliziere(x,y)}");
-Console.WriteLine($"Quotient: {Dividiere(x,y)}");
+<br>
+
+❌ **Nicht erlaubt:** Unterschied nur im **Rückgabetyp** oder in den **Parameternamen**
+
+```csharp
+int Berechne(int a) { ... }
+double Berechne(int a) { ... } // Fehler: gleiche Parameterliste!
+int Berechne(int zahl) { ... } // Fehler: nur anderer Parametername!
 ```
 
-Ausgabe:
-```bash {all|1|2|2|2|3|3|3|4|4|4|5|5|5|6}{at:1}
-Zahl 1: 4
-Zahl 2: 2
-Summe: 6
-Differenz: 2
-Produkt: 8
-Quotient: 2
+<br>
+
+> Merksatz:
+>
+> **Gleicher Name, gleiche Aufgabe – aber unterschiedliche Eingaben.**
+
+---
+
+# Überladung in .NET
+
+Viele fertige .NET-Funktionen sind überladen:
+
+<div class="grid grid-cols-2 gap-8">
+<div>
+
+**`Console.WriteLine`** – unterschiedliche **Typen**
+
+```csharp
+Console.WriteLine();          // leere Zeile
+Console.WriteLine("Hallo");   // string
+Console.WriteLine(42);        // int
+Console.WriteLine(3.14);      // double
+Console.WriteLine(true);      // bool
 ```
+
+</div>
+<div>
+
+**`Math.Round`** – unterschiedliche **Anzahl**
+
+```csharp
+double a = Math.Round(3.14159);    // 3
+double b = Math.Round(3.14159, 2); // 3.14
+```
+
+**`Math.Abs`** – Rückgabetyp passt zum Parameter
+
+```csharp
+int    c = Math.Abs(-5);    // Abs(int)    → int
+double d = Math.Abs(-2.5);  // Abs(double) → double
+```
+
+</div>
+</div>
+
+---
+title: Ablauf einer Funktion
+layout: full
+clicks: 7
+---
+
+<FunktionsAblauf :schritt="$clicks" />
 
 ---
 

@@ -79,6 +79,12 @@ defineProps<{
   font-size: 0.95rem;
 }
 
+/* Die Folie bleibt im Dark Mode hell, Inline-Code braucht dort eigene Farben */
+.dark .praxis-root :deep(:not(pre) > code) {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.07);
+}
+
 .praxis-hint {
   margin-top: auto;
   background: #fffbeb;

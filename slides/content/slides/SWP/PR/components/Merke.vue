@@ -28,6 +28,10 @@ withDefaults(defineProps<{ title?: string }>(), {
   color: #15803d;
   margin-bottom: 0.15rem;
 }
+.callout-body :deep(code) {
+  color: inherit;
+  background: rgba(0, 0, 0, 0.07);
+}
 .callout-body :deep(p) {
   margin: 0;
 }

@@ -32,4 +32,24 @@
 
 - Change Resolution
 
+## Color Correction
+
+- Menu -> Fenster -> Lumetri-Farben
+
+## Effekte
+
+- Videoüberblendungen
+- Aussuchen der Überblendungen (in Anfang/Mitte oder Ende von Sequenzen) ziehen
+- "Sprenkeln" Ordner sind einige brauchbare
+- Achtung "Morph-Schnitt"
+- "Übergang zu Schwarz" für Anfang und Ende
+- Pre-role and post-role für Start und Ende
+
+## Audio
+
+- Audio-Track: Linie heben und senken
+- Info: Dialoge sollten zwischen -6 und -12 db liegen
+- Alternative: Rechtsklick auf Track "Audioverstärkung" (Anstelle der Linie wird der gesamte Track verstärkt)
+- Alternative: Auto-Sound: Menü -> Fenster -> Essential Sound
+
 
